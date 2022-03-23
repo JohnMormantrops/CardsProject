@@ -1,6 +1,18 @@
 const express = require('express');
 const { Card } = require('../storage/card');
+const { jwtVerify } = require('../tools/encryption');
 const router = express.Router();
+
+router.use((req, res, next) => {
+    const jwtToken = req.get('jwtToken');
+    try {
+        const user = jwtVerify(jwtToken);
+        req.user = user;
+        next();
+    } catch (err) {
+        res.status(400).send({ err: 'Invalid user identity!' })
+    }
+})
 
 
 /**
@@ -9,6 +21,14 @@ const router = express.Router();
  *   get:
  *     description: Get all cards information.
  *     tags: [Card]
+ *
+ *     parameters:
+ *       - in: header
+ *         name: jwtToken
+ *         schema:
+ *           type: string
+ *           description: The user identity token.
+ *         required: true
  *
  *     responses:
  *       200:
@@ -51,6 +71,14 @@ router.get('/', function (req, res, next) {
  *     description: Get all the selected cards information.
  *     tags: [Card Management]
  *
+ *     parameters:
+ *       - in: header
+ *         name: jwtToken
+ *         schema:
+ *           type: string
+ *           description: The user identity token.
+ *         required: true
+ *
  *     responses:
  *       200:
  *         description: Return the selected cards' information.
@@ -90,6 +118,14 @@ router.get('/management', function (req, res, next) {
  *     description: Add a selected card.
  *     tags: [Card Management]
  *
+ *     parameters:
+ *       - in: header
+ *         name: jwtToken
+ *         schema:
+ *           type: string
+ *           description: The user identity token.
+ *         required: true
+ *
  *     requestBody:
  *       required: true
  *       content:
@@ -117,6 +153,14 @@ router.post('/management', function (req, res, next) {
  *   delete:
  *     description: Delete a selected card.
  *     tags: [Card Management]
+ *
+ *     parameters:
+ *       - in: header
+ *         name: jwtToken
+ *         schema:
+ *           type: string
+ *           description: The user identity token.
+ *         required: true
  *
  *     responses:
  *       200:

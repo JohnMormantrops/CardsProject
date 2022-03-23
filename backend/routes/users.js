@@ -73,9 +73,11 @@ router.post('/register', async function (req, res, next) {
  *             properties:
  *               email:
  *                 type: string
+ *                 default: cs353@gmail.com
  *                 description: The email address.
  *               password:
  *                 type: string
+ *                 default: ahahahaha
  *                 description: The password.
  *
  *     responses:
