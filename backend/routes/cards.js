@@ -1,6 +1,6 @@
-var express = require('express');
-const { cardSchema, Card } = require('../storage/cards');
-var router = express.Router();
+const express = require('express');
+const { Card } = require('../storage/card');
+const router = express.Router();
 
 
 /**
