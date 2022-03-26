@@ -1,3 +1,5 @@
+///this is a temporary function to create a card class mimicking the schema in the database
+///just made this so i can mess around with layouts and design the real data can easily replace this later
 function cardClass(nation, name, image, attack, defense) {
   this.name = name;
   this.nation = nation;
@@ -6,6 +8,9 @@ function cardClass(nation, name, image, attack, defense) {
   this.defense = defense;
 }
 
+//to test your card design simply copy this enter your information
+//and add it to the card array below you will then see your design pop up
+//on the webpage
 var card1 = new cardClass(
   "norse",
   "Thor",
