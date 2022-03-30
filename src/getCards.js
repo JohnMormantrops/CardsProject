@@ -1,11 +1,13 @@
 import React, {useState, useEffect} from "react";
-import {apiKey} from "./apiKey";
+//import {apiKey} from "./apiKey";
 
 
 function Cards(){
 
     const [allCards, setAllCards] = useState([])
 
+    var cards = [];
+    
     useEffect(async() => {
 
         const headers = {
@@ -16,7 +18,17 @@ function Cards(){
         }
 
         const apiResponse = await fetch("http://localhost:3000/card/", { headers })
-        console.log(apiResponse)
+        console.log("heres the api response");
+        //apiResponse = apiResponse.json()
+        //console.log(apiResponse.json())
+
+        apiResponse.json().then(data => {
+            cards.push(data)
+        });
+
+        console.log("HERES THE CARD DATA FOR ALL CARDS")
+        //console.log(cards.);
+        //setAllCards(JSON.parse(apiResponse))
          //pass empty array only to run on page load 
     }, [])
   
@@ -24,9 +36,9 @@ function Cards(){
     return <>
     <h1>Results</h1>
     {
-        allCards.map(post => {
-
-        })
+        cards.map(item =>(<h1>{item.name}</h1>)
+            
+        )
 }    
     </>
 
