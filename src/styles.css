@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Skranji&display=swap");
+
+.App {
+  background-image: url("https://github.com/JohnMormantrops/Images/blob/main/Olympus.jpg?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-width: 100vh;
+  min-height: 100vh;
+  margin: -8px;
+  padding: 0;
+  user-select: none;
+  font-family: "Skranji", cursive;
+}
+.home {
+  margin-top: 10%;
+}
+.acc {
+  margin-top: 10%;
+}
+
+.spring {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  will-change: transform;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* the back of the page overlaps the nav so give it margin */
+.back {
+  margin-top: 70px;
+}
+
+/* center items in div */
+.centered{
+   justify-content: center;   
+  /* background-color: black; */
+}
+
+.nav {
+  display: flex;
+  margin: 0px;
+  width: 75%;
+  background-color: transparent;
+  height: 50px;
+  padding: 20px;
+  /* border-width: 15%;
+  border-style: solid;
+  border-color:blue; */
+}
+
+.navButton {
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: auto;
+  width: 25%;
+  list-style: none;
+  color: gold;
+  padding: 15px;
+}
+.navButton:hover {
+  /* background-color: gray; */
+
+  border-width: 15%;
+  border-style: solid;
+  border-color: gold;
+}
+.infoBox {
+  height: 200px;
+  width: 500px;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  overflow: hidden;
+  margin: 15px;
+  color: gold;
+  padding: 2%;
+}
+
+.row {
+  display: flex;
+}
+.choose {
+  cursor: pointer;
+}
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #d14f00;
+  border-width: 3%;
+  border-style: solid;
+  border-color: green;
+  background-image: url("https://github.com/JohnMormantrops/Images/blob/main/greenlightning.jpg?raw=true");
+  /*  card ratio 3: 2  */
+  height: 200px;
+  width: 130px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  margin: 15px;
+  /* box-shadow: 5px 10px #2c2c2b; */
+  cursor: pointer;
+}
+.card:hover {
+  transform: scale(1.2);
+  margin: 20px;
+}
+
+#norse {
+}
+#china {
+  filter: hue-rotate(250deg);
+}
+#usa {
+  filter: hue-rotate(100deg);
+}
+#southamerican {
+  filter: hue-rotate(310deg);
+}
+#greek {
+  filter: hue-rotate(270deg);
+}
+
+.pic {
+  height: 55%;
+  width: 93%;
+  margin: auto;
+  padding: 3%;
+  filter: hue-rotate(0deg) !important;
+}
+.ability {
+  background-color: #d14f00;
+  height: 17%;
+  margin: 2%;
+  border-width: 3%;
+  border-style: solid;
+  border-color: green;
+  position: relative;
+}
+.heroname {
+  background-color: #d14f00;
+  border-width: 3%;
+  border-style: solid;
+  border-color: green;
+}
+p {
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: 90%;
+}
+.text {
+  margin: auto;
+  font-size: 60%;
+}
