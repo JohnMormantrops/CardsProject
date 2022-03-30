@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+//import { useEffect, useState } from "react";
 import cardArray from "./data";
 import React from "react";
 
@@ -20,7 +20,7 @@ export default function ({limit, type}) {
   
 //   console.log( Math.floor(Math.random() * cardArray.length));
   
-  let tempCards = [];
+  //let tempCards = [];
 
   // if(type === 'random'){
   //    console.log("YES RANDOM")

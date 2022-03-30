@@ -59,8 +59,8 @@ let cardArray = [
   card2
 ];
 
-console.log("making cards array");
-console.log(cardArray);
+// console.log("making cards array");
+// console.log(cardArray);
 
 
  

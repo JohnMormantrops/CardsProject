@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import {  useState } from "react";
 import CardLayout from "./cardLayoutMapped.js";
 import InfoBox from "./infoBox";
 import React from "react";
