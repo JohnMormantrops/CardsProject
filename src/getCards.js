@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import  {useState, useEffect} from "react";
 import {apiKey} from "./apiKey";
 
 
@@ -23,14 +23,7 @@ function Cards(){
     console.log("HERES THE CARD DATA FOR ALL CARDS")       
     console.log(allCards)
 
-    return <>
-    <h1>Results</h1>
-    {
-        //cards.map(item =>(<h1>{item.name}</h1>) )
-            
-       
-}    
-    </>
+    return null
 }
 
 export default Cards

@@ -12,16 +12,16 @@ export default function () {
       </Link>
       <Link to="openPacks" className="navButton">
         OPEN PACKS
-      </Link>
-      <Link to="viewCards" className="navButton">
-        VIEW CARDS
-      </Link>
+      </Link> 
       <Link to="manageDeck" className="navButton">
         MANAGE DECK
+      </Link> 
+      <Link to="viewCards" className="navButton">
+        VIEW DECK
       </Link>
-      <Link to="getCards" className="navButton">
+      {/* <Link to="getCards" className="navButton">
         get cards
-      </Link>
+      </Link> */}
       <Link to="account" className="navButton">
         ACCOUNT
       </Link>

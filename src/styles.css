@@ -117,6 +117,15 @@
   transform: scale(1.2);
   margin: 20px;
 }
+.sidePanel{
+  min-width: 250px;
+  background-color: black;
+  flex-shrink: 0;
+  top: 150px;
+  bottom: 0px;
+  position: fixed;
+   
+}
 
 #norse {
 }

@@ -1,4 +1,4 @@
-import React from "react";
+//import React from "react";
 
 //this is a temporary function to create a card class mimicking the schema in the database
 ///just made this so i can mess around with layouts and design the real data can easily replace this later

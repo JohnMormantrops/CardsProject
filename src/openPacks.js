@@ -16,7 +16,7 @@ export default function () {
       <div className="row" style={{marginLeft: '15%'}} >
         {showSelected === "false" ? (
           <div
-          //creating a div with the className card will disply 
+          //creating a div with the className card will display 
           //the card back the card is displayed using css 
           className="card choose"
           //on click show randomly selected cards to add to the users deck
@@ -25,6 +25,7 @@ export default function () {
           }
         ></div>
         ):(
+          
          <CardLayout limit={5} type={'random'} />     
         )} 
         {/* some jsx here to show the cards if the cards been clicked */}
@@ -32,8 +33,6 @@ export default function () {
       </div>{/* //end of row div */}
 
         {/* <InfoBox /> */}
-
-      {/* //end of row */}
       <hr />
     </div> //end of app div
   );
