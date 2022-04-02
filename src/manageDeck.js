@@ -4,12 +4,6 @@ import  { useEffect, useState } from "react";
 import CardLayout from "./cardLayoutMapped.js";
 
 
-const handleCardClick = (name) =>{
-          console.log("HANDLE CLICK FUNCTION")
-          //console.log(e.currentTarget)
-          console.log(name)
-          
-        };
 
 
 export default function () {
@@ -17,6 +11,14 @@ export default function () {
    
     const[deckArray, setDeckArray] = useState([]);
     
+    const handleCardClick = (name) => {
+          console.log("HANDLE CLICK FUNCTION")
+          
+          //console.log(e.target)
+          console.log(name)
+          
+        };
+
     
     
     return (
@@ -26,7 +28,7 @@ export default function () {
               <div style={{minWidth:250}}>
               </div>
                <div className="sidePanel">SIDEPANE:</div>
-              <div><CardLayout handler={() => setDeckArray()}/></div>
+              <div><CardLayout handler={handleCardClick}/></div>
           </div>
       </div>
     );

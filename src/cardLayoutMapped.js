@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import cardArray from "./data";
 import React from "react";
-import manageDeck from "./manageDeck";
 
 
 
