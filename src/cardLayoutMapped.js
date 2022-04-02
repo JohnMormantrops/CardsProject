@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import cardArray from "./data";
 import React from "react";
+import manageDeck from "./manageDeck";
 
 
 
@@ -22,6 +23,8 @@ export default function ({limit, type, handler}) {
             console.log("HERES A RANODOM CARD")
             console.log(card);
             tempcards.concat(card);
+
+            ////spread operate=or to add to array in react6
             setCards(cards => [...cards, card]);
             
             console.log(tempcards);
@@ -45,7 +48,7 @@ export default function ({limit, type, handler}) {
     
     <div className="cardContainer" id="cardContainer">
       {cards.map((card, key) => (
-        <div className="card" onClick={handler} id={card.nation}>
+        <div className="card" onClick={() => handler(card.name)} id={card.nation}>
           <div className="pic">
             <p className="heroname">{card.name}</p>
             <img src={card.image} alt="hero pic" />

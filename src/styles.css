@@ -102,7 +102,7 @@
   border-style: solid;
   border-color: green;
   background-image: url("https://github.com/JohnMormantrops/Images/blob/main/greenlightning.jpg?raw=true");
-  /*  card ratio 3: 2  */
+  /*  card ratio  3: 2  */
   height: 200px;
   width: 130px;
   border-radius: 10px;
@@ -116,6 +116,7 @@
 .card:hover {
   transform: scale(1.2);
   margin: 20px;
+  box-shadow: 0px 5px 5px 2px #0d0d09;
 }
 .sidePanel{
   min-width: 250px;

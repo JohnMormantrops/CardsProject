@@ -19,9 +19,9 @@ export default function () {
       <Link to="viewCards" className="navButton">
         VIEW DECK
       </Link>
-      {/* <Link to="getCards" className="navButton">
+      <Link to="getCards" className="navButton">
         get cards
-      </Link> */}
+      </Link>
       <Link to="account" className="navButton">
         ACCOUNT
       </Link>
