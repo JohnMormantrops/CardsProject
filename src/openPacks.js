@@ -1,15 +1,34 @@
 import { useState } from "react";
 import CardLayout from "./cardLayoutMapped.js";
-//import InfoBox from "./infoBox";
+import cardArray from "./data.js";
+import InfoBox from "./infoBox";
 import React from "react";
 
 export default function () {
   
-  //use state here is a string value when you click the card
+  //use state here are string values when you click the card
   // the value will be changed to true which will show randomly selected crads
+  //or show the info box
   const [showSelected, setShowSelected] = useState("false");
-  console.log("showSelected");
-  console.log(showSelected);
+  const [showInfoBox, setShowInfoBox] = useState("false");
+  ///this store the currently 
+  const [selectedCard, setSelectedCard] = useState([]);
+
+  //args sent from cardlayout mapped 
+  const handleCardClick = (e, nation, name) => {
+    e.preventDefault()
+    console.log("clicked")
+    console.log(nation)
+    console.log(name)
+    var select = cardArray.find( cards => cards.name === name)
+    console.log("select theis")
+    console.log(select)
+    
+    setSelectedCard(select);
+    setShowInfoBox("true")
+    
+  }
+
   return (
     
     <div className="back">
@@ -26,14 +45,17 @@ export default function () {
         ></div>
         ):(
           
-         <CardLayout limit={5} type={'random'} />     
+         <CardLayout limit={5} type={'random'} handler={handleCardClick} />     
         )} 
         {/* some jsx here to show the cards if the cards been clicked */}
        
       </div>{/* //end of row div */}
 
-        {/* <InfoBox /> */}
+        
       <hr />
+      <div style={{margin:"500"}}>
+      {showInfoBox === 'true' && <InfoBox card={selectedCard} />}
+      </div>
     </div> //end of app div
   );
 }

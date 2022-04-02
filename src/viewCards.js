@@ -2,6 +2,7 @@ import {  useState } from "react";
 import CardLayout from "./cardLayoutMapped.js";
 import InfoBox from "./infoBox";
 import React from "react";
+import cardArray from "./data.js";
 
 export default function () {
   
@@ -22,7 +23,7 @@ export default function () {
         {showFaction === "norse" ? (
           <CardLayout faction={showFaction} />
         ) : (
-          <InfoBox />
+          <InfoBox card={cardArray[0]}/>
         )}
       </div>
       {/* //end of row */}
@@ -37,9 +38,9 @@ export default function () {
           }
         ></div>
         {showFaction === "china" ? (
-          <CardLayout faction={showFaction} />
+          <CardLayout  faction={showFaction} />
         ) : (
-          <InfoBox />
+          <InfoBox card={cardArray[0]} />
         )}
       </div>
       {/* //end of row */}
@@ -56,7 +57,7 @@ export default function () {
         {showFaction === "southamerica" ? (
           <CardLayout faction={showFaction} />
         ) : (
-          <InfoBox />
+          <InfoBox card={cardArray[0]} />
         )}
       </div>
       {/* //end of row */}
@@ -73,7 +74,7 @@ export default function () {
         {showFaction === "greek" ? (
           <CardLayout faction={showFaction} />
         ) : (
-          <InfoBox />
+          <InfoBox card={cardArray[0]}/>
         )}
       </div>
 
@@ -89,7 +90,7 @@ export default function () {
         {showFaction === "usa" ? (
           <CardLayout faction={showFaction} />
         ) : (
-          <InfoBox />
+          <InfoBox card={cardArray[0]}/>
         )}
       </div>
       {/* //end of row */}

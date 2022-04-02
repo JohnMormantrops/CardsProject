@@ -67,6 +67,7 @@
   list-style: none;
   color: gold;
   padding: 15px;
+  text-shadow: 0 0 5px #0d0d09;
 }
 .navButton:hover {
   /* background-color: gray; */
@@ -76,13 +77,15 @@
   border-color: gold;
 }
 .infoBox {
-  height: 200px;
+  display: flex;
+  height: 300px;
   width: 500px;
   /* background-color: rgba(0, 0, 0, 0.3); */
   overflow: hidden;
-  margin: 15px;
+  /* margin: 15px; */
   color: gold;
   padding: 2%;
+  text-shadow: 0 0 5px #000000;
 }
 
 .row {
@@ -97,6 +100,7 @@
 }
 
 .card {
+  color: black;
   background-color: #d14f00;
   border-width: 3%;
   border-style: solid;
@@ -112,22 +116,78 @@
   margin: 15px;
   /* box-shadow: 5px 10px #2c2c2b; */
   cursor: pointer;
+  text-shadow: 0 0 0px #0d0d09;
 }
+
+/* //////
+//////MANAGE DECK STYLES
+///// */
+.build{
+  margin-left: 10px;
+}
+.createDeck{
+  color: #ffd700;
+  margin-left: 15px;
+}
+
 .card:hover {
   transform: scale(1.2);
   margin: 20px;
   box-shadow: 0px 5px 5px 2px #0d0d09;
 }
 .sidePanel{
-  min-width: 250px;
-  background-color: black;
+  min-width: 240px;
   flex-shrink: 0;
   top: 150px;
-  bottom: 0px;
-  position: fixed;
-   
+  /* bottom: 0px; */
+  position: absolute;
+  z-index: 1;
 }
 
+.panelBackground{
+    position: absolute;
+    background-color: gray;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: -100000;
+}
+.panelBox{
+  margin-left: 15px;
+   width: 100%;
+   color: gold;
+   height: 15%;
+   z-index: 1;
+   padding: 10px;
+   background-color: auto;
+}
+.panelBox:hover{
+    background-color: rgba(140, 140, 140, 0.211);
+    margin-left: 0;
+}
+.createDeckTitle{
+  text-shadow: 0 0 5px #0d0d09;
+  font-family: "Skranji", cursive;
+}
+.panelBox:hover{
+  cursor: pointer;
+}
+.clearButton{
+  cursor: pointer;
+  width: 100%;
+  background-color: transparent;
+  font-family: "Skranji", cursive;
+  color:#ffd700;
+}
+/* 
+/////
+/////END MANAGE DECK STYLES
+////// */
+
+
+/* ////
+////CARD STYLES
+//// */
 #norse {
 }
 #china {
@@ -175,4 +235,5 @@ img {
 .text {
   margin: auto;
   font-size: 60%;
+
 }
