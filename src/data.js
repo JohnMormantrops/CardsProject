@@ -13,7 +13,7 @@ function cardClass(nation, name, image, attack, defense) {
 //to test your card design simply copy this enter your information
 //and add it to the card array below you will then see your design pop up
 //on the webpage
-var card1 = new cardClass(
+var card11 = new cardClass(
   "norse",
   "Thor",
   "https://github.com/JohnMormantrops/Images/blob/main/thor.jpg?raw=true",
