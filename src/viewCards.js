@@ -6,6 +6,9 @@ import cardArray from "./data.js";
 
 export default function () {
   
+  const handleCardClick =()=> {
+    console.log("CRADS CLICKED")
+  }
   //use state here is a string value when you click the 
   const [showFaction, setShowFaction] = useState("");
 
@@ -21,7 +24,7 @@ export default function () {
           }
         ></div>
         {showFaction === "norse" ? (
-          <CardLayout faction={showFaction} />
+          <CardLayout faction={showFaction} handler={handleCardClick} />
         ) : (
           <InfoBox card={cardArray[0]}/>
         )}
@@ -38,7 +41,7 @@ export default function () {
           }
         ></div>
         {showFaction === "china" ? (
-          <CardLayout  faction={showFaction} />
+          <CardLayout  faction={showFaction} handler={handleCardClick} />
         ) : (
           <InfoBox card={cardArray[0]} />
         )}
@@ -55,7 +58,7 @@ export default function () {
           }
         ></div>
         {showFaction === "southamerica" ? (
-          <CardLayout faction={showFaction} />
+          <CardLayout faction={showFaction} handler={handleCardClick}/>
         ) : (
           <InfoBox card={cardArray[0]} />
         )}
@@ -72,7 +75,7 @@ export default function () {
           }
         ></div>
         {showFaction === "greek" ? (
-          <CardLayout faction={showFaction} />
+          <CardLayout faction={showFaction} handler={handleCardClick} />
         ) : (
           <InfoBox card={cardArray[0]}/>
         )}
@@ -88,7 +91,7 @@ export default function () {
           }
         ></div>
         {showFaction === "usa" ? (
-          <CardLayout faction={showFaction} />
+          <CardLayout faction={showFaction} handler={handleCardClick}/>
         ) : (
           <InfoBox card={cardArray[0]}/>
         )}

@@ -7,6 +7,11 @@ export default function ({card}) {
   console.log(card.name)
   console.log(card)
   console.log("END OF INFO")
+
+  const handleCardClick = () =>{
+    console.log("INFO BOX CARD CLICKED")
+  }
+
   return (
     <div className="infoBox">
       <div className="viewInfo">
@@ -17,7 +22,7 @@ export default function ({card}) {
           aliquip duis ad
         </p>
       </div>
-      <CardLayoutMapped limit={1} type={card}/>
+      <CardLayoutMapped limit={1} type={card} handler={handleCardClick}/>
     </div>
   );
 }
