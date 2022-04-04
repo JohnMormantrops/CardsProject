@@ -20,7 +20,7 @@ var card1 = new cardClass(
   "Lightning Attack \n 5 damage",
   "Morale Boost +1 defense for all troops"
 );
-var card2 = new cardClass(
+var card21 = new cardClass(
   "china",
   "Thief",
   "https://github.com/JohnMormantrops/Images/blob/main/thief.jpg?raw=true",
@@ -56,14 +56,10 @@ let cardArray = [
   card2,
   card3,
   card1,
-  card2
+  card2,
 ];
 
 // console.log("making cards array");
 // console.log(cardArray);
 
-
- 
 export default cardArray;
-
-
