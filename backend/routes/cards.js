@@ -1,5 +1,5 @@
 const express = require('express');
-const { Card } = require('../storage/card');
+const { Card, Deck } = require('../storage/card');
 const { jwtVerify } = require('../tools/encryption');
 const router = express.Router();
 
@@ -58,18 +58,17 @@ router.use((req, res, next) => {
  *                     type: string
  *                     description: The hero's defense magic.
  */
-router.get('/', function (req, res, next) {
-    Card.find({}, function (err, cards) {
-        res.send(cards);
-    })
+router.get('/', async function (req, res, next) {
+    const cards = await Card.find({});
+    res.send(cards);
 });
 
 /**
  * @openapi
- * /card/management:
+ * /card/deck:
  *   get:
- *     description: Get all the selected cards information.
- *     tags: [Card Management]
+ *     description: Get all the decks' information.
+ *     tags: [Deck Management]
  *
  *     parameters:
  *       - in: header
@@ -81,16 +80,13 @@ router.get('/', function (req, res, next) {
  *
  *     responses:
  *       200:
- *         description: Return the selected cards' information.
+ *         description: Return the decks' information.
  *         content:
  *           application/json:
  *             schema:
  *               type: array
  *               items:
  *                 properties:
- *                   _id:
- *                     type: string
- *                     description: The card ID.
  *                   name:
  *                     type: string
  *                     description: The hero name.
@@ -107,16 +103,21 @@ router.get('/', function (req, res, next) {
  *                     type: string
  *                     description: The hero's defense magic.
  */
-router.get('/management', function (req, res, next) {
-    //todo not implemented
+router.get('/deck', async function (req, res, next) {
+    const decks = await Deck.findOne({ userId: req.user.id });
+    if (decks) {
+        res.send(decks);
+    } else {
+        res.send([]);
+    }
 });
 
 /**
  * @openapi
- * /card/management:
- *   post:
- *     description: Add a selected card.
- *     tags: [Card Management]
+ * /card/deck:
+ *   put:
+ *     description: Store the selected decks.
+ *     tags: [Deck Management]
  *
  *     parameters:
  *       - in: header
@@ -131,44 +132,36 @@ router.get('/management', function (req, res, next) {
  *       content:
  *         application/json:
  *           schema:
- *             type: object
- *             properties:
- *               _id:
- *                 type: string
- *                 description: The card ID.
+ *             type: array
+ *             items:
+ *               properties:
+ *                 name:
+ *                   type: string
+ *                   description: The hero name.
+ *                 nation:
+ *                   type: string
+ *                   description: The country the hero belongs to.
+ *                 image:
+ *                   type: string
+ *                   description: The card image url.
+ *                 attack:
+ *                   type: string
+ *                   description: The hero's attack magic.
+ *                 defense:
+ *                   type: string
+ *                   description: The hero's defense magic.
  *
  *     responses:
  *       200:
- *         description: Addition succeeded.
- *       400:
- *         description: Card does not exist.
+ *         description: Successful storage.
  */
-router.post('/management', function (req, res, next) {
-    //todo not implemented
+router.put('/deck', async function (req, res, next) {
+    await Deck.findOneAndUpdate({ userId: req.user.id }, {
+        userId: req.user.id,
+        decks: req.body
+    }, { upsert: true, new: true, setDefaultsOnInsert: true });
+    res.send();
 });
 
-/**
- * @openapi
- * /card/management/{cardID}:
- *   delete:
- *     description: Delete a selected card.
- *     tags: [Card Management]
- *
- *     parameters:
- *       - in: header
- *         name: jwtToken
- *         schema:
- *           type: string
- *           description: The user identity token.
- *         required: true
- *
- *     responses:
- *       200:
- *         description: Deletion succeeded.
- */
-router.delete('/management/:cardID', function (req, res, next) {
-    //todo not implemented
-    res.send("cardID is set to " + req.params.cardID);
-});
 
 module.exports = router;
