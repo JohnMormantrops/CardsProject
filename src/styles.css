@@ -14,6 +14,11 @@
 }
 .home {
   margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+.title{
+  margin:auto;
 }
 .acc {
   margin-top: 10%;
@@ -137,6 +142,7 @@
 }
 .sidePanel{
   min-width: 240px;
+  max-width: 240px;
   flex-shrink: 0;
   top: 150px;
   /* bottom: 0px; */
@@ -171,6 +177,7 @@
 }
 .panelBox:hover{
   cursor: pointer;
+  position: relative;
 }
 .clearButton{
   cursor: pointer;
@@ -178,6 +185,18 @@
   background-color: transparent;
   font-family: "Skranji", cursive;
   color:#ffd700;
+}
+.deckX{
+  color: red;
+  font-size: large;
+  position:absolute;
+  right:0;
+  background-color: transparent;
+  border: none;
+
+}
+.deckX:hover{
+  background-color: #00000092;
 }
 /* 
 /////
@@ -235,5 +254,18 @@ img {
 .text {
   margin: auto;
   font-size: 60%;
+
+}
+/* ////
+////OPEN PACKS 
+//// */
+.addToCollection{
+  padding: 30px;
+  background-color: rgba(128, 128, 128, 0.386);
+  width: 130px;
+  height: 100px;
+}
+.addToCollection:hover{
+  cursor:pointer;
 
 }

@@ -25,7 +25,7 @@ function Cards(){
     console.log(allCards)
 
     return (<div>CARDS<p>
-        {allCards.map((card, key) =>(<div>{card.name}{card.nation}</div> ))}</p></div>);
+        {allCards.map((card, key) =>(<div>{card.name} {card.nation} {card.paragraph} check</div> ))}</p></div>);
 };
 
 export default Cards

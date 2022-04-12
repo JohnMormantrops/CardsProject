@@ -3,7 +3,9 @@ import React from "react";
 function Home() {
   return (
     <div className="home">
-      <h1>WHEN I CLICK HOME IT GOESZ TO THE HOME.jS FOLDER AND LOADS IT DO SOMETHING HERE</h1>
+      
+      <div className="title"><h1>WORLD</h1><br/><h3>OF</h3><br/><h1>WORSHIP</h1></div>
+
     </div>
   );
 }

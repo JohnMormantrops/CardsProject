@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import CardLayout from "./cardLayoutMapped.js";
-import cardArray from "./data.js";
+import { apiKey } from "./apiKey.js";
 import InfoBox from "./infoBox";
 import React from "react";
 
@@ -13,8 +13,50 @@ export default function () {
   const [showInfoBox, setShowInfoBox] = useState("false");
   ///this store the currently 
   const [selectedCard, setSelectedCard] = useState([]);
+  const [randomCards, setRandomCards] = useState([]);
 
-  //args sent from cardlayout mapped 
+  const[cardArray, setCardArray] = useState([]);
+
+    useEffect(() => {
+
+      const headers = {
+          // "Access-Control-Allow-Origin": '*',
+          "content-type" : "application/json",
+          "jwtToken": apiKey
+          
+      }
+      
+      const fetchData =  async () => {
+        const apiResponse = await fetch("http://localhost:3000/card/", { headers })
+        const json = await apiResponse.json();
+        setCardArray(json);
+      }
+      fetchData().catch(console.error)
+      }, [])
+   
+
+
+  const getRandom = () => {
+    let someCards= [];
+    for(let i = 0; i < 5; i++){
+      let card = cardArray[Math.floor(Math.random() * cardArray.length)]
+      console.log("Heres a crd??")
+      console.log(card)
+     
+      setRandomCards(randomCards => [...randomCards, card]);
+      console.log(randomCards)
+    }
+    setShowSelected("true")
+  }
+  //
+console.log("RANDOM")
+ console.log(randomCards)
+
+ //this functions hould add to users collection
+ const addToCollection = () =>{
+
+ }
+
   const handleCardClick = (e, nation, name) => {
     e.preventDefault()
     console.log("clicked")
@@ -39,13 +81,27 @@ export default function () {
           //the card back the card is displayed using css 
           className="card choose"
           //on click show randomly selected cards to add to the users deck
-          onClick={() =>
-            setShowSelected("true")
+          onClick={() => getRandom()
           }
         ></div>
         ):(
-          
-         <CardLayout limit={5} type={'random'} handler={handleCardClick} />     
+          <div className="cardContainer" id="cardContainer">
+          {randomCards.map((card, key) => (
+            <div className="card" onClick={(e) => handleCardClick(e, card.nation, card.name)} id={card.nation}>
+              <div className="pic">
+                <p className="heroname">{card.name}</p>
+                <img src={card.image} alt="hero pic" />
+              </div>
+              <div className="ability">
+                <p className="text">{card.attack}</p>
+              </div>
+              <div className="ability">
+                <p className="text">{card.defense}</p>
+              </div>
+            </div>
+          ))}<div className="addToCollection" onClick={addToCollection}>ADD TO COLLECTION</div>
+        </div>
+        //  <CardLayout limit={5} type={'random'} handler={handleCardClick} />     
         )} 
         {/* some jsx here to show the cards if the cards been clicked */}
        

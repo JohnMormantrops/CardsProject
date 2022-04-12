@@ -1,16 +1,35 @@
-import {  useState } from "react";
+import {  useState, useEffect } from "react";
 import CardLayout from "./cardLayoutMapped.js";
 import InfoBox from "./infoBox";
 import React from "react";
 import cardArray from "./data.js";
+import { apiKey } from "./apiKey.js";
 
 export default function () {
   
   const handleCardClick =()=> {
-    console.log("CRADS CLICKED")
+    console.log("card clicked")
   }
   //use state here is a string value when you click the 
   const [showFaction, setShowFaction] = useState("");
+  const [cardArray, setCardArray] = useState([]);
+
+  useEffect(() => {
+
+    const headers = {
+        // "Access-Control-Allow-Origin": '*',
+        "content-type" : "application/json",
+        "jwtToken": apiKey
+        
+    }
+    
+    const fetchData =  async () => {
+      const apiResponse = await fetch("http://localhost:3000/card/", { headers })
+      const json = await apiResponse.json();
+      setCardArray(json);
+    }
+    fetchData().catch(console.error)
+    }, [])
 
   return (
     <div className="back">
@@ -18,82 +37,36 @@ export default function () {
         <div
           className="card choose"
           onClick={() =>
-            showFaction === "norse"
+            showFaction === "true"
               ? setShowFaction("")
-              : setShowFaction("norse")
+              : setShowFaction("true")
           }
         ></div>
-        {showFaction === "norse" ? (
-          <CardLayout faction={showFaction} handler={handleCardClick} />
+        {showFaction === "true" ? (
+          <div className="cardContainer" id="cardContainer">
+          {cardArray.map((card, key) => (
+            <div className="card" onClick={(e) => handleCardClick(e, card.nation, card.name)} id={card.nation}>
+              <div className="pic">
+                <p className="heroname">{card.name}</p>
+                <img src={card.image} alt="hero pic" />
+              </div>
+              <div className="ability">
+                <p className="text">{card.attack}</p>
+              </div>
+              <div className="ability">
+                <p className="text">{card.defense}</p>
+              </div>
+            </div>
+          ))}
+        </div>
         ) : (
-          <InfoBox card={cardArray[0]}/>
-        )}
+          <div className="infoBox">
+      <div className="viewInfo">
+        <h1>MY DECK</h1>
+        <p>
+        </p>
       </div>
-      {/* //end of row */}
-      <hr />
-      <div class="row">
-        <div
-          className="card choose"
-          onClick={() =>
-            showFaction === "china"
-              ? setShowFaction("")
-              : setShowFaction("china")
-          }
-        ></div>
-        {showFaction === "china" ? (
-          <CardLayout  faction={showFaction} handler={handleCardClick} />
-        ) : (
-          <InfoBox card={cardArray[0]} />
-        )}
-      </div>
-      {/* //end of row */}
-      <hr />
-      <div className="row">
-        <div
-          className="card choose"
-          onClick={() =>
-            showFaction === "southamerica"
-              ? setShowFaction("")
-              : setShowFaction("southamerica")
-          }
-        ></div>
-        {showFaction === "southamerica" ? (
-          <CardLayout faction={showFaction} handler={handleCardClick}/>
-        ) : (
-          <InfoBox card={cardArray[0]} />
-        )}
-      </div>
-      {/* //end of row */}
-      <hr />
-      <div className="row">
-        <div
-          className="card choose"
-          onClick={() =>
-            showFaction === "greek"
-              ? setShowFaction("")
-              : setShowFaction("greek")
-          }
-        ></div>
-        {showFaction === "greek" ? (
-          <CardLayout faction={showFaction} handler={handleCardClick} />
-        ) : (
-          <InfoBox card={cardArray[0]}/>
-        )}
-      </div>
-
-      <hr />
-      {/* //end of row */}
-      <div className="row">
-        <div
-          className="card choose"
-          onClick={() =>
-            showFaction === "usa" ? setShowFaction("") : setShowFaction("usa")
-          }
-        ></div>
-        {showFaction === "usa" ? (
-          <CardLayout faction={showFaction} handler={handleCardClick}/>
-        ) : (
-          <InfoBox card={cardArray[0]}/>
+      </div> 
         )}
       </div>
       {/* //end of row */}
