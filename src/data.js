@@ -56,14 +56,10 @@ let cardArray = [
   card2,
   card3,
   card1,
-  card2
+  card2,
 ];
 
 // console.log("making cards array");
 // console.log(cardArray);
 
-
- 
 export default cardArray;
-
-

@@ -7,7 +7,12 @@ const cardSchema = new mongoose.Schema({
     attack: String,
     defense: String
 })
-
 const Card = mongoose.model('Card', cardSchema);
 
-module.exports = { Card: Card, cardSchema: cardSchema }
+const deckSchema = new mongoose.Schema({
+    userId: mongoose.Schema.Types.ObjectId,
+    decks: []
+}, { strict: false });
+const Deck = mongoose.model('Deck', deckSchema);
+
+module.exports = { Card: Card, Deck: Deck }
