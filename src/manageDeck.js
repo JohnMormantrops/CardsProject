@@ -43,6 +43,7 @@ export default function () {
 
     const handleCardClick = (e, nation, name) => {
           e.preventDefault();
+          //here I just put the nation and names in the sidebar to represent the clicked card
           console.log("HANDLE CLICK FUNCTION") 
 
           var info = {"nation": nation, "name": name} 
@@ -66,16 +67,9 @@ export default function () {
     }
 
     const handlePanelClick = (card) =>{
-      console.log(cardArray)
-      //e.preventDefault()
       var select = cardArray.find( cards => cards.name === card.name)
-      console.log("select This")
-      console.log(select)
-
       setSelectedCard(select)
-      console.log("clicked panel button")
       setShowInfo("true")
-      
     }
 
     const showInfoCard = () =>{
@@ -88,7 +82,7 @@ export default function () {
     }
 
     return (
-      <div className="manageDeck back">
+      <div className="manageDeck">
         
         <div className="createDeck"><h2 className="createDeckTitle">Create Deck</h2></div>
           <div className="row">
