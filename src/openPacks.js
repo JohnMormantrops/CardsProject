@@ -32,8 +32,28 @@ export default function () {
         setCardArray(json);
       }
       fetchData().catch(console.error)
-      }, [])
+    }, [])
    
+     //this functions should add to users collection
+ const addToCollection = async(e) => {
+    e.preventDefault();
+    const send = {cardArray};
+    const header = {
+        // "Access-Control-Allow-Origin": '*',
+        "content-type" : "application/json",
+        "jwtToken": apiKey
+        
+    }
+
+    fetch("http://localhost:3000/deck", {
+      method: "PUT",
+      header,
+      body: send 
+    }).then(()=> {
+      console.log("ADDED?")
+  })
+  
+}
 
 
   const getRandom = () => {
@@ -49,13 +69,8 @@ export default function () {
     setShowSelected("true")
   }
   //
-console.log("RANDOM")
- console.log(randomCards)
-
- //this functions hould add to users collection
- const addToCollection = () =>{
-
- }
+  console.log("RANDOM")
+  console.log(randomCards)
 
   const handleCardClick = (e, nation, name) => {
     e.preventDefault()

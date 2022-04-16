@@ -8,7 +8,7 @@ export default function () {
       <div className="viewInfo">
         <h1>World Of Worship</h1>
         <p>
-         Select cards and add them to your deck. Choose wisely!!
+         Here are all the cards in your collection!! Choose 20 to add to your game deck. Choose wisely!!
         </p>
       </div>
       
