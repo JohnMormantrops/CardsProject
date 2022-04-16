@@ -13,8 +13,15 @@ import ViewCards from "./viewCards";
 import Account from "./account";
 import ManageDeck from "./manageDeck";
 import GetCards from "./getCards";
+import Login from "./login";
+import Register from "./register";
 
-
+const Homepage = () => (
+  <div className="App">
+    <Nav />
+    <Outlet />
+  </div>
+)
 
 export default function App() {
   return (
@@ -24,6 +31,9 @@ export default function App() {
         <div>
           {/* Route links are in navbar file */}
           <Routes>
+            <Route exact path="/login" element={<Login />}> </Route>
+            <Route exact path="/signup" element={<Register />}> </Route>
+            <Route path="/" element={<Homepage/>}>
             <Route exact path="home" element={<Home />} />
             <Route exact path="openPacks" element={<OpenPacks />} />
             <Route exact path="viewCards" element={<ViewCards />} />
