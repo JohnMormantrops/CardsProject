@@ -5,6 +5,13 @@ import {
 } from "react-router-dom";
 
 export default function () {
+  let navigate = useNavigate();
+
+  const handleClick = () => {
+    localStorage.removeItem("token");
+    navigate("/login");
+  }
+  
   return (
     <ol className="nav">
       <Link to="home" className="navButton">
@@ -25,6 +32,9 @@ export default function () {
       <Link to="account" className="navButton">
         ACCOUNT
       </Link>
+    <div className="navButton" onClick={handleClick}>
+        Sign out
+      </div>
     </ol>
   );
 }
