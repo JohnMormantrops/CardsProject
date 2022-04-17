@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router";
+import React from "react";
 
 const Register = () => {
 	let navigate = useNavigate();
@@ -12,7 +13,7 @@ const Register = () => {
 			password
 		}
 		try {
-			const res = await fetch("http://localhost:4399/user/register", {
+			const res = await fetch("http://localhost:3000/user/register", {
 				mode: 'cors',
 				method: 'POST',
 				headers: {
@@ -36,6 +37,7 @@ const Register = () => {
 
 	return (
 		<div style={{marginTop: "150px", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
+			<h2 className="heading">New User? Register here!</h2>		
 			<div>
 				<input type="text" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
 			</div>
@@ -43,9 +45,6 @@ const Register = () => {
 				<input type="Password" placeholder="Password" value={password} onChange={e => setPassword(e.target.value)} />
 			</div>
 			<button onClick={handleRegister}>register</button>
-
-		
-
 		</div>
 	)
 }

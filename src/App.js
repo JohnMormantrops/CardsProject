@@ -5,7 +5,8 @@ import {
   Routes,
   Route
 } from "react-router-dom";
-
+import { useState } from "react";
+import { Outlet } from "react-router-dom";
 import Nav from "./navbar.js";
 import Home from "./home.js";
 import OpenPacks from "./openPacks";
@@ -18,22 +19,31 @@ import Register from "./register";
 
 const Homepage = () => (
   <div className="App">
-    <Nav />
+    {/* <Nav /> */}
     <Outlet />
   </div>
 )
 
 export default function App() {
+
+  const[authUser, setAuthUser] = useState("false")
+  const[awtToken, setAwtToken] = useState("")
+
+  
+  console.log("App user?")
+  console.log(authUser)
+
   return (
     <Router>
       <div className="App">
-        <Nav />
+
+        <Nav authUser={authUser} setAuthUser={setAuthUser}/>
+       
         <div>
           {/* Route links are in navbar file */}
           <Routes>
-            <Route exact path="/login" element={<Login />}> </Route>
-            <Route exact path="/signup" element={<Register />}> </Route>
-            <Route path="/" element={<Homepage/>}>
+            <Route exact path="/" element={<Login authUser={authUser} setAuthUser={setAuthUser}/>} /> 
+            <Route exact path="register" element={<Register authUser={authUser} setAuthUser={setAuthUser}/>} />
             <Route exact path="home" element={<Home />} />
             <Route exact path="openPacks" element={<OpenPacks />} />
             <Route exact path="viewCards" element={<ViewCards />} />

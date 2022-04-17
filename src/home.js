@@ -4,7 +4,7 @@ function Home() {
   return (
     <div className="home">
       
-      <div className="title"><h1>WORLD</h1><br/><h3>OF</h3><br/><h1>WORSHIP</h1></div>
+      <div className="title"><h1 className="heading">WORLD OF<br/>WORSHIP!!</h1></div>
 
     </div>
   );

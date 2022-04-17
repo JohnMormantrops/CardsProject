@@ -1,23 +1,37 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
   Link,
-  Switch
 } from "react-router-dom";
 
-export default function () {
+export default function ({authUser, setAuthUser}) {
   let navigate = useNavigate();
+
+  console.log("auth user")
+  console.log(authUser)
 
   const handleClick = () => {
     localStorage.removeItem("token");
-    navigate("/login");
+    setAuthUser("false")
+    navigate("/");
   }
   
   return (
-    <ol className="nav">
+    <div>
+     {authUser === "false" ?
+      (<ol className="nav">
+        <h2 className="heading">WORLD OF<br/>WORSHIP!!</h2>
+        <Link to="/" className="navButton" >
+          SIGN IN
+        </Link>
+        <Link to="register" className="navButton" >
+          SIGN UP
+        </Link>
+      </ol>) :
+      ///
+      /// IF LOGGED IN SHOW THE NAV BAR
+    (<ol className="nav">
       <Link to="home" className="navButton">
         HOME
       </Link>
@@ -33,12 +47,10 @@ export default function () {
       <Link to="getCards" className="navButton">
         get cards
       </Link>
-      <Link to="account" className="navButton">
-        ACCOUNT
-      </Link>
     <div className="navButton" onClick={handleClick}>
         Sign out
       </div>
-    </ol>
+    </ol>)}
+    </div>
   );
 }

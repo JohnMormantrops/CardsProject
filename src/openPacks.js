@@ -37,53 +37,44 @@ export default function () {
      //this functions should add to users collection
  const addToCollection = async(e) => {
     e.preventDefault();
-    const send = {cardArray};
+    
     const header = {
         // "Access-Control-Allow-Origin": '*',
         "content-type" : "application/json",
-        "jwtToken": apiKey
+        "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNWIyM2EzY2FmNmJjZjEyMjdhMjg4MiIsImVtYWlsIjoiSm9obm55QGdtYWlsLmNvbSIsImlhdCI6MTY1MDE1MDEyMX0.52WD2Ta_8UI_TNmlydzCA42clsRd5vo-36uM-Ae4pV0"
         
     }
+
 
     fetch("http://localhost:3000/deck", {
       method: "PUT",
       header,
-      body: send 
+      body: cardArray 
     }).then(()=> {
       console.log("ADDED?")
   })
   
 }
 
-
+//get 5 renadom cards
   const getRandom = () => {
-    let someCards= [];
     for(let i = 0; i < 5; i++){
-      let card = cardArray[Math.floor(Math.random() * cardArray.length)]
-      console.log("Heres a crd??")
-      console.log(card)
-     
+      let card = cardArray[Math.floor(Math.random() * cardArray.length)] 
       setRandomCards(randomCards => [...randomCards, card]);
-      console.log(randomCards)
+      //console.log(randomCards)
     }
     setShowSelected("true")
   }
   //
-  console.log("RANDOM")
-  console.log(randomCards)
 
+  //Handle card click 
   const handleCardClick = (e, nation, name) => {
     e.preventDefault()
-    console.log("clicked")
-    console.log(nation)
-    console.log(name)
     var select = cardArray.find( cards => cards.name === name)
     console.log("select theis")
     console.log(select)
-    
     setSelectedCard(select);
-    setShowInfoBox("true")
-    
+    setShowInfoBox("true") 
   }
 
   return (

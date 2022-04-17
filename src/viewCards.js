@@ -1,8 +1,6 @@
 import {  useState, useEffect } from "react";
-import CardLayout from "./cardLayoutMapped.js";
 import InfoBox from "./infoBox";
 import React from "react";
-import cardArray from "./data.js";
 import { apiKey } from "./apiKey.js";
 
 export default function () {

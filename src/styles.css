@@ -74,12 +74,25 @@
   padding: 15px;
   text-shadow: 0 0 5px #0d0d09;
 }
+.heading{
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.8em;
+  margin: auto;
+  list-style: none;
+  color: gold;
+  padding: 15px;
+  text-shadow: 2px 1px 5px #0d0d09;
+  /* box-shadow: .75em .75em .75em #000000; */
+}
 .navButton:hover {
   /* background-color: gray; */
 
-  border-width: 15%;
+  /* border-width: 15%;
   border-style: solid;
-  border-color: gold;
+  border-color: gold; */
+   box-shadow: -.1em .1em .1em .3em #000000;
 }
 .infoBox {
   display: flex;
@@ -130,6 +143,7 @@
 ///// */
 .build{
   margin-left: 10px;
+  top: 350px;
 }
 .createDeck{
   color: #ffd700;
@@ -145,7 +159,7 @@
   min-width: 240px;
   max-width: 240px;
   flex-shrink: 0;
-  top: 150px;
+  top: 400px;
   /* bottom: 0px; */
   position: absolute;
   z-index: 1;
@@ -198,6 +212,9 @@
 }
 .deckX:hover{
   background-color: #00000092;
+}
+.manageSection{
+  margin-top: -40px;
 }
 /* 
 /////
@@ -271,5 +288,4 @@ img {
 }
 .addToCollection:hover{
   cursor:pointer;
-
 }

@@ -82,15 +82,17 @@ export default function () {
     }
 
     return (
-      <div className="manageDeck">
-        
-        <div className="createDeck"><h2 className="createDeckTitle">Create Deck</h2></div>
+      <div className="manageDeck back">
+        {showInfo==="true" ? <InfoBox card={selectedCard}/>:<DeckBox />} 
+
+        {/* <div className="createDeck"><h2 className="createDeckTitle">Create Deck</h2></div> */}
           <div className="row">
               <div style={{minWidth:250}}>
               </div>      
                <div className="sidePanel">
                  <div className="panelBackground"></div>
                <div className="panel">
+
                <h3 className="build">BUILD DECK {deckArray.length}</h3>{deckArray.map((card, key) => 
                <div className="panelBox" onClick={() => handlePanelClick(card)}>{card.nation} God {card.name} <button className="deckX" onClick={removeFromDeck}>X</button>
                </div>
@@ -99,7 +101,8 @@ export default function () {
                </div>
                {/*end of side panel */}
                          
-              <div>{showInfo==="true" ? <InfoBox card={selectedCard}/>:<DeckBox />} <div className="cardContainer" id="cardContainer">
+              <div> 
+              <div className="cardContainer manageSection" id="cardContainer">
                   {cardArray.map((card, key) => (
                     <div className="card" onClick={(e) => handleCardClick(e, card.nation, card.name)} id={card.nation}>
                       <div className="pic">
