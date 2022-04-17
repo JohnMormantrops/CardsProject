@@ -4,6 +4,8 @@ const { jwtVerify } = require('../tools/encryption');
 const router = express.Router();
 
 router.use((req, res, next) => {
+    console.log("HERE")
+
     const jwtToken = req.get('jwtToken');
     try {
         const user = jwtVerify(jwtToken);
@@ -59,6 +61,7 @@ router.use((req, res, next) => {
  *                     description: The hero's defense magic.
  */
 router.get('/', async function (req, res, next) {
+    console.log("getting cards")
     const cards = await Card.find({});
     res.send(cards);
 });
@@ -156,11 +159,31 @@ router.get('/deck', async function (req, res, next) {
  *         description: Successful storage.
  */
 router.put('/deck', async function (req, res, next) {
+    console.log("PUTTING")
+    console.log(req)
+    console.log(req.user)
+    console.log(req.body)
+
     await Deck.findOneAndUpdate({ userId: req.user.id }, {
         userId: req.user.id,
         decks: req.body
     }, { upsert: true, new: true, setDefaultsOnInsert: true });
-    res.send();
+    res.send("done");
+});
+
+
+
+router.put('/owned', async function (req, res, next) {
+    console.log("PUTTING")
+    console.log(req)
+    console.log(req.user)
+    console.log(req.body)
+
+    await Deck.findOneAndUpdate({ userId: req.user.id }, {
+        userId: req.user.id,
+        $push: {owned: { $each: req.body}}
+    }, { upsert: true, new: true, setDefaultsOnInsert: true });
+    res.send("done");
 });
 
 

@@ -1,10 +1,14 @@
 import { useState, useEffect } from "react";
-import CardLayout from "./cardLayoutMapped.js";
 import { apiKey } from "./apiKey.js";
 import InfoBox from "./infoBox";
 import React from "react";
 
-export default function () {
+
+
+
+
+
+export default function ({authUser}) {
   
   //use state here are string values when you click the card
   // the value will be changed to true which will show randomly selected crads
@@ -17,6 +21,10 @@ export default function () {
 
   const[cardArray, setCardArray] = useState([]);
 
+  console.log("OPEN PACKS")
+  console.log(authUser)
+
+    ///THIS CALL GETS ALL CARDS
     useEffect(() => {
 
       const headers = {
@@ -26,7 +34,7 @@ export default function () {
           
       }
       
-      const fetchData =  async () => {
+    const fetchData =  async () => {
         const apiResponse = await fetch("http://localhost:3000/card/", { headers })
         const json = await apiResponse.json();
         setCardArray(json);
@@ -35,26 +43,37 @@ export default function () {
     }, [])
    
      //this functions should add to users collection
- const addToCollection = async(e) => {
-    e.preventDefault();
-    
-    const header = {
-        // "Access-Control-Allow-Origin": '*',
-        "content-type" : "application/json",
-        "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNWIyM2EzY2FmNmJjZjEyMjdhMjg4MiIsImVtYWlsIjoiSm9obm55QGdtYWlsLmNvbSIsImlhdCI6MTY1MDE1MDEyMX0.52WD2Ta_8UI_TNmlydzCA42clsRd5vo-36uM-Ae4pV0"
-        
-    }
+ 
+   
 
+      const addToCollection = async(e) => {
+          e.preventDefault();
+          console.log("ADDING?")
+          console.log(JSON.stringify(randomCards))
+          const cardInfo = JSON.stringify(randomCards) 
+          console.log(cardInfo)
 
-    fetch("http://localhost:3000/deck", {
-      method: "PUT",
-      header,
-      body: cardArray 
-    }).then(()=> {
-      console.log("ADDED?")
-  })
-  
-}
+          const header = {
+              // "Access-Control-Allow-Origin": '*',
+              "content-type" : "application/json",
+              //authuser contains the jwt token
+              "jwtToken": authUser         
+          }
+          const requestOptions = {
+            method: "PUT",
+            headers: header,
+            body: cardInfo
+          }
+
+          const response = await  fetch("http://localhost:3000/card/owned", requestOptions);
+          const data = await response.json();
+          console.log(data)
+          setShowSelected("false")  
+          setRandomCards([])        
+      }
+
+ 
+     
 
 //get 5 renadom cards
   const getRandom = () => {
@@ -66,6 +85,8 @@ export default function () {
     setShowSelected("true")
   }
   //
+  console.log("CARD ARRAY HERE")
+  console.log(cardArray)
 
   //Handle card click 
   const handleCardClick = (e, nation, name) => {
@@ -115,7 +136,7 @@ export default function () {
 
         
       <hr />
-      <div style={{margin:"500"}}>
+      <div className="centered">
       {showInfoBox === 'true' && <InfoBox card={selectedCard} />}
       </div>
     </div> //end of app div

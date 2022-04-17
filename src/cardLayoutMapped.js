@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 //import cardArray from "./data";
 import React from "react";
 
@@ -10,7 +10,7 @@ import React from "react";
 export default function ({cardArray, handler}) {
   //console.log("CARD LAYOUT MAPPED");
   
-  const [cards, setCards] = useState([cardArray]);
+  const [cards] = useState([cardArray]);
 
   //in the return function i displayed the contents on the card objects
   //on the css background design there is an onclick functiuon added to each crad which 

@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useNavigate } from "react-router";
 import React from "react";
 
-const Register = () => {
+const Register = ({setAuthUser}) => {
 	let navigate = useNavigate();
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
@@ -28,6 +28,7 @@ const Register = () => {
 			} else {
 				const { jwtToken } = await res.json();
 				localStorage.setItem("token", jwtToken);
+				setAuthUser(jwtToken)
 				navigate("/home");
 			}
 		} catch (error) {

@@ -1,6 +1,4 @@
 import React from "react";
-import CardLayoutMapped from "./cardLayoutMapped";
-
 
 export default function ({card}) {
   // console.log("INFO BOX???")
@@ -8,7 +6,7 @@ export default function ({card}) {
   console.log(card)
   // console.log("END OF INFO")
 
-  const handleCardClick = () =>{
+  const handleCardClick = () => {
     console.log("INFO BOX CARD CLICKED")
   }
 

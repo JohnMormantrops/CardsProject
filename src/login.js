@@ -25,11 +25,10 @@ const handleLogin = async (setAuthUser, email, password, navigate) => {
 			alert(err)
 		} else {
 			const { jwtToken } = await res.json();
-			console.log("HERE IT IS THE JWT")
-			console.log(res.id)
-			console.log(jwtToken)
+			// console.log("HERE IS THE JWT")
+			// console.log(jwtToken)
 			localStorage.setItem("token", jwtToken);
-			setAuthUser("true")
+			setAuthUser(jwtToken)
 			navigate("/home");
 		}
 	} catch (error) {

@@ -11,27 +11,26 @@ import Nav from "./navbar.js";
 import Home from "./home.js";
 import OpenPacks from "./openPacks";
 import ViewCards from "./viewCards";
-import Account from "./account";
 import ManageDeck from "./manageDeck";
 import GetCards from "./getCards";
 import Login from "./login";
 import Register from "./register";
 
-const Homepage = () => (
-  <div className="App">
-    {/* <Nav /> */}
-    <Outlet />
-  </div>
-)
+// const Homepage = () => (
+//   <div className="App">
+//     {/* <Nav /> */}
+//     <Outlet />
+//   </div>
+// )
 
 export default function App() {
-
-  const[authUser, setAuthUser] = useState("false")
-  const[awtToken, setAwtToken] = useState("")
-
+  /// IMPORTANT!!
+  // AUTH USER CONTAINS JWT, JWT CONTAINS USER ID AND EMAIL
+  // JWT WILL REFRESH EVERY USE OF THE APP
+  const[authUser, setAuthUser] = useState("")
   
-  console.log("App user?")
-  console.log(authUser)
+  // console.log("App user?")
+  // console.log(authUser)
 
   return (
     <Router>
@@ -45,11 +44,10 @@ export default function App() {
             <Route exact path="/" element={<Login authUser={authUser} setAuthUser={setAuthUser}/>} /> 
             <Route exact path="register" element={<Register authUser={authUser} setAuthUser={setAuthUser}/>} />
             <Route exact path="home" element={<Home />} />
-            <Route exact path="openPacks" element={<OpenPacks />} />
-            <Route exact path="viewCards" element={<ViewCards />} />
-            <Route exact path="account" element={<Account />} />
-            <Route exact path="manageDeck" element={<ManageDeck />} />
-            <Route exact path="getCards" element={<GetCards />}/>
+            <Route exact path="openPacks" element={<OpenPacks authUser={authUser} />} />
+            <Route exact path="viewCards" element={<ViewCards authUser={authUser}/>} />     
+            <Route exact path="manageDeck" element={<ManageDeck authUser={authUser}/>} />
+            <Route exact path="getCards" element={<GetCards/>}/>
           </Routes>
         </div>
       </div>

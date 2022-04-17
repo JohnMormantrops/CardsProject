@@ -18,7 +18,7 @@
   justify-content: center;
 }
 .title{
-  margin:auto;
+  /* margin:auto; */
 }
 .acc {
   margin-top: 10%;
@@ -46,10 +46,15 @@
 
 /* center items in div */
 .centered{
+  width: 100vw;
+  display: flex;
    justify-content: center;   
-  /* background-color: black; */
-}
+   /* margin: auto; */
+  /* background-color: black;*/
+} 
 
+/* ///
+///NAV STYLES */
 .nav {
   display: flex;
   margin: 0px;
@@ -94,6 +99,10 @@
   border-color: gold; */
    box-shadow: -.1em .1em .1em .3em #000000;
 }
+
+/* ////
+////INFO BOX COMPONENT
+/// */
 .infoBox {
   display: flex;
   height: 300px;
@@ -113,6 +122,10 @@
 .choose {
   cursor: pointer;
 }
+/* 
+/////
+/////CARD DESIGN 
+///// */
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
@@ -136,6 +149,62 @@
   /* box-shadow: 5px 10px #2c2c2b; */
   cursor: pointer;
   text-shadow: 0 0 0px #0d0d09;
+}
+/* ////
+////CARD COLORS
+//// */
+#norse {
+  filter: hue-rotate(350deg);
+}
+#china {
+  filter: hue-rotate(250deg);
+}
+#usa {
+  filter: hue-rotate(100deg);
+}
+#southamerican {
+  filter: hue-rotate(310deg);
+}
+#greek {
+  filter: hue-rotate(270deg);
+}
+#Egyptian{
+  filter: hue-rotate(20deg);
+}
+
+.pic {
+  height: 55%;
+  width: 93%;
+  margin: auto;
+  padding: 3%;
+  filter: hue-rotate(0deg) !important;
+}
+.ability {
+  background-color: #d14f00;
+  height: 17%;
+  margin: 2%;
+  border-width: 3%;
+  border-style: solid;
+  border-color: green;
+  position: relative;
+}
+.heroname {
+  background-color: #d14f00;
+  border-width: 3%;
+  border-style: solid;
+  border-color: green;
+}
+p {
+  margin: auto;
+}
+img {
+  width: 100%;
+  height: 90%;
+}
+.text {
+  margin: auto;
+  font-size: 60%;
+
 }
 
 /* //////
@@ -201,6 +270,22 @@
   font-family: "Skranji", cursive;
   color:#ffd700;
 }
+.deckOK{
+  font-size: large;
+  background-color: transparent;
+  border: none;
+  font-family: "Skranji", cursive;
+  color:#ffd700;
+}
+.deckOK:hover{
+  color: #2afe00;
+  /* background-color: #2afe00; */
+  padding:px;
+  border: solid;
+  border-width: 3px;
+  border-color: #000000;
+
+}
 .deckX{
   color: red;
   font-size: large;
@@ -222,61 +307,6 @@
 ////// */
 
 
-/* ////
-////CARD STYLES
-//// */
-#norse {
-}
-#china {
-  filter: hue-rotate(250deg);
-}
-#usa {
-  filter: hue-rotate(100deg);
-}
-#southamerican {
-  filter: hue-rotate(310deg);
-}
-#greek {
-  filter: hue-rotate(270deg);
-}
-#Egyptian{
-  filter: hue-rotate(20deg);
-}
-
-.pic {
-  height: 55%;
-  width: 93%;
-  margin: auto;
-  padding: 3%;
-  filter: hue-rotate(0deg) !important;
-}
-.ability {
-  background-color: #d14f00;
-  height: 17%;
-  margin: 2%;
-  border-width: 3%;
-  border-style: solid;
-  border-color: green;
-  position: relative;
-}
-.heroname {
-  background-color: #d14f00;
-  border-width: 3%;
-  border-style: solid;
-  border-color: green;
-}
-p {
-  margin: auto;
-}
-img {
-  width: 100%;
-  height: 90%;
-}
-.text {
-  margin: auto;
-  font-size: 60%;
-
-}
 /* ////
 ////OPEN PACKS 
 //// */

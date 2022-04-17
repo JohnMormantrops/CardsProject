@@ -19,7 +19,7 @@ export default function ({authUser, setAuthUser}) {
   
   return (
     <div>
-     {authUser === "false" ?
+     {authUser === "" ?
       (<ol className="nav">
         <h2 className="heading">WORLD OF<br/>WORSHIP!!</h2>
         <Link to="/" className="navButton" >

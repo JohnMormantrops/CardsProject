@@ -3,7 +3,7 @@ import InfoBox from "./infoBox";
 import React from "react";
 import { apiKey } from "./apiKey.js";
 
-export default function () {
+export default function ({authUser}) {
   
   const handleCardClick =()=> {
     console.log("card clicked")
@@ -17,12 +17,12 @@ export default function () {
     const headers = {
         // "Access-Control-Allow-Origin": '*',
         "content-type" : "application/json",
-        "jwtToken": apiKey
+        "jwtToken": authUser
         
     }
     
-    const fetchData =  async () => {
-      const apiResponse = await fetch("http://localhost:3000/card/", { headers })
+    const fetchData = async() => {
+      const apiResponse = await fetch("http://localhost:3000/card/deck", { headers })
       const json = await apiResponse.json();
       setCardArray(json);
     }
@@ -42,7 +42,7 @@ export default function () {
         ></div>
         {showFaction === "true" ? (
           <div className="cardContainer" id="cardContainer">
-          {cardArray.map((card, key) => (
+          {cardArray.decks && cardArray.decks.map((card, key) => (
             <div className="card" onClick={(e) => handleCardClick(e, card.nation, card.name)} id={card.nation}>
               <div className="pic">
                 <p className="heroname">{card.name}</p>
