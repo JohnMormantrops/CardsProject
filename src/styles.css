@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center;
 }
-.title{
+.title {
   /* margin:auto; */
 }
 .acc {
@@ -38,20 +38,19 @@
   box-sizing: border-box;
 }
 
-
 /* the back of the page overlaps the nav so give it margin */
 .back {
   margin-top: 70px;
 }
 
 /* center items in div */
-.centered{
+.centered {
   width: 100vw;
   display: flex;
-   justify-content: center;   
-   /* margin: auto; */
+  justify-content: center;
+  /* margin: auto; */
   /* background-color: black;*/
-} 
+}
 
 /* ///
 ///NAV STYLES */
@@ -79,7 +78,7 @@
   padding: 15px;
   text-shadow: 0 0 5px #0d0d09;
 }
-.heading{
+.heading {
   align-content: center;
   justify-content: center;
   text-decoration: none;
@@ -97,7 +96,7 @@
   /* border-width: 15%;
   border-style: solid;
   border-color: gold; */
-   box-shadow: -.1em .1em .1em .3em #000000;
+  box-shadow: -0.1em 0.1em 0.1em 0.3em #000000;
 }
 
 /* ////
@@ -112,8 +111,7 @@
   /* margin: 15px; */
   color: gold;
   padding: 2%;
-  text-shadow:  1px 1px 2px #000000;
-  
+  text-shadow: 1px 1px 2px #000000;
 }
 
 .row {
@@ -168,7 +166,7 @@
 #greek {
   filter: hue-rotate(270deg);
 }
-#Egyptian{
+#Egyptian {
   filter: hue-rotate(20deg);
 }
 
@@ -204,17 +202,16 @@ img {
 .text {
   margin: auto;
   font-size: 60%;
-
 }
 
 /* //////
 //////MANAGE DECK STYLES
 ///// */
-.build{
+.build {
   margin-left: 10px;
   top: 350px;
 }
-.createDeck{
+.createDeck {
   color: #ffd700;
   margin-left: 15px;
 }
@@ -224,7 +221,7 @@ img {
   margin: 15px;
   box-shadow: 0px 5px 5px 2px #0d0d09;
 }
-.sidePanel{
+.sidePanel {
   min-width: 240px;
   max-width: 240px;
   flex-shrink: 0;
@@ -234,71 +231,69 @@ img {
   z-index: 1;
 }
 
-.panelBackground{
-    position: absolute;
-    background-color: gray;
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-    z-index: -100000;
+.panelBackground {
+  position: absolute;
+  background-color: gray;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  z-index: -100000;
 }
-.panelBox{
+.panelBox {
   margin-left: 15px;
-   width: 100%;
-   color: gold;
-   height: 15%;
-   z-index: 1;
-   padding: 10px;
-   background-color: auto;
+  width: 100%;
+  color: gold;
+  height: 15%;
+  z-index: 1;
+  padding: 10px;
+  background-color: auto;
 }
-.panelBox:hover{
-    background-color: rgba(140, 140, 140, 0.211);
-    margin-left: 0;
+.panelBox:hover {
+  background-color: rgba(140, 140, 140, 0.211);
+  margin-left: 0;
 }
-.createDeckTitle{
+.createDeckTitle {
   text-shadow: 0 0 5px #0d0d09;
   font-family: "Skranji", cursive;
 }
-.panelBox:hover{
+.panelBox:hover {
   cursor: pointer;
   position: relative;
 }
-.clearButton{
+.clearButton {
   cursor: pointer;
   width: 100%;
   background-color: transparent;
   font-family: "Skranji", cursive;
-  color:#ffd700;
+  color: #ffd700;
 }
-.deckOK{
+.deckOK {
   font-size: large;
   background-color: transparent;
   border: none;
   font-family: "Skranji", cursive;
-  color:#ffd700;
+  color: #ffd700;
 }
-.deckOK:hover{
+.deckOK:hover {
   color: #2afe00;
   /* background-color: #2afe00; */
-  padding:px;
+  padding: px;
   border: solid;
   border-width: 3px;
   border-color: #000000;
-
 }
-.deckX{
+.deckX {
   color: red;
   font-size: large;
-  position:absolute;
-  right:0;
+  position: absolute;
+  right: 0;
   background-color: transparent;
   border: none;
-
 }
-.deckX:hover{
+.deckX:hover {
   background-color: #00000092;
 }
-.manageSection{
+.manageSection {
   margin-top: -40px;
 }
 /* 
@@ -306,16 +301,25 @@ img {
 /////END MANAGE DECK STYLES
 ////// */
 
-
 /* ////
 ////OPEN PACKS 
 //// */
-.addToCollection{
+.addToCollection {
   padding: 30px;
   background-color: rgba(128, 128, 128, 0.386);
   width: 130px;
   height: 100px;
 }
-.addToCollection:hover{
-  cursor:pointer;
+.addToCollection:hover {
+  cursor: pointer;
+}
+
+#getCardsPara {
+  font: verdana;
+  font-size: large;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: rgb(236, 65, 65);
+  color: rgb(47, 5, 5);
+  text-align: center;
+  margin-top: 100px;
 }
