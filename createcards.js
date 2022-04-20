@@ -29,59 +29,162 @@ const Card = mongoose.model("Card", cardSchema);
 //const inti = new Card ({ name: "Inti", nation: "southamerican", image:"https://github.com/JohnMormantrops/Images/blob/main/inti.jpg?raw=true", attack: "sun burn +5 damage", defense:"blinding rays +5 defense", paragraph: "This is Inti, the ancient sun god in Mayan culture."});
 //const matecito = new Card({name: "Matecito", nation: "southamerican", image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/matecito.jpg?raw=true", attack: "'Accidental' spill +1 damage", defense:"Replenishing drink +1 defense", paragraph: "Mate is a popular drink in countries where the Guarani natives once lived."});
 
-const Sarcophagus = new Card({
-  name: "Sarcophagus",
-  nation: "Egyptian",
+
+
+const Odin = new Card({
+  name: "Odin",
+  nation: "Norse",
   image:
-    "https://github.com/lcroker/Card-Images/blob/main/Sarcophagus.jpg?raw=true",
-  attack: "Envelopment +4 damage",
-  defense: "Safe Passage +4 defense",
+    "https://github.com/JohnMormantrops/Images/blob/main/Odin.jpg?raw=true",
+  attack: "Odins penetrating spear +6 attack",
+  defense: "Odins wisdom +2 defense to all troops",
   paragraph:
-    "Surrounds enemy opponent while also provideing safe passage to user.",
+    "The chief god, master of wisdom, magic and poetry. Armoured in gold, Blind in one eye. His ravens flew throughout the world and reported to him each night",
 });
 
-const ScarabBeetle = new Card({
-  name: "Scarab Beetle",
-  nation: "Egyptian",
+const Thor = new Card({
+  name: "Thor",
+  nation: "Norse",
   image:
-    "https://github.com/lcroker/Card-Images/blob/main/Scarab%20Beetle.jpg?raw=true",
-  attack: "Hard Shell +5 damage",
-  defense: "Ressurection +6 defense",
+    "https://github.com/JohnMormantrops/Images/blob/main/Thor.jpg?raw=true",
+  attack: "Thors hammer Mjolnir never misses +2 to all Norse attack",
+  defense:  "Thunder shield +5 defense",
   paragraph:
-    "The Scarab Beetle attacks with a flying assault using its hard shell, while boosting owners health with Ressurection.",
+    "God of Thunder, fearsome to his enemies. Thor possesed a powerful hammer Mjolnir which always struck its target and returned to his hand",
 });
 
-const Sphinx = new Card({
-  name: "Sphinx",
-  nation: "Egyptian",
-  image: "https://github.com/lcroker/Card-Images/blob/main/Sphinx.jpg?raw=true",
-  attack: "Riddle Me This +5 damage",
-  defense: "Tomb Protection +5 defense",
+const Heimdall = new Card({
+  name: "Heimdall's horn",
+  nation: "Norse",
+  image:
+    "https://github.com/JohnMormantrops/Images/blob/main/Heimdalls%20Horn.jpg?raw=true",
+  attack: "Warn of Ranarok, (Summon Ragnarok from your deck)",
+  defense: "Keep watch +2 defense for Norse",
   paragraph:
-    "The sphinx is an evil and cruel creature that asks riddles and those who cannot answer it have suffered the fate of being killed and eaten",
+    "Heimdall was the watcher of the god, stationed on rainbow bridge. His trumpet announces the coming of Ragnarok.",
+});
+const Ragnarok = new Card({
+  name: "Ragnarock",
+  nation: "Norse",
+  image:
+    "https://github.com/JohnMormantrops/Images/blob/main/Ragnarok.jpg?raw=true",
+  attack: "Doomsday +8 attack (When summoned by Heimdall's horn)",
+  defense: "Await Heimdalls horn",
+  paragraph:
+    "The Norse gods feared the coming of Ragnarok or doomsday. There will be a great battle between monsters and the gods. Heimdall's horn will sound before the coming of Ragnarock.",
+});
+const Loki = new Card({
+  name: "Loki",
+  nation: "Norse",
+  image:
+    "https://github.com/JohnMormantrops/Images/blob/main/Loki.jpg?raw=true",
+  attack: "Mischief, steal two cards from opponent",
+  defense: "Shapeshift +4 defense",
+  paragraph:
+    "The god of mischief. Full of malice and cunning. With the ability to shapeshift He played tricks on the gods until bound in a cavern.",
+});
+const Baldur = new Card({
+  name: "Baldur",
+  nation: "Norse",
+  image:
+    "https://github.com/JohnMormantrops/Images/blob/main/Baldur.jpg?raw=true",
+  attack: "Invincible assault +4 attack",
+  defense: "Cleanse evil remove an enemy from the field",
+  paragraph:
+    "The god of light, bravery, purity and joy. Possesed invincibilty except to mistletoe. A favourite of the Norse",
+});
+const Apple = new Card({
+  name: "Apple of Idunn",
+  nation: "Norse",
+  image:
+    "https://github.com/JohnMormantrops/Images/blob/main/Apple%20Of%20Idun.jpg?raw=true",
+  attack: "Poison apple -3 to enemy attackers",
+  defense: "Apple of youth +2 defense to all norse",
+  paragraph:
+    "Idunn is the goddess of youth, her apples give eternal life to the gods.",
+});
+const Freya = new Card({
+  name: "Freya",
+  nation: "Norse",
+  image:
+    "https://github.com/JohnMormantrops/Images/blob/main/Freya.jpg?raw=true",
+  attack: "Entice warriors to battle +2 to all Norse attckers",
+  defense: "Protective cloak of feathers +4 defense",
+  paragraph:
+    "Goddess of love and fertility, sorcery and death. She had her pick of fallen warriors who she would bring to her hall in the afterlife",
+});
+const Mimir = new Card({
+  name: "Mimir",
+  nation: "Norse",
+  image:
+    "https://github.com/JohnMormantrops/Images/blob/main/Mimir.jpg?raw=true",
+  attack: "Seek knowledge (view your opponents hand)",
+  defense: "Knowledge of Mimir (Double Odins defensive ability)",
+  paragraph:
+    "Wisest of all the gods he was decpitated for fear of his knowledge. His decapitated head was preserved by Odin",
+});
+const Nilfheim = new Card({
+  name: "Nilfheim",
+  nation: "Norse",
+  image: "https://github.com/JohnMormantrops/Images/blob/main/niflheim.jpg?raw=true",
+  attack: "Cold Icy hell +3 attack",
+  defense: "Avoid death for fear of Hell +2 defense all Norse",
+  paragraph:
+    "The Norse icy hell, if a warrior died a dishonourable death they would go straight to Nilfheim",
+});
+const Tyr = new Card({
+  name: "Tyr",
+  nation: "Norse",
+  image:
+    "https://github.com/JohnMormantrops/Images/blob/main/Tyr.jpg?raw=true",
+  attack: "Brew of the gods +2 attck all Norse",
+  defense: "Sacrifice +3 defense",
+  paragraph:
+    "The god of warriors and heroes, he scarificed his hand to a monster to save the gods. He brews beer for the gods in the giant cauldron he stole from his father",
+});
+const Valhalla = new Card({
+  name: "Valhalla",
+  nation: "Norse",
+  image:
+    "https://github.com/JohnMormantrops/Images/blob/main/Valhalla.jpg?raw=true",
+  attack: "To Valhalla!! +3 to all Norse attackers",
+  defense: "Move a card from defense to attack",
+  paragraph:
+    "Every Norse man dreams of an afterlife in the halls of Valhalla where they can drink with Odin, but only those who die in battle may travel there.",
+});
+const Valkyrie = new Card({
+  name: "Valkyrie",
+  nation: "Norse",
+  image:
+    "https://github.com/JohnMormantrops/Images/blob/main/valkyrie.jpg?raw=true",
+  attack: "Charge of the Valkyrie +4 attack",
+  defense: "Guiding hand +2 defense to all soldiers",
+  paragraph:
+    "Maidens and servents of Odin, bearing golden shields and helmets they ride to battle and guide those they deem worthy to Valhalla.",
+});
+const Ymir = new Card({
+  name: "Ymir",
+  nation: "Norse",
+  image:
+    "https://github.com/JohnMormantrops/Images/blob/main/Ymir.jpg?raw=true",
+  attack: "Father the gods (bring two Norse gods to join the attack)",
+  defense: "Creation bring two Norse Items to the defense",
+  paragraph:
+    "Born of ice and fire, the first being to come into existence, the gods sprang from the legs of this hermaphroditic god.",
+});
+const OdinsRavens = new Card({
+  name: "Odin's Ravens",
+  nation: "Norse",
+  image:
+    "https://github.com/JohnMormantrops/Images/blob/main/Odins%20Ravens.jpg?raw=true",
+  attack: "Fly over the enemy (view your enemies cards)",
+  defense: "Scouting trip +3 defense all Norse",
+  paragraph:
+    "Huginn and Munnin the two ravens of Odin. They flew around the world each day and delivered everything they saw and heard to Odin",
 });
 
-const TheMummy = new Card({
-  name: "The Mummy",
-  nation: "Egyptian",
-  image:
-    "https://github.com/lcroker/Card-Images/blob/main/The%20Mummy.jpg?raw=true",
-  attack: "Life Force Drain +8 damage",
-  defense: "Immunity +10 defense",
-  paragraph:
-    "Immunity to all forms of attack and draining the life force of mortals, The Mummy has some of the strongest powers",
-});
 
-const UraeusTheCobra = new Card({
-  name: "Uraeus The Cobra",
-  nation: "Egyptian",
-  image:
-    "https://github.com/lcroker/Card-Images/blob/main/Uraeus%20the%20Cobra.jpg?raw=true",
-  attack: "Poison Strike +4 damage",
-  defense: "Wall of Flames +6 defense",
-  paragraph:
-    "Ureas The Cobra is a serpant goddess who wields fierce powers as she can use not only poison but flames against the enemies of the pharaoh.",
-});
+
 
 // console.log(Anubis.attack);
 
@@ -93,11 +196,24 @@ addTheCrap();
 
 async function addTheCrap() {
   //when you run this code the data will be saved try it with your data and see if it saves succesfully
-  await Sarcophagus.save();
-  await ScarabBeetle.save();
-  await Sphinx.save();
-  await TheMummy.save();
-  await UraeusTheCobra.save();
+  await Odin.save();
+  await OdinsRavens.save();
+  await Ragnarok.save();
+  await Thor.save();
+  await Tyr.save();
+
+  await Apple.save();
+  await Baldur.save();
+  await Freya.save();
+  await Heimdall.save();
+  await Loki.save();
+
+  await Mimir.save();
+  await Nilfheim.save();
+  await Valhalla.save();
+  await Valkyrie.save();
+  await Ymir.save();
+  
 
   // await inti.save();
   // await matecito.save();

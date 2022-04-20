@@ -141,7 +141,7 @@ export default function ({authUser}) {
                   {cardArray.owned && cardArray.owned.map((card, key) => (
                     <div className="card" onClick={(e) => handleCardClick(e, card)} id={card.nation}>
                       <div className="pic">
-                        <p className="heroname">{card.name}</p>
+                        <p className="heroname">{card.name}<div className="letter">{card.nation.charAt(0).toUpperCase()}</div></p>
                         <img src={card.image} alt="hero pic" />
                       </div>
                       <div className="ability">
@@ -150,6 +150,7 @@ export default function ({authUser}) {
                       <div className="ability">
                         <p className="text">{card.defense}</p>
                       </div>
+                     
                     </div>
                   ))}
     </div></div>

@@ -24,8 +24,8 @@ function Cards(){
     console.log("HERES THE CARD DATA FOR ALL CARDS")       
     console.log(allCards)
 
-    return (<div>CARDS<p>
-        {allCards.map((card, key) =>(<div>{card.name} {card.nation} {card.paragraph} check</div> ))}</p></div>);
+    return (<div className="back">CARDS<p>
+        {allCards.map((card, key) =>(<div>{card.name} {card.nation} {card.paragraph}<br></br><br></br></div> ))}</p></div>);
 };
 
 export default Cards
