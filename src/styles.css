@@ -340,6 +340,30 @@ img {
   margin-top: 100px;
 }
 
+#logo {
+  margin-top: -7%;
+  margin-left: 25%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+#textWrap {
+  animation: textSpin 15s linear infinite;
+  /* transform-origin: bottom center; */
+  /*   transform-box: fill-box; */
+}
+
+@keyframes textSpin {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+
 
 
 /* ////

@@ -6,6 +6,11 @@ import Logo from "./logo";
 // }
 
 // previous code before logo added in casde of errors
+// function Home() {
+//   return <div>{Logo()}</div>;
+// }
+
+//previous code before logo added in casde of errors
 function Home() {
   return (
     <div className="home">
