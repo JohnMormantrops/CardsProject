@@ -5,21 +5,12 @@ import Logo from "./logo";
 //   return <div className="logo">{Logo()}</div>;
 // }
 
-// previous code before logo added in casde of errors
-// function Home() {
-//   return <div>{Logo()}</div>;
-// }
-
 //previous code before logo added in casde of errors
 function Home() {
   return (
     <div className="home">
       <div className="title">
-        <h1 className="heading">
-          WORLD OF
-          <br />
-          WORSHIP!!
-        </h1>
+        <div>{Logo()}</div>
       </div>
     </div>
   );
