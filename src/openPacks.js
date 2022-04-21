@@ -15,6 +15,7 @@ export default function ({authUser}) {
   //or show the info box
   const [showSelected, setShowSelected] = useState("false");
   const [showInfoBox, setShowInfoBox] = useState("false");
+  const [turn, setTurn] = useState("false");
   ///this store the currently 
   const [selectedCard, setSelectedCard] = useState([]);
   const [randomCards, setRandomCards] = useState([]);
@@ -73,7 +74,7 @@ export default function ({authUser}) {
       }
 
  
-     
+
 
 //get 5 renadom cards
   const getRandom = () => {
@@ -82,7 +83,10 @@ export default function ({authUser}) {
       setRandomCards(randomCards => [...randomCards, card]);
       //console.log(randomCards)
     }
-    setShowSelected("true")
+    setTurn("true")
+    
+    setTimeout (() => {setShowSelected("true")}, 400);
+    
   }
   //
   console.log("CARD ARRAY HERE")
@@ -101,7 +105,8 @@ export default function ({authUser}) {
   return (
     
     <div className="back">
-      <div className="row" style={{marginLeft: '15%'}} >
+      {/* style={{marginLeft: '15%'}} */}
+      <div className="row" id={turn === "true" && "turn"} >
         {showSelected === "false" ? (
           <div
           //creating a div with the className card will display 
@@ -112,9 +117,9 @@ export default function ({authUser}) {
           }
         ></div>
         ):(
-          <div className="cardContainer" id="cardContainer">
+          <div className="cardContainer">
           {randomCards.map((card, key) => (
-            <div className="card" onClick={(e) => handleCardClick(e, card.nation, card.name)} id={card.nation}>
+            <div className="card open" id="open"  onClick={(e) => handleCardClick(e, card.nation, card.name)} id={card.nation}>
               <div className="pic">
                 <p className="heroname">{card.name}<div className="letter">{card.nation.charAt(0).toUpperCase()}</div></p>
                 <img src={card.image} alt="hero pic" />
@@ -132,9 +137,7 @@ export default function ({authUser}) {
         )} 
         {/* some jsx here to show the cards if the cards been clicked */}
        
-      </div>{/* //end of row div */}
-
-        
+      </div>{/* //end of row div */}     
       <hr />
       <div className="centered">
       {showInfoBox === 'true' && <InfoBox card={selectedCard} />}
