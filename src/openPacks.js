@@ -106,6 +106,7 @@ export default function ({authUser}) {
     
     <div className="back">
       {/* style={{marginLeft: '15%'}} */}
+      
       <div className="row" id={turn === "true" && "turn"} >
         {showSelected === "false" ? (
           <div
