@@ -354,6 +354,7 @@ img {
 }
 
 .addToCollection {
+  
   padding: 30px;
   background-color: rgba(128, 128, 128, 0.386);
   width: 130px;
@@ -366,9 +367,9 @@ img {
 #getCardsPara {
   font: verdana;
   font-size: large;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: rgb(236, 65, 65);
-  color: rgb(47, 5, 5);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  color: #ffd700;
   text-align: center;
   margin-top: 100px;
 }

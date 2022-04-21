@@ -26,7 +26,7 @@ function Cards() {
         <h3>CARDS</h3>
         {allCards.map((card, key) => (
           <div>
-            {card.name} {card.nation} {card.paragraph} 
+            {card.name} {card.nation} {card.paragraph} <br></br><br></br>
           </div>
         ))}
       </p>
