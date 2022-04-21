@@ -117,13 +117,16 @@
 .row {
   display: flex;
 }
-.choose {
-  cursor: pointer;
-}
+
 /* 
 /////
 /////CARD DESIGN 
 ///// */
+
+.choose {
+  cursor: pointer;
+}
+
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
@@ -320,6 +323,36 @@ img {
 /* ////
 ////OPEN PACKS 
 //// */
+
+@keyframes move {
+  0% { margin-left: -140px;}
+  50% { margin-left: -140px;}
+  100% { margin-left: 15px;}
+}
+/* @keyframes turn {
+  0% { }
+  50% {}
+  100% { rotateY: 0deg;}
+} */
+.open{
+  left: 140px;
+  /* position: relative; */
+  animation: move 2s forwards;
+  transform: rotateY(180deg);
+  
+}
+.open:hover{
+  /* transform:  */
+  transform: scale(1.2) rotateY(180deg);
+  margin: 15px;
+  box-shadow: 0px 5px 5px 2px #0d0d09;
+}
+
+#turn{
+  transition: transform 1s;
+  transform: rotateY(180deg);
+}
+
 .addToCollection {
   padding: 30px;
   background-color: rgba(128, 128, 128, 0.386);
