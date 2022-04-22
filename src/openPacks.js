@@ -3,7 +3,7 @@ import { apiKey } from "./apiKey.js";
 import InfoBox from "./infoBox";
 import React from "react";
 
-
+import Logo from "./babyLogo";
 
 
 
@@ -112,11 +112,11 @@ export default function ({authUser}) {
           <div
           //creating a div with the className card will display 
           //the card back the card is displayed using css 
-          className="card choose"
+          className="card choose centered"
           //on click show randomly selected cards to add to the users deck
           onClick={() => getRandom()
           }
-        ></div>
+        ><div className="WW"><div className="ww">WW</div></div></div>
         ):(
           <div className="cardContainer">
           {randomCards.map((card, key) => (

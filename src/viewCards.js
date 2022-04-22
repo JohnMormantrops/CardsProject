@@ -33,17 +33,17 @@ export default function ({authUser}) {
     <div className="back">
       <div className="row">
         <div
-          className="card choose"
+          className="card choose centered"
           onClick={() =>
             showFaction === "true"
               ? setShowFaction("")
               : setShowFaction("true")
           }
-        ></div>
+        ><div className="WW"><div className="ww">WW</div></div></div>
         {showFaction === "true" ? (
           <div className="cardContainer" id="cardContainer">
           {cardArray.decks && cardArray.decks.map((card, key) => (
-            <div className="card" onClick={(e) => handleCardClick(e, card.nation, card.name)} id={card.nation}>
+            <div className="card view" onClick={(e) => handleCardClick(e, card.nation, card.name)} id={card.nation}>
               <div className="pic">
                 <p className="heroname">{card.name}<div className="letter">{card.nation.charAt(0).toUpperCase()}</div></p>
                 <img src={card.image} alt="hero pic" />

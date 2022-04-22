@@ -54,14 +54,14 @@ export default function ({authUser}) {
     const handleCardClick = (e, card) => {
           e.preventDefault();
           if(deckArray.length < 20){
-            setSelectedCard(card)
-            setShowInfo("false")
             ///add to the deck array
             setDeckArray(deckArray => [...deckArray, card])
             //show the info bx with the currently selected card
-            showInfoCard() 
+            
           }
-             
+          setSelectedCard(card)
+          setShowInfo("false")
+          showInfoCard() 
         };
 
     console.log("HERES THE DECK ARRAY");
