@@ -378,15 +378,23 @@ img {
 }
 
 .addToCollection {
+  text-align: center;
   padding: 30px;
   background-color: rgba(128, 128, 128, 0.386);
-  width: 130px;
+  width: 150px;
   height: 100px;
   transition: transform 1s;
   transform: rotateY(180deg);
+  margin-left: 50%;
+  font: verdana;
+  font-size: large;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  color: #ffd700;
 }
 .addToCollection:hover {
   cursor: pointer;
+  box-shadow: 0px 5px 5px 2px #0d0d09;
 }
 
 /* ////
@@ -421,30 +429,6 @@ img {
   color: #ffd700;
   text-align: center;
   margin-top: 100px;
-}
-
-#logo {
-  margin-top: -7%;
-  margin-left: 25%;
-  display: inline-flex;
-  justify-content: center;
-}
-
-#textWrap {
-  animation: textSpin 15s linear infinite;
-  /* transform-origin: bottom center; */
-  /*   transform-box: fill-box; */
-}
-
-@keyframes textSpin {
-  0% {
-    transform: rotate(0deg);
-    transform-origin: center;
-  }
-  100% {
-    transform: rotate(360deg);
-    transform-origin: center;
-  }
 }
 
 #logo {
