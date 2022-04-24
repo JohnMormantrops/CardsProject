@@ -89,9 +89,7 @@ export default function({ authUser }) {
 
   //get 5 renadom cards
   const getRandom = () => {
-    if (secondCardArray.owned.length > 40) {
-      alert("Too Many Cards In Your Collection!");
-    } else {
+    if (secondCardArray.owned === undefined) {
       for (let i = 0; i < 5; i++) {
         let card = cardArray[Math.floor(Math.random() * cardArray.length)];
         setRandomCards((randomCards) => [...randomCards, card]);
@@ -102,6 +100,21 @@ export default function({ authUser }) {
       setTimeout(() => {
         setShowSelected("true");
       }, 400);
+    } else {
+      if (secondCardArray.owned.length > 40) {
+        alert("Too Many Cards In Your Collection!");
+      } else {
+        for (let i = 0; i < 5; i++) {
+          let card = cardArray[Math.floor(Math.random() * cardArray.length)];
+          setRandomCards((randomCards) => [...randomCards, card]);
+          //console.log(randomCards)
+        }
+        setTurn("true");
+
+        setTimeout(() => {
+          setShowSelected("true");
+        }, 400);
+      }
     }
   };
   //

@@ -152,21 +152,21 @@
   cursor: pointer;
   text-shadow: 0 0 0px #0d0d09;
 }
-.WW{
-  color:#ffd700;
+.WW {
+  color: #ffd700;
   background-color: #000000a5;
   height: 15%;
   width: 20%;
   border-radius: 50%;
   border-color: #ffd700;
   border-width: 2px;
-  border-style:groove;
-  text-align:  center;
+  border-style: groove;
+  text-align: center;
   font-size: large;
   margin-top: 0px;
   box-shadow: -1px 3px 2px 3px #000000;
 }
-.ww{
+.ww {
   margin-top: 3px;
   margin-left: -6px;
   -webkit-text-stroke-width: 1px;
@@ -382,6 +382,8 @@ img {
   background-color: rgba(128, 128, 128, 0.386);
   width: 130px;
   height: 100px;
+  transition: transform 1s;
+  transform: rotateY(180deg);
 }
 .addToCollection:hover {
   cursor: pointer;
@@ -392,25 +394,24 @@ img {
 
 /* ////
 ////VIEW DECK STYLES */
-@keyframes gogagadgetcards  {
+@keyframes gogagadgetcards {
   0% {
     /* top: 80px;
   left: -80px;
   margin: -65px; */
-  opacity:0;
-  }  
+    opacity: 0;
+  }
   100% {
-     /* top: 0px;
+    /* top: 0px;
      left: 0px;
      margin: 15px; */
-     opacity: 1;
+    opacity: 1;
   }
 }
-.view{
+.view {
   position: relative;
   animation: gogagadgetcards 1s linear;
 }
-
 
 #getCardsPara {
   font: verdana;
