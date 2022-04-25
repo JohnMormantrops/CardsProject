@@ -246,8 +246,15 @@ img {
 //////MANAGE DECK STYLES
 ///// */
 .build {
+  background-color: #241f0057;
+  margin-top: 0px;
+  padding-top: 10px;
+  height: 50px;
+  color: #ffd700;
   margin-left: 10px;
   top: 350px;
+  text-shadow: 1px 1px #000000;
+  text-align: center;
 }
 .createDeck {
   color: #ffd700;
@@ -285,6 +292,7 @@ img {
   z-index: 1;
   padding: 10px;
   background-color: auto;
+  text-shadow: 1px 1px #000000;
 }
 .panelBox:hover {
   background-color: rgba(140, 140, 140, 0.211);
@@ -311,13 +319,15 @@ img {
   border: none;
   font-family: "Skranji", cursive;
   color: #ffd700;
+  text-shadow: 1px 1px #000000;
 }
 .deckOK:hover {
   color: #2afe00;
   /* background-color: #2afe00; */
-  padding: px;
+
   border: solid;
   border-width: 3px;
+  margin: 0px;
   border-color: #000000;
 }
 .deckX {
@@ -409,6 +419,12 @@ img {
   margin: -65px; */
     opacity: 0;
   }
+
+  50% {
+    opacity: 1;
+    /* margin-top: 10px; */
+  }
+
   100% {
     /* top: 0px;
      left: 0px;
@@ -418,7 +434,7 @@ img {
 }
 .view {
   position: relative;
-  animation: gogagadgetcards 1s linear;
+  animation: gogagadgetcards 3s linear;
 }
 
 #getCardsPara {

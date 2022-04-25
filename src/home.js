@@ -10,6 +10,7 @@ function Home() {
   return (
     <div className="home">
       <div className="title">
+        <br></br><br></br><br></br><br></br>
         <div>{Logo()}</div>
       </div>
     </div>
