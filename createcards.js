@@ -184,6 +184,14 @@ mongoose
                 defense: "Invalidate water property damage",
                 paragraph:
                     "The king of the dragons, being responsible for raining.",
+            }),
+            new Card({
+                name: "Big Thief",
+                nation: "Chinese",
+                image: "https://github.com/JohnMormantrops/Images/blob/main/thief.jpg?raw=true",
+                attack: "Steal draw two from opponents deck",
+                defense: "Sneak away +3 defense",
+                paragraph: "The most famous thief in Chinese history, could steal everything he wants."
             })
         ]
 
