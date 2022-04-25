@@ -120,7 +120,7 @@ export default function ({authUser}) {
         ):(
           <div className="cardContainer">
           {randomCards.map((card, key) => (
-            <div className="card open" id="open"  onClick={(e) => handleCardClick(e, card.nation, card.name)} id={card.nation}>
+            <div className="card open" onClick={(e) => handleCardClick(e, card.nation, card.name)} id={card.nation}>
               <div className="pic">
                 <p className="heroname">{card.name}<div className="letter">{card.nation.charAt(0).toUpperCase()}</div></p>
                 <img src={card.image} alt="hero pic" />
