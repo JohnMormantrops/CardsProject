@@ -152,21 +152,21 @@
   cursor: pointer;
   text-shadow: 0 0 0px #0d0d09;
 }
-.WW{
-  color:#ffd700;
+.WW {
+  color: #ffd700;
   background-color: #000000a5;
   height: 15%;
   width: 20%;
   border-radius: 50%;
   border-color: #ffd700;
   border-width: 2px;
-  border-style:groove;
-  text-align:  center;
+  border-style: groove;
+  text-align: center;
   font-size: large;
   margin-top: 0px;
   box-shadow: -1px 3px 2px 3px #000000;
 }
-.ww{
+.ww {
   margin-top: 3px;
   margin-left: -6px;
   -webkit-text-stroke-width: 1px;
@@ -247,7 +247,7 @@ img {
 ///// */
 .build {
   background-color: #241f0057;
-  margin-top:0px;
+  margin-top: 0px;
   padding-top: 10px;
   height: 50px;
   color: #ffd700;
@@ -274,7 +274,6 @@ img {
   /* bottom: 0px; */
   position: absolute;
   z-index: 1;
-
 }
 
 .panelBackground {
@@ -315,7 +314,6 @@ img {
   color: #ffd700;
 }
 .deckOK {
- 
   font-size: large;
   background-color: transparent;
   border: none;
@@ -326,10 +324,10 @@ img {
 .deckOK:hover {
   color: #2afe00;
   /* background-color: #2afe00; */
-  
+
   border: solid;
   border-width: 3px;
-  margin:0px;
+  margin: 0px;
   border-color: #000000;
 }
 .deckX {
@@ -390,13 +388,23 @@ img {
 }
 
 .addToCollection {
+  text-align: center;
   padding: 30px;
   background-color: rgba(128, 128, 128, 0.386);
-  width: 130px;
+  width: 150px;
   height: 100px;
+  transition: transform 1s;
+  transform: rotateY(180deg);
+  margin-left: 50%;
+  font: verdana;
+  font-size: large;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  color: #ffd700;
 }
 .addToCollection:hover {
   cursor: pointer;
+  box-shadow: 0px 5px 5px 2px #0d0d09;
 }
 
 /* ////
@@ -404,31 +412,30 @@ img {
 
 /* ////
 ////VIEW DECK STYLES */
-@keyframes gogagadgetcards  {
+@keyframes gogagadgetcards {
   0% {
     /* top: 80px;
   left: -80px;
   margin: -65px; */
-  opacity:0;
-  } 
-  
-  50%{
-    opacity:1;
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
     /* margin-top: 10px; */
   }
 
   100% {
-     /* top: 0px;
+    /* top: 0px;
      left: 0px;
      margin: 15px; */
-     opacity: 1;
+    opacity: 1;
   }
 }
-.view{
+.view {
   position: relative;
   animation: gogagadgetcards 3s linear;
 }
-
 
 #getCardsPara {
   font: verdana;
@@ -438,30 +445,6 @@ img {
   color: #ffd700;
   text-align: center;
   margin-top: 100px;
-}
-
-#logo {
-  margin-top: -7%;
-  margin-left: 25%;
-  display: inline-flex;
-  justify-content: center;
-}
-
-#textWrap {
-  animation: textSpin 15s linear infinite;
-  /* transform-origin: bottom center; */
-  /*   transform-box: fill-box; */
-}
-
-@keyframes textSpin {
-  0% {
-    transform: rotate(0deg);
-    transform-origin: center;
-  }
-  100% {
-    transform: rotate(360deg);
-    transform-origin: center;
-  }
 }
 
 #logo {
