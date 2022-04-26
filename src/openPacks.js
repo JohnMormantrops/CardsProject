@@ -91,7 +91,6 @@ export default function ({authUser}) {
   //
   console.log("CARD ARRAY HERE")
   console.log(cardArray)
-
   //Handle card click 
   const handleCardClick = (e, nation, name) => {
     e.preventDefault()
@@ -112,11 +111,11 @@ export default function ({authUser}) {
           <div
           //creating a div with the className card will display 
           //the card back the card is displayed using css 
-          className="card choose centered"
+          className="card choose"
           //on click show randomly selected cards to add to the users deck
           onClick={() => getRandom()
           }
-        ><div className="WW"><div className="ww">WW</div></div></div>
+        ><div>{Logo()}</div></div>
         ):(
           <div className="cardContainer">
           {randomCards.map((card, key) => (

@@ -53,6 +53,8 @@ export default function ({authUser}) {
 
     const handleCardClick = (e, card) => {
           e.preventDefault();
+          console.log("HERES THE CARD");
+          console.log(card);
           if(deckArray.length < 20){
             ///add to the deck array
             setDeckArray(deckArray => [...deckArray, card])
@@ -77,6 +79,8 @@ export default function ({authUser}) {
     }
 
     const handlePanelClick = (card) =>{
+      console.log(card);
+
       var select = cardArray.owned.find( cards => cards.name === card.name)
       setSelectedCard(select)
       setShowInfo("true")
