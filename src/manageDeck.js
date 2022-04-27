@@ -6,7 +6,7 @@ import { apiKey } from "./apiKey";
 import InfoBox from "./infoBox";
 import DeckBox from "./deckBox";
 
-export default function({ authUser }) {
+export default function ({ authUser }) {
   //deck array will display in the create deck panel and can be updated to the DB as a deck
   const [deckArray, setDeckArray] = useState([]);
   //show info can display the info of the clicked card
@@ -48,7 +48,19 @@ export default function({ authUser }) {
 
   const handleCardClick = (e, card) => {
     e.preventDefault();
-    if (deckArray.length < 20) {
+    let limit = 0;
+    for (let i = 0; i < cardArray.owned.length; i++) {
+      if (card._id === cardArray.owned[i]._id) {
+        limit += 1;
+      }
+    }
+    let currentHave = 0;
+    for (let i = 0; i < deckArray.length; i++) {
+      if (card._id === deckArray[i]._id) {
+        currentHave += 1;
+      }
+    }
+    if (deckArray.length < 20 && currentHave < limit) {
       ///add to the deck array
       setDeckArray((deckArray) => [...deckArray, card]);
       //show the info bx with the currently selected card
@@ -130,7 +142,7 @@ export default function({ authUser }) {
             </h3>
             {deckArray.map((card, key) => (
               <div className="panelBox" onClick={() => handlePanelClick(card)}>
-                 {card.name}{" - "}{card.nation}
+                {card.name}{" - "}{card.nation}
                 <button
                   className="deckX"
                   onClick={() => {
