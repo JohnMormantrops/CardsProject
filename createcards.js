@@ -192,6 +192,14 @@ mongoose
                 attack: "Steal draw two from opponents deck",
                 defense: "Sneak away +3 defense",
                 paragraph: "The most famous thief in Chinese history, could steal everything he wants."
+            }),
+            new Card({
+                name: "Bagua",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/bagua.png?raw=true",
+                attack: "Add a buff to the attacker once: ignore the defender's defense.",
+                defense: "Invalidate one attack",
+                paragraph: "Legendary defence tool and strategy in Daoism."
             })
         ]
 
