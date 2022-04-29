@@ -200,6 +200,14 @@ mongoose
                 attack: "Add a buff to the attacker once: ignore the defender's defense.",
                 defense: "Invalidate one attack",
                 paragraph: "Legendary defence tool and strategy in Daoism."
+            }),
+            new Card({
+                name: "Mars",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/mars.png?raw=true",
+                attack: "At least 2 damages.",
+                defense: "Invalidate at least 2 damages",
+                paragraph: "The symbol of mars in ancient China."
             })
         ]
 
