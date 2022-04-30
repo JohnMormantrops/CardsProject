@@ -237,7 +237,7 @@ mongoose
             new Card({
                 name: "Lamp",
                 nation: "Japanese",
-                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_bone.png?raw=true",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_lamp.jpeg?raw=true",
                 attack: "light up the sky and find the hidden enermy with 1 attack",
                 defense: "invalidate 1 damage from wind",
                 paragraph: "A lamp brings you light and warmth."
