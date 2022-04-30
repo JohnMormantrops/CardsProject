@@ -216,6 +216,79 @@ mongoose
                 attack: "Spit out fire(fire property damage)",
                 defense: "Invalidate fire property damage",
                 paragraph: "Born from gourd with 6 brothers. Can control fire."
+            }),
+            //9 Japanese cards
+            new Card({
+                name: "Bone",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_bone.png?raw=true",
+                attack: "attack plants with 3 damages",
+                defense: "hide oneself and invalidate 2 damage",
+                paragraph: "Bone Woman is a pretty ghost that kills bad guys in Japanese legends."
+            }),
+            new Card({
+                name: "Fan",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_fan.jpg?raw=true",
+                attack: "blow strong wind to put out fire with 2 damage ",
+                defense: "defend from shot and invalidate 1 damage",
+                paragraph: "A traditional asian folded fan belongs to a swordsman."
+            }),
+            new Card({
+                name: "Lamp",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_bone.png?raw=true",
+                attack: "light up the sky and find the hidden enermy with 1 attack",
+                defense: "invalidate 1 damage from wind",
+                paragraph: "A lamp brings you light and warmth."
+            }),
+            new Card({
+                name: "Maple",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_maple.jpg?raw=true",
+                attack: "poison the enermy with 1 damage",
+                defense: "invalidate 1 damage from bone",
+                paragraph: "Falling maples in autumn."
+            }),
+            new Card({
+                name: "Mirror",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_mirror.jpg?raw=true",
+                attack: "reflect the enermy with its damage",
+                defense: "invalidate 2 damage from anyone",
+                paragraph: "Geisha put on makeup in front of the mirror."
+            }),
+            new Card({
+                name: "Sakura",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_sakura.jpeg?raw=true",
+                attack: "poison the enermy with 2 damage",
+                defense: "invalidate 1 damage from bone",
+                paragraph: "Spring arrived when the sakura were blooming"
+            }),
+            new Card({
+                name: "Shrine",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_temple.png?raw=true",
+                attack: "make everyting static with 1 damage",
+                defense: "invalidate 1 damage from poison or wind",
+                paragraph: "You can find inner peace in a shrine"
+            }),
+            new Card({
+                name: "Umbrella",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_umbrella.jpg?raw=true",
+                attack: "block the view of enermy with 1 damage",
+                defense: "invalidate 1 damage from water",
+                paragraph: "An umbrella shelters you from the rain."
+            }),
+            new Card({
+                name: "Wave",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_wave.jpg?raw=true",
+                attack: "put out fire with 3 damage",
+                defense: "invalidate 1 damage from temple",
+                paragraph: "There's waves that are coming and you can't stop them from coming."
             })
         ]
 
