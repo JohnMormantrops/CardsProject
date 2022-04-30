@@ -208,6 +208,14 @@ mongoose
                 attack: "At least 2 damages.",
                 defense: "Invalidate at least 2 damages",
                 paragraph: "The symbol of mars in ancient China."
+            }),
+            new Card({
+                name: "Fire Boy",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/fireBoy.png?raw=true",
+                attack: "Spit out fire(fire property damage)",
+                defense: "Invalidate fire property damage",
+                paragraph: "Born from gourd with 6 brothers. Can control fire."
             })
         ]
 
