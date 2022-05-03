@@ -217,6 +217,14 @@ mongoose
                 defense: "Invalidate fire property damage",
                 paragraph: "Born from gourd with 6 brothers. Can control fire."
             }),
+            new Card({
+                name: "Somersault Cloud",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/somersaultCloud.png?raw=true",
+                attack: "Have a chance of getting one more turn in the same round",
+                defense: "Have a chance of skipping the turn",
+                paragraph: "Special cloud, only kind people can take."
+            }),
             //9 Japanese cards
             new Card({
                 name: "Bone",
