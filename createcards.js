@@ -233,6 +233,14 @@ mongoose
                 defense: "Prevent a rival from getting cards for one turn",
                 paragraph: "A legendary bowl full of wealth. Anybody who found it would be the richest person in the world."
             }),
+            new Card({
+                name: "Kitchen Knife",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/kitchenKnife.png?raw=true",
+                attack: "Incur damages that are proporational to the attack of the character.",
+                defense: "Never defense.",
+                paragraph: "The most powerful weapon in the world. Even if you are a master in Wusu, you would submit yourself to the legendary weapon."
+            }),
             //9 Japanese cards
             new Card({
                 name: "Bone",
