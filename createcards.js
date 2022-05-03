@@ -225,6 +225,14 @@ mongoose
                 defense: "Have a chance of skipping the turn",
                 paragraph: "Special cloud, only kind people can take."
             }),
+            new Card({
+                name: "Treasure Bowl",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/treasureBowl.png?raw=true",
+                attack: "Get two new cards from the deck.",
+                defense: "Prevent a rival from getting cards for one turn",
+                paragraph: "A legendary bowl full of wealth. Anybody who found it would be the richest person in the world."
+            }),
             //9 Japanese cards
             new Card({
                 name: "Bone",
