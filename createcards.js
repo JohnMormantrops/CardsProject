@@ -257,6 +257,14 @@ mongoose
                 defense: "Ignore all physical attack in the next round.",
                 paragraph: "The defense of the ancient China. Never works."
             }),
+            new Card({
+                name: "The Flash Controller",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/flashController.png?raw=true",
+                attack: "Summon flash(flash property damage, stunning the target for one round).",
+                defense: "Avoid one attack by flash speed.",
+                paragraph: "Created by a great thunderstorm, born to control flash."
+            }),
             //9 Japanese cards
             new Card({
                 name: "Bone",
