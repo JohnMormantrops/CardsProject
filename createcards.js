@@ -249,6 +249,14 @@ mongoose
                 defense: "Avoid one attack(ignore the attack).",
                 paragraph: "The priests in Taoism. In Chinese legendary stories, they can wind, fire, flash and raining."
             }),
+            new Card({
+                name: "The Great Wall",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/theGreatWall.png?raw=true",
+                attack: "Never attack.",
+                defense: "Ignore all physical attack in the next round.",
+                paragraph: "The defense of the ancient China. Never works."
+            }),
             //9 Japanese cards
             new Card({
                 name: "Bone",
