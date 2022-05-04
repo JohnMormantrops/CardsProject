@@ -241,6 +241,14 @@ mongoose
                 defense: "Never defense.",
                 paragraph: "The most powerful weapon in the world. Even if you are a master in Wusu, you would submit yourself to the legendary weapon."
             }),
+            new Card({
+                name: "Taoist Priest",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/taoistPriest.png?raw=true",
+                attack: "Ignore the defense on one attack.",
+                defense: "Avoid one attack(ignore the attack).",
+                paragraph: "The priests in Taoism. In Chinese legendary stories, they can wind, fire, flash and raining."
+            }),
             //9 Japanese cards
             new Card({
                 name: "Bone",
