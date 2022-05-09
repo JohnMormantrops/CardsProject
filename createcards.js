@@ -192,6 +192,127 @@ mongoose
                 attack: "Steal draw two from opponents deck",
                 defense: "Sneak away +3 defense",
                 paragraph: "The most famous thief in Chinese history, could steal everything he wants."
+            }),
+            new Card({
+                name: "Bagua",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/bagua.png?raw=true",
+                attack: "Add a buff to the attacker once: ignore the defender's defense.",
+                defense: "Invalidate one attack",
+                paragraph: "Legendary defence tool and strategy in Daoism."
+            }),
+            new Card({
+                name: "Mars",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/mars.png?raw=true",
+                attack: "At least 2 damages.",
+                defense: "Invalidate at least 2 damages",
+                paragraph: "The symbol of mars in ancient China."
+            }),
+            new Card({
+                name: "Fire Boy",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/fireBoy.png?raw=true",
+                attack: "Spit out fire(fire property damage)",
+                defense: "Invalidate fire property damage",
+                paragraph: "Born from gourd with 6 brothers. Can control fire."
+            }),
+            new Card({
+                name: "Somersault Cloud",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/somersaultCloud.png?raw=true",
+                attack: "Have a chance of getting one more turn in the same round",
+                defense: "Have a chance of skipping the turn",
+                paragraph: "Special cloud, only kind people can take."
+            }),
+            new Card({
+                name: "Treasure Bowl",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/treasureBowl.png?raw=true",
+                attack: "Get two new cards from the deck.",
+                defense: "Prevent a rival from getting cards for one turn",
+                paragraph: "A legendary bowl full of wealth. Anybody who found it would be the richest person in the world."
+            }),
+            new Card({
+                name: "Kitchen Knife",
+                nation: "Chinese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/kitchenKnife.png?raw=true",
+                attack: "Incur damages that are proporational to the attack of the character.",
+                defense: "Never defense.",
+                paragraph: "The most powerful weapon in the world. Even if you are a master in Wusu, you would submit yourself to the legendary weapon."
+            }),
+            //9 Japanese cards
+            new Card({
+                name: "Bone",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_bone.png?raw=true",
+                attack: "attack plants with 3 damages",
+                defense: "hide oneself and invalidate 2 damage",
+                paragraph: "Bone Woman is a pretty ghost that kills bad guys in Japanese legends."
+            }),
+            new Card({
+                name: "Fan",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_fan.jpg?raw=true",
+                attack: "blow strong wind to put out fire with 2 damage ",
+                defense: "defend from shot and invalidate 1 damage",
+                paragraph: "A traditional asian folded fan belongs to a swordsman."
+            }),
+            new Card({
+                name: "Lamp",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_lamp.jpeg?raw=true",
+                attack: "light up the sky and find the hidden enermy with 1 attack",
+                defense: "invalidate 1 damage from wind",
+                paragraph: "A lamp brings you light and warmth."
+            }),
+            new Card({
+                name: "Maple",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_maple.jpg?raw=true",
+                attack: "poison the enermy with 1 damage",
+                defense: "invalidate 1 damage from bone",
+                paragraph: "Falling maples in autumn."
+            }),
+            new Card({
+                name: "Mirror",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_mirror.jpg?raw=true",
+                attack: "reflect the enermy with its damage",
+                defense: "invalidate 2 damage from anyone",
+                paragraph: "Geisha put on makeup in front of the mirror."
+            }),
+            new Card({
+                name: "Sakura",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_sakura.jpeg?raw=true",
+                attack: "poison the enermy with 2 damage",
+                defense: "invalidate 1 damage from bone",
+                paragraph: "Spring arrived when the sakura were blooming"
+            }),
+            new Card({
+                name: "Shrine",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_temple.png?raw=true",
+                attack: "make everyting static with 1 damage",
+                defense: "invalidate 1 damage from poison or wind",
+                paragraph: "You can find inner peace in a shrine"
+            }),
+            new Card({
+                name: "Umbrella",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_umbrella.jpg?raw=true",
+                attack: "block the view of enermy with 1 damage",
+                defense: "invalidate 1 damage from water",
+                paragraph: "An umbrella shelters you from the rain."
+            }),
+            new Card({
+                name: "Wave",
+                nation: "Japanese",
+                image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_wave.jpg?raw=true",
+                attack: "put out fire with 3 damage",
+                defense: "invalidate 1 damage from temple",
+                paragraph: "There's waves that are coming and you can't stop them from coming."
             })
         ]
 
