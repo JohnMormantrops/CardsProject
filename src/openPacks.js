@@ -18,6 +18,7 @@ export default function({ authUser }) {
 
   const [cardArray, setCardArray] = useState([]);
   const [secondCardArray, setSecondCardArray] = useState([]);
+  const [clicked, setClicked] = useState(false);
 
   console.log("OPEN PACKS");
   console.log(authUser);
@@ -102,7 +103,7 @@ export default function({ authUser }) {
       }, 400);
     } else {
       if (secondCardArray.owned.length > 40) {
-        alert("Too Many Cards In Your Collection!");
+        setClicked(true);
       } else {
         for (let i = 0; i < 5; i++) {
           let card = cardArray[Math.floor(Math.random() * cardArray.length)];
@@ -147,6 +148,11 @@ export default function({ authUser }) {
             <div className="WW">
               <div className="ww">WW</div>
             </div>
+            {clicked === true && (
+              <div id="limit">
+                SORRY YOU HAVE TOO MANY CARDS IN YOUR COLLECTION!!
+              </div>
+            )}
           </div>
         ) : (
           <div className="cardContainer">

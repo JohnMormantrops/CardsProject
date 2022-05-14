@@ -448,8 +448,8 @@ img {
 }
 
 #logo {
-  margin-top: -40%;
-  margin-left: -10%;
+  margin-top: -50%;
+  margin-left: -15%;
   display: inline-flex;
   justify-content: center;
 }
@@ -469,4 +469,18 @@ img {
     transform: rotate(360deg);
     transform-origin: center;
   }
+}
+
+#limit {
+  text-align: center;
+  padding: 3%;
+  background-color: rgba(128, 128, 128, 0.386);
+  width: 300px;
+  height: 150px;
+  margin-left: 40%;
+  font: verdana;
+  font-size: large;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  color: #f71c1c;
 }
