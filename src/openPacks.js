@@ -119,9 +119,9 @@ export default function({ authUser }) {
     }
   };
   //
-  console.log("CARD ARRAY HERE")
-  console.log(cardArray)
-  //Handle card click 
+  console.log("CARD ARRAY HERE");
+  console.log(cardArray);
+  //Handle card click
   const handleCardClick = (e, nation, name) => {
     e.preventDefault();
     var select = cardArray.find((cards) => cards.name === name);
@@ -134,6 +134,11 @@ export default function({ authUser }) {
   return (
     <div className="back">
       {/* style={{marginLeft: '15%'}} */}
+      {clicked === true && (
+        <span id="limit">
+          SORRY YOU HAVE TOO MANY CARDS IN YOUR COLLECTION!!
+        </span>
+      )}
 
       <div className="row" id={turn === "true" && "turn"}>
         {showSelected === "false" ? (
@@ -147,11 +152,6 @@ export default function({ authUser }) {
             <div className="WW">
               <div className="ww">WW</div>
             </div>
-            {clicked === true && (
-              <div id="limit">
-                SORRY YOU HAVE TOO MANY CARDS IN YOUR COLLECTION!!
-              </div>
-            )}
           </div>
         ) : (
           <div className="cardContainer">

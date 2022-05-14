@@ -189,17 +189,15 @@
 /* ////
 ////CARD COLORS/// */
 #Norse {
-  filter: hue-rotate(0deg) brightness(.9);
-  
+  filter: hue-rotate(0deg) brightness(0.9);
 }
 #Norse .pic {
   filter: hue-rotate(0deg) brightness(1.1);
-
 }
 #Chinese {
   filter: hue-rotate(250deg);
 }
-#Chinese .pic{
+#Chinese .pic {
   filter: hue-rotate(-250deg);
 }
 
@@ -221,7 +219,6 @@
   width: 93%;
   margin: auto;
   padding: 3%;
-  
 }
 .ability {
   background-color: #d14f00;
@@ -481,12 +478,14 @@ img {
 }
 
 #limit {
+  position: absolute;
   text-align: center;
   padding: 3%;
   background-color: rgba(128, 128, 128, 0.386);
-  width: 300px;
+  width: 400px;
   height: 150px;
-  margin-left: 40%;
+  margin-left: 35%;
+  border: 5px solid black;
   font: verdana;
   font-size: large;
   -webkit-text-stroke-width: 1px;
