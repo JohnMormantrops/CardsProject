@@ -119,10 +119,9 @@ export default function({ authUser }) {
     }
   };
   //
-  console.log("CARD ARRAY HERE");
-  console.log(cardArray);
-
-  //Handle card click
+  console.log("CARD ARRAY HERE")
+  console.log(cardArray)
+  //Handle card click 
   const handleCardClick = (e, nation, name) => {
     e.preventDefault();
     var select = cardArray.find((cards) => cards.name === name);
@@ -159,7 +158,6 @@ export default function({ authUser }) {
             {randomCards.map((card, key) => (
               <div
                 className="card open"
-                id="open"
                 onClick={(e) => handleCardClick(e, card.nation, card.name)}
                 id={card.nation}
               >

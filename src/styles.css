@@ -187,14 +187,22 @@
   right: 2px;
 }
 /* ////
-////CARD COLORS
-//// */
-#norse {
-  filter: hue-rotate(350deg);
+////CARD COLORS/// */
+#Norse {
+  filter: hue-rotate(0deg) brightness(.9);
+  
 }
-#china {
+#Norse .pic {
+  filter: hue-rotate(0deg) brightness(1.1);
+
+}
+#Chinese {
   filter: hue-rotate(250deg);
 }
+#Chinese .pic{
+  filter: hue-rotate(-250deg);
+}
+
 #usa {
   filter: hue-rotate(100deg);
 }
@@ -213,6 +221,7 @@
   width: 93%;
   margin: auto;
   padding: 3%;
+  
 }
 .ability {
   background-color: #d14f00;
