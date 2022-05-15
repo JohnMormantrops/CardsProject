@@ -1,12 +1,15 @@
+
 import React from "react";
-// import "./App.css";
+import "./styles.css";
+
 
 function Logo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="170mm"
-      height="257mm"
+      // width="170mm"
+      // height="257mm
+      height="130mm"
       version="1.1"
       viewBox="0 0 210 297"
       id="logo"
@@ -79,7 +82,7 @@ function Logo() {
           style={{ lineHeight: "1.25" }}
           fill="#ffd700"
           strokeWidth="0.973"
-          fontFamily="Britannic Bold"
+          fontFamily="Skranji" cursive
           fontSize="24.168"
           id="textWrap"
         >
