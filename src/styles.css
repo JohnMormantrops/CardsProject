@@ -481,7 +481,7 @@ img {
   position: absolute;
   text-align: center;
   padding: 3%;
-  background-color: rgba(128, 128, 128, 0.386);
+  background-color: rgba(128, 128, 128, 0.885);
   width: 400px;
   height: 150px;
   margin-left: 35%;
@@ -491,4 +491,21 @@ img {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
   color: #f71c1c;
+}
+
+#added {
+  position: absolute;
+  text-align: center;
+  padding: 1.35%;
+  background-color: rgba(128, 128, 128, 0.514);
+  width: 200px;
+  height: 100px;
+  margin-left: 10%;
+  margin-top: 5%;
+  border: 3px solid black;
+  font: verdana;
+  font-size: large;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  color: #ffd700;
 }

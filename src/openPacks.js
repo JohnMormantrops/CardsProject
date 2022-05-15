@@ -19,6 +19,7 @@ export default function({ authUser }) {
   const [cardArray, setCardArray] = useState([]);
   const [secondCardArray, setSecondCardArray] = useState([]);
   const [clicked, setClicked] = useState(false);
+  const [added, setAdded] = useState(false);
 
   console.log("OPEN PACKS");
   console.log(authUser);
@@ -77,6 +78,7 @@ export default function({ authUser }) {
       headers: header,
       body: cardInfo,
     };
+    setAdded(true);
 
     const response = await fetch(
       "http://localhost:3000/card/owned",
@@ -139,7 +141,7 @@ export default function({ authUser }) {
           SORRY YOU HAVE TOO MANY CARDS IN YOUR COLLECTION!!
         </span>
       )}
-
+      {added === true && <span id="added">CARDS ADDED TO YOU COLLECTION!</span>}
       <div className="row" id={turn === "true" && "turn"}>
         {showSelected === "false" ? (
           <div
@@ -186,6 +188,7 @@ export default function({ authUser }) {
         )}
         {/* some jsx here to show the cards if the cards been clicked */}
       </div>
+
       {/* //end of row div */}
       <hr />
       <div className="centered">
