@@ -13,10 +13,69 @@
   font-family: "Skranji", cursive;
 }
 .home {
-  margin-top: 10%;
-  display: flex;
+  margin-top: 70px;
+}
+
+#logo {
+  margin:auto;
+
+  display: inline-flex;
   justify-content: center;
 }
+.logo{
+ 
+}
+
+.getCards {
+  text-align: center;
+  padding: 20px;
+  width: 150px;
+  height: 100px;
+  font: verdana;
+  font-size: large;
+  text-shadow: 0 0 3px #000000, 0 0 3px #000000;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0); */
+  color: #ffd700;
+  border-radius: 15px;
+  border: none;
+  font-family: "Skranji", cursive;
+  background-color: transparent;
+}
+.getCards:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.welcome{
+  
+  margin: 0px;
+  margin-top: 70px;
+  margin-left: 150px;
+  color:#ffd700;
+  text-shadow: 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000;
+
+}
+
+#textWrap {
+  animation: textSpin 15s linear infinite;
+  /* transform-origin: bottom center; */
+  /*   transform-box: fill-box; */
+}
+
+@keyframes textSpin {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+
+
+
 .title {
   /* margin:auto; */
 }
@@ -79,6 +138,15 @@
   text-shadow: 0 0 5px #0d0d09;
   z-index: 10;
 }
+
+.navButton:hover {
+  /* background-color: gray; */
+
+  /* border-width: 15%;
+  border-style: solid;
+  border-color: gold; */
+  box-shadow: -0.1em 0.1em 0.1em 0.3em #000000;
+}
 .heading {
   align-content: center;
   justify-content: center;
@@ -91,14 +159,7 @@
   text-shadow: 2px 1px 5px #0d0d09;
   /* box-shadow: .75em .75em .75em #000000; */
 }
-.navButton:hover {
-  /* background-color: gray; */
 
-  /* border-width: 15%;
-  border-style: solid;
-  border-color: gold; */
-  box-shadow: -0.1em 0.1em 0.1em 0.3em #000000;
-}
 
 /* ////
 ////INFO BOX COMPONENT
@@ -399,7 +460,6 @@ img {
 .addToCollection {
   text-align: center;
   padding: 30px;
-  background-color: rgba(128, 128, 128, 0.386);
   width: 150px;
   height: 100px;
   transition: transform 1s;
@@ -407,13 +467,17 @@ img {
   margin-left: 50%;
   font: verdana;
   font-size: large;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
+  text-shadow: 0 0 3px #000000, 0 0 3px #000000;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0); */
   color: #ffd700;
+  border-radius: 15px;
+
 }
 .addToCollection:hover {
   cursor: pointer;
   box-shadow: 0px 5px 5px 2px #0d0d09;
+  background-color: rgba(128, 128, 128, 0.386);
 }
 
 /* ////
@@ -456,26 +520,5 @@ img {
   margin-top: 100px;
 }
 
-#logo {
-  margin-top: -40%;
-  margin-left: -10%;
-  display: inline-flex;
-  justify-content: center;
-}
 
-#textWrap {
-  animation: textSpin 15s linear infinite;
-  /* transform-origin: bottom center; */
-  /*   transform-box: fill-box; */
-}
 
-@keyframes textSpin {
-  0% {
-    transform: rotate(0deg);
-    transform-origin: center;
-  }
-  100% {
-    transform: rotate(360deg);
-    transform-origin: center;
-  }
-}
