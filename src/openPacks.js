@@ -18,6 +18,8 @@ export default function({ authUser }) {
 
   const [cardArray, setCardArray] = useState([]);
   const [secondCardArray, setSecondCardArray] = useState([]);
+  const [clicked, setClicked] = useState(false);
+  const [added, setAdded] = useState(false);
 
   console.log("OPEN PACKS");
   console.log(authUser);
@@ -76,6 +78,7 @@ export default function({ authUser }) {
       headers: header,
       body: cardInfo,
     };
+    setAdded(true);
 
     const response = await fetch(
       "http://localhost:3000/card/owned",
@@ -102,7 +105,7 @@ export default function({ authUser }) {
       }, 400);
     } else {
       if (secondCardArray.owned.length > 40) {
-        alert("Too Many Cards In Your Collection!");
+        setClicked(true);
       } else {
         for (let i = 0; i < 5; i++) {
           let card = cardArray[Math.floor(Math.random() * cardArray.length)];
@@ -118,9 +121,9 @@ export default function({ authUser }) {
     }
   };
   //
-  console.log("CARD ARRAY HERE")
-  console.log(cardArray)
-  //Handle card click 
+  console.log("CARD ARRAY HERE");
+  console.log(cardArray);
+  //Handle card click
   const handleCardClick = (e, nation, name) => {
     e.preventDefault();
     var select = cardArray.find((cards) => cards.name === name);
@@ -133,7 +136,12 @@ export default function({ authUser }) {
   return (
     <div className="back">
       {/* style={{marginLeft: '15%'}} */}
-
+      {clicked === true && (
+        <span id="limit">
+          SORRY YOU HAVE TOO MANY CARDS IN YOUR COLLECTION!!
+        </span>
+      )}
+      {added === true && <span id="added">CARDS ADDED TO YOU COLLECTION!</span>}
       <div className="row" id={turn === "true" && "turn"}>
         {showSelected === "false" ? (
           <div
@@ -180,6 +188,7 @@ export default function({ authUser }) {
         )}
         {/* some jsx here to show the cards if the cards been clicked */}
       </div>
+
       {/* //end of row div */}
       <hr />
       <div className="centered">
