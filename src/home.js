@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "./logo";
+import { Link } from "react-router-dom";
 
 // function Home() {
 //   return <div className="logo">{Logo()}</div>;
@@ -18,17 +19,20 @@ function Home() {
           <div>
           <p className="welcome">
             <h1>World of Worship!!</h1>
-            All over the world, and throughout history,
-            people have always found something to worship.
-            Who will you choose? Whose gods are the strongest?
+            All over the world, and throughout history,<br/>
+            people have always found something to worship.<br/>
+            Who will you choose? Whose gods are the strongest?<br/>
             Get started and choose your gods now.<br/>
-          <button className="getCards">GET CARDS</button>
-           </p></div>
-
-        <div >{Logo()}</div>
+         
+          <Link to="openPacks" className="navButton">
+            GET STARTED
+          </Link>
+           </p>
+    </div>
+   
+    {Logo()}</div>
         </div>
       </div>
-    </div>
   );
 }
 export default Home;
