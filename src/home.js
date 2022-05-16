@@ -37,7 +37,7 @@ function Home() {
                   <div className="cardhome right"  id="norse">
                     <div className="pic">
                       <p className="heroname">Baldur<div className="letter">
-                        C
+                        N
                       </div></p>
                       <img src="https://github.com/JohnMormantrops/Images/blob/main/Baldur.jpg?raw=true" alt="hero pic" />
                     </div>

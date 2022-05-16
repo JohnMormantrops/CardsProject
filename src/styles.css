@@ -303,13 +303,16 @@
   filter: hue-rotate(-250deg);
 }
 
-#usa {
-  filter: hue-rotate(100deg);
+#America {
+  filter: hue-rotate(270deg);
 }
-#southamerican {
+#America .pic {
+  filter: hue-rotate(-270deg);
+}
+#SouthAmerican {
   filter: hue-rotate(310deg);
 }
-#greek {
+#Greek {
   filter: hue-rotate(270deg);
 }
 #Egyptian {
@@ -503,6 +506,11 @@ img {
   transform: rotateY(180deg);
 }
 
+#turnback {
+  transition: transform 1s;
+  transform: rotateY(-180deg);
+}
+
 .addToCollection {
   text-align: center;
   padding: 30px;
@@ -529,7 +537,7 @@ img {
   /* box-shadow: 0px 5px 5px 2px #0d0d09;
   background-color: rgba(128, 128, 128, 0.386); */
 }
-#limit{
+span{
   color:#ffd700;
   text-shadow: 0 0 5px #0d0d09, 0 0 5px #0d0d09;
   

@@ -6,6 +6,7 @@ import React from "react";
 import Logo from "./babyLogo";
 
 export default function({ authUser }) {
+
   //use state here are string values when you click the card
   // the value will be changed to true which will show randomly selected crads
   //or show the info box
@@ -23,6 +24,12 @@ export default function({ authUser }) {
 
   console.log("OPEN PACKS");
   console.log(authUser);
+
+  const reset =()=>{
+    setTurn("false")
+    setShowSelected("false")
+    setRandomCards([]);
+  }
 
   ///THIS CALL GETS ALL CARDS
   useEffect(() => {
@@ -87,6 +94,7 @@ export default function({ authUser }) {
     const data = await response.json();
     console.log(data);
     setShowSelected("false");
+    setTurn("false");
     setRandomCards([]);
   };
 
@@ -141,8 +149,8 @@ export default function({ authUser }) {
           SORRY YOU HAVE TOO MANY CARDS IN YOUR COLLECTION!!
         </span>
       )}
-      {added === true && <span id="added">CARDS ADDED TO YOU COLLECTION!</span>}
-      <div className="row" id={turn === "true" && "turn"}>
+      {added === true && <span id="added">CARDS ADDED TO YOUR COLLECTION!!</span>}
+      <div className="row" id={turn === "true" ? "turn" : "" } >
         {showSelected === "false" ? (
           <div
             //creating a div with the className card will display
@@ -157,6 +165,7 @@ export default function({ authUser }) {
           </div>
         ) : (
           <div className="cardContainer">
+           
             {randomCards.map((card, key) => (
               <div
                 className="card open"
@@ -180,8 +189,13 @@ export default function({ authUser }) {
                 </div>
               </div>
             ))}
+            <div className="row">
             <div className="addToCollection" onClick={addToCollection}>
               ADD TO COLLECTION
+            </div>
+            <div className="addToCollection" onClick={() => reset()}>
+              BACK
+            </div>
             </div>
           </div>
           //  <CardLayout limit={5} type={'random'} handler={handleCardClick} />

@@ -41,7 +41,7 @@ mongoose
                 nation: "Norse",
                 image:
                     "https://github.com/JohnMormantrops/Images/blob/main/Thor.jpg?raw=true",
-                attack: "Thors hammer Mjolnir never misses +2 to all Norse attack",
+                attack: "Mjolnir never misses +2 to all Norse",
                 defense: "Thunder shield +5 defense",
                 paragraph:
                     "God of Thunder, fearsome to his enemies. Thor possesed a powerful hammer Mjolnir which always struck its target and returned to his hand",
@@ -393,6 +393,235 @@ mongoose
                 defense: "M.A.G.A +1",
                 paragraph: "Elected in 2016 many Americans believe Donald is still the president of U.S",
             }),
+            new Card({
+                name: "Nagual",
+                nation: "SouthAmerican",
+                image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/nagual.jpg?raw=true",
+                 attack: "Talon attack +3 damage",
+                 defense:"Quick escape by flight +3 defense",
+                 paragraph: "From Aztec mythology, this creature can shapeshift into any animal as long as he possesses their pelt"
+               }),
+               new Card({
+                   name:"Football",
+                   nation:"SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/football.jpg",
+                   attack:"Mess freekick to opponent's head +5 damage",
+                   defense:"Team boost +1 attack to all cards in play",
+                   paragraph:"Football is Latin America's most popular sport. Do not underestimate its power."
+               }),
+               new Card({
+                   name: "Encantado",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/encantado.jpg?raw=true",
+                   attack: "Charms opponent and bites +4 damage",
+                   defense:"Water damage resistant +4 defense",
+                   paragraph: "Tribes believed that dolphins turned into handsome men and emerged from the water during a full moon"}),
+               new Card({
+                   name: "Curupira",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/curupira.jpg?raw=true",
+                   attack: "Surprise arrow attack +6 damage",
+                   defense:"Master of deception, escapes serious damage +7 defense",
+                   paragraph: "This creature is famous for his backwards feet and he is a master of deception"}),
+               new Card({
+                   name: "Boitata",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/boitata.jpg?raw=true",
+                   attack: "Blinding stare +8 damage",
+                   defense:"Resistant to fire attacks +10 defense",
+                   paragraph: "This fire breathing snake has its origins in Brazilian folklore. He is known for protecting nature and blinding people"}),
+               new Card({
+                   name: "Iara",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/iara.jpg?raw=true",
+                   attack: "Tsunami +7 damage",
+                   defense:"Water shield +5 defense",
+                   paragraph: "Iara is a mermaid whose name translates to water queen. She lives in the Amazon River and kills fishermen who venture out alone"}),
+               new Card({
+                   name: "Headless mule",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/headlessmule.jpg?raw=true",
+                   attack: "Fire +6 damage",
+                   defense:"Protects teammate +4 defense",
+                   paragraph: "Originally a woman, she was turned into a fire-spewing headless mule by god after sinning with a priest. This myth was brought to Brazil by Spanish colonizers"}),
+               new Card({
+                   name: "Boi bumba",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/boibumba.jpg?raw=true",
+                   attack: "Ox ram attack +5 damage",
+                   defense:"Invincible +10 defense",
+                   paragraph: "This brazilian ox was resurrected from dead as he was his owner's favourite animal. The ox forgave his killers and Brazil celebrate the story of the ox every year"}),
+               new Card({
+                   name: "One-legged woman",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/la-patosa-colombia-leyenda.jpg?raw=true",
+                   attack: "Counter-attack. Opponent's attack card is used on himself +x damage",
+                   defense:"Animals unite to defend +2 defense",
+                   paragraph: "Like la Tunda, the one-legged woman roams the forests of Colombia in search of hunters. She is very protective of her territory and wants to protect animals from humans"}),
+               new Card({
+                   name: "Headless priest",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/sacerdotesincabeza.jpg?raw=true",
+                   attack: "Divine powers from above +3 damage",
+                   defense:"Protected by a higher power +3 defense",
+                   paragraph: "After multiple apparitions in Ecuador, locals started reporting seeing a mysterious priest wandering the streets at night. It was revealed that a local priest used to sneak out after mass and visit various women in the village"}),
+               new Card({
+                   name: "La tunda",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/latunda.jpg?raw=true",
+                   attack: "Scream +1 damage",
+                   defense:"Kidnap rival. Rival's attack has no effect",
+                   paragraph: "This Colombian demon shapeshifts to take the form of his victims' loved ones and traps them, keeping them in a forest"}),
+               new Card({
+                   name: "Nightelf",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/elpombero.jpg?raw=true",
+                   attack: "Scare into submission +1 damage",
+                   defense:"Guardian +2 defense",
+                   paragraph: "Known locally as el pombero, this creature is supposed to have haunted Argentina and Paraguay's woodlands"}),
+               new Card({
+                   name: "Puchman",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/ahPuchdemonofdeath.png?raw=true",
+                   attack: "Jump scare +1 damage",
+                   defense:"Draw one more card from deck",
+                   paragraph: "A Mayan death god who is associated with darkness and disaster but also childbirth and beginnings"}),
+               new Card({
+                   name: "The crying woman",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/la-llorona.jpg?raw=true",
+                   attack: "Hysterical crying +2 damage",
+                   defense:"Steal one card",
+                   paragraph: "More commonly known as la llorona, this grieving mother roams the land in search of children to steal, after she killed her own."
+               }),
+               new Card({
+                   name: "Goat man",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/huaychivo.jpg?raw=true",
+                   attack: "Ram +2 damage",
+                   defense:"Reduce opponent's attack by 1 damage",
+                   paragraph: "Half-man, half-beast, this Mayan creature is known to be very agressive."
+               }),
+               new Card({
+                   name: "Matecito",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/matecito.jpg?raw=true",
+                   attack: "'Accidental' spill +1 damage",
+                   defense:"Replenishing drink +1 defense",
+                   paragraph: "Mate is a popular drink in countries where the Guarani natives once lived."
+               }),
+               new Card ({
+                   name: "Inti",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/JohnMormantrops/Images/blob/main/inti.jpg?raw=true",
+                   attack: "sun burn +5 damage",
+                   defense:"blinding rays +5 defense",
+                   paragraph: "This is Inti, the ancient sun god in Mayan culture."
+               }),
+               new Card ({
+                   name: "Pan flute",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/peruvianpanflute.jpg",
+                   attack: "Music disorientates opponent +1 attack",
+                   defense:"Music distracts opponent +3 defense",
+                   paragraph: "Traditional Peruvian musical instrument. It is easy to become mesmerized by its sound."
+               }),
+               new Card({
+                   name:"Arepa",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/arepa.jpg?raw=true",
+                   attack: "Poison enemy +6 damage",
+                   defense:"Replenishing snack +6 defense",
+                   paragraph: "Arepas are a popular street food in Colombia and Venezuela."
+               }),
+               new Card ({
+                   name: "Mexican mural wall",
+                   nation: "SouthAmerican",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/Diego-Rivera-La-historia-de-M%C3%A9xico-de-la-conquista-al-futuro-1929-1935.-Mural-at-Palacio-Nacional-Ciudad-de-M%C3%A9xico.jpg?raw=true",
+                   attack: "No attack + 0 attack",
+                   defense:"Massive wall keeps enemies away + 9 defense",
+                   paragraph: "Muralism became very popular in Mexico during the 20th century. You can find beautiful murals painted on walls all over the country"
+               }),
+               new Card({
+                   name:"Trojan horse",
+                   nation: "Greek",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/trojanhorse.jpg?raw=true",
+                   attack: "Sneak attack +4 damage",
+                   defense:" Structure provides cover +4 defense",
+                   paragraph: "The Trojan horse was presented as a gift from the Greeks who hid soldiers inside in order to infiltrate the city of Troy."
+               }),
+               new Card({
+                   name:"Hera",
+                   nation: "Greek",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/hera.jpg?raw=true",
+                   attack: "Extra damage against female enemies +4 damage (x2)",
+                   defense: "Order cows to defend +4 defense",
+                   paragraph: "Hera is the goddess of marriage and one of Zeus' wives. She is known to be very jealous of other women. Cows were sacred to Hera"
+               }),
+               new Card({
+                   name:"Zeus",
+                   nation: "Greek",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/zeus.jpg?raw=true",
+                   attack: "Lighting attack +10 damage",
+                   defense:" Natural body armour +10 defense",
+                   paragraph:"The god of all gods, Zeus is the most powerful Greek Deity."
+               }),
+               new Card({
+                   name:"Apollo",
+                   nation: "Greek",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/apollo.jpg?raw=true",
+                   attack: "Lightning attck +6 damage",
+                   defense:" Immune to fire damage +4 defense",
+                   paragraph: "Son of Zeus and Leto, he is the god of light and is feared by everyone except his parents."
+               }),
+               new Card({
+                   name:"Metis",
+                   nation: "Greek",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/metis.jpg?raw=true",
+                   attack: "Lure enemy into trap +5 damage",
+                   defense: "Makes a smart escape +5 defense",
+                   paragraph: "Zeus' first wife, Metis is the deity of wisdom."
+               }),
+               new Card({
+                   name:"Athena",
+                   nation: "Greek",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/athena.jpg?raw=true",
+                   attack: "War chariot attack +4 damage",
+                   defense:" Sail away +2 defense",
+                   paragraph: "Known to be good at war strategy, Athena is often associated with inventing the ship and the chariot. A great asset for any team."
+               }),
+               new Card({
+                   name:"Artemis",
+                   nation: "Greek",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/artemis.jpg?raw=true",
+                   attack: "Bow and arrow attack +7 damage",
+                   defense: "Healing hand +7 defense",
+                   paragraph: "Artemis is an excellent hunter and possesses the ability to heal allies."
+               }),
+               new Card({
+                   name:"Dionysus",
+                   nation: "Greek",
+                   image:"https://raw.githubusercontent.com/Emma-martin1/CS353c-Rowan/main/folderCardImages/dionysus.jpg",
+                   attack: "Lion attack +9 damage",
+                   defense: "Grows vine to impede enemy advance +8 defense",
+                   paragraph: "Dionysus is an immortal and powerful god who can shapeshift and make wine."
+               }),
+               new Card({
+                   name:"Ares",
+                   nation: "Greek",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/ares.jpg?raw=true",
+                   attack: "Spear attack +8 damage",
+                   defense: "Shield +8 defense",
+                   paragraph: "Ares is the god of war and son of Zeus and Hera. He represents the darker and violent side of war."
+               }),
+               new Card({
+                   name:"Poseidon",
+                   nation: "Greek",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/poseidon.jpg",
+                   attack: "Earthquake +5 damage",
+                   defense: "Immune to water damage +4 defense",
+                   paragraph: "God of the sea, Poseidon is powerful but can also be moody and unpredictable. He can cause earthquakes and control the waves."
+               }),
 
         ]
 
