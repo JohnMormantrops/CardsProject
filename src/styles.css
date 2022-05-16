@@ -15,15 +15,48 @@
 .home {
   margin-top: 70px;
 }
-
+.homecard{
+  margin-top: -400px;
+  margin-left: 150px;
+  position: absolute;
+}
+.cardhome {
+  color: black;
+  background-color: #d14f00;
+  border-width: 3%;
+  border-style: solid;
+  border-color: green;
+  background-image: url("https://github.com/JohnMormantrops/Images/blob/main/greenlightning.jpg?raw=true");
+  /*  card ratio  3: 2  */
+  height: 200px;
+  width: 130px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  /* box-shadow: 5px 10px #2c2c2b; */
+  text-shadow: 0 0 0px #0d0d09;
+}
+.right{
+  transform: rotate(10deg);
+  margin-left: 40px;
+}
+.left{
+  transform: rotate(-10deg);
+  margin-left: -40px;
+}
 #logo {
-  margin:auto;
+  /* margin:auto; */
 
-  display: inline-flex;
-  justify-content: center;
+  /* display: inline-flex;
+  justify-content: center; */
+  font-family: "Skranji", cursive;
 }
 .logo{
- 
+  font-family: "Skranji", cursive;
+}
+#textWrap{
+  font-family: "Skranji", cursive;
 }
 
 .getStarted {
@@ -153,7 +186,7 @@
   box-shadow: 0em 0em 0.1em 0.1em  #ffd700;
   /* background-color: #000000; */
   
-  background-color: #000000c7;
+  background-color: #00000048;
 }
 .heading {
   align-content: center;
@@ -181,7 +214,7 @@
   /* margin: 15px; */
   color: gold;
   padding: 2%;
-  text-shadow: 1px 1px 2px #000000;
+  text-shadow: 0px 0px 5px #000000,0px 0px 5px #000000;
 }
 
 .row {
@@ -496,7 +529,11 @@ img {
   /* box-shadow: 0px 5px 5px 2px #0d0d09;
   background-color: rgba(128, 128, 128, 0.386); */
 }
-
+#limit{
+  color:#ffd700;
+  text-shadow: 0 0 5px #0d0d09, 0 0 5px #0d0d09;
+  
+}
 /* ////
 ////END OPEN PACKS STYLES */
 

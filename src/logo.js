@@ -9,36 +9,25 @@ function Logo() {
       xmlns="http://www.w3.org/2000/svg"
       // width="170mm"
       // height="257mm
-      height="130mm"
+      height="160mm"
       version="1.1"
       viewBox="0 0 210 297"
       id="logo"
     >
+      <defs>
+    <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');</style>
+    </defs>
       <g stroke="#000">
 
-        <foreignObject>
-          <div>WANK</div><div className="cardContainer" id="cardContainer">
-              <div className="card"  id="norse">
-                <div className="pic">
-                  <p className="heroname">Baldur</p>
-                  <img src="https://github.com/JohnMormantrops/Images/blob/main/Baldur.jpg?raw=true" alt="hero pic" />
-                </div>
-                <div className="ability">
-                  <p className="text">Invincible assault +4 attack</p>
-                </div>
-                <div className="ability">
-                  <p className="text">Cleanse evil remove an enemy from the field</p>
-                </div>
-              </div>
-              </div>
-          </foreignObject>
-                  
+    
+          
+                
         <g
           ariaLabel="WORLD OF WORSHIP"
           style={{ lineHeight: "1.25" }}
           fill="#ffd700"
           strokeWidth="0.973"
-          fontFamily="Skranji"
+          fontFamily="Skranji" cursive
           fontSize="24.168"
           id="textWrap"
         >
