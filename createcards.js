@@ -49,7 +49,7 @@ mongoose
         nation: "Norse",
         image:
           "https://github.com/JohnMormantrops/Images/blob/main/Heimdalls%20Horn.jpg?raw=true",
-        attack: "Warn of Ranarok, (Summon Ragnarok from your deck)",
+        attack: "Warn of Ranarok, (Summon Ragnarok)",
         defense: "Keep watch +2 defense for Norse",
         paragraph:
           "Heimdall was the watcher of the god, stationed on rainbow bridge. His trumpet announces the coming of Ragnarok.",
@@ -199,7 +199,7 @@ mongoose
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/bagua.png?raw=true",
         attack:
-          "Add a buff to the attacker once: ignore the defender's defense.",
+          "Add a buff: ignore defense.",
         defense: "Invalidate one attack",
         paragraph: "Legendary defence tool and strategy in Daoism.",
       }),
@@ -448,7 +448,7 @@ mongoose
         nation: "SouthAmerican",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/football.jpg?raw=true",
-        attack: "Mess freekick to opponent's head +5 damage",
+        attack: "Mess freekick to opponent's head +5",
         defense: "Team boost +1 attack to all cards in play",
         paragraph:
           "Football is Latin America's most popular sport. Do not underestimate its power.",
@@ -519,7 +519,7 @@ mongoose
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/la-patosa-colombia-leyenda.jpg?raw=true",
         attack:
-          "Counter-attack. Opponent's attack card is used on himself +x damage",
+          "Counter-attack. Return Opponents attack",
         defense: "Animals unite to defend +2 defense",
         paragraph:
           "Like la Tunda, the one-legged woman roams the forests of Colombia in search of hunters. She is very protective of her territory and wants to protect animals from humans",
@@ -708,7 +708,7 @@ mongoose
         image:
           "https://raw.githubusercontent.com/Emma-martin1/CS353c-Rowan/main/folderCardImages/dionysus.jpg",
         attack: "Lion attack +9 damage",
-        defense: "Grows vine to impede enemy advance +8 defense",
+        defense: "Grows vine to impede enemy advance +8",
         paragraph:
           "Dionysus is an immortal and powerful god who can shapeshift and make wine.",
       }),
