@@ -110,7 +110,7 @@ mongoose
         image:
           "https://github.com/JohnMormantrops/Images/blob/main/Mimir.jpg?raw=true",
         attack: "Seek knowledge (view your opponents hand)",
-        defense: "Knowledge of Mimir (Double Odins defensive ability)",
+        defense: "Knowledge of Mimir Double Odins defense",
         paragraph:
           "Wisest of all the gods he was decpitated for fear of his knowledge. His decapitated head was preserved by Odin",
       }),
@@ -159,7 +159,7 @@ mongoose
         nation: "Norse",
         image:
           "https://github.com/JohnMormantrops/Images/blob/main/Ymir.jpg?raw=true",
-        attack: "Father the gods (bring two Norse gods to join the attack)",
+        attack: "Bring two Norse gods to join the attack",
         defense: "Creation bring two Norse Items to the defense",
         paragraph:
           "Born of ice and fire, the first being to come into existence, the gods sprang from the legs of this hermaphroditic god.",
@@ -276,7 +276,7 @@ mongoose
         nation: "Japanese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_lamp.jpeg?raw=true",
-        attack: "light up the sky and find the hidden enermy with 1 attack",
+        attack: "light up the sky and find the hidden enermy +1",
         defense: "invalidate 1 damage from wind",
         paragraph: "A lamp brings you light and warmth.",
       }),
@@ -469,7 +469,7 @@ mongoose
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/curupira.jpg?raw=true",
         attack: "Surprise arrow attack +6 damage",
-        defense: "Master of deception, escapes serious damage +7 defense",
+        defense: "Master of deception, escapes serious damage +7",
         paragraph:
           "This creature is famous for his backwards feet and he is a master of deception",
       }),
@@ -607,7 +607,7 @@ mongoose
         name: "Pan flute",
         nation: "SouthAmerican",
         image:
-          "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/peruvianpanflute.jpg",
+          "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/peruvianpanflute.jpg?raw=true",
         attack: "Music disorientates opponent +1 attack",
         defense: "Music distracts opponent +3 defense",
         paragraph:
@@ -726,7 +726,7 @@ mongoose
         name: "Poseidon",
         nation: "Greek",
         image:
-          "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/poseidon.jpg",
+          "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/poseidon.jpg?raw=true",
         attack: "Earthquake +5 damage",
         defense: "Immune to water damage +4 defense",
         paragraph:

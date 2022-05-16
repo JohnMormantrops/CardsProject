@@ -51,7 +51,7 @@ const Login = ({ setAuthUser }) => {
         alignItems: "center",
       }}
     >
-      <h2 className="heading">Already a member? Sign in!</h2>
+      <h2 className="heading shadow">Already a member? Sign in!</h2>
       <div>
         <input
           type="text"
