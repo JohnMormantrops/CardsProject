@@ -404,7 +404,7 @@ mongoose
                new Card({
                    name:"Football",
                    nation:"SouthAmerican",
-                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/football.jpg",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/football.jpg?raw=true",
                    attack:"Mess freekick to opponent's head +5 damage",
                    defense:"Team boost +1 attack to all cards in play",
                    paragraph:"Football is Latin America's most popular sport. Do not underestimate its power."
@@ -521,7 +521,7 @@ mongoose
                new Card ({
                    name: "Pan flute",
                    nation: "SouthAmerican",
-                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/peruvianpanflute.jpg",
+                   image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/peruvianpanflute.jpg?raw=true",
                    attack: "Music disorientates opponent +1 attack",
                    defense:"Music distracts opponent +3 defense",
                    paragraph: "Traditional Peruvian musical instrument. It is easy to become mesmerized by its sound."

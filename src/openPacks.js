@@ -29,6 +29,7 @@ export default function({ authUser }) {
     setTurn("false")
     setShowSelected("false")
     setRandomCards([]);
+    setAdded("false");
   }
 
   ///THIS CALL GETS ALL CARDS
