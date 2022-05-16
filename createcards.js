@@ -313,7 +313,87 @@ mongoose
                 attack: "put out fire with 3 damage",
                 defense: "invalidate 1 damage from temple",
                 paragraph: "There's waves that are coming and you can't stop them from coming."
-            })
+            }),
+            new Card({
+                name: "Bald Eagle",
+                nation: "America",
+                image: "https://github.com/JohnMormantrops/Images/blob/main/Eagle.jpg?raw=true",
+                attack: "Swoop attack +5 attack",
+                defense: "Fly away +4 defense",
+                paragraph: "The founding fathers chose the bald eagle as an emblem of the nation symbolizing the strength and freedom of America.",
+            }), new Card({
+                name: "Fast Food",
+                nation: "America",
+                image: "https://github.com/JohnMormantrops/Images/blob/main/Fast%20Food.jpg?raw=true",
+                attack: "Heart Attack +3",
+                defense: "Quick meal energy boost +4",
+                paragraph: "America has an obsession with fast food eating over $50 billion annually. Leading to high rates of obesity and heart attacks.",
+            }),
+            new Card({
+                name: "Football",
+                nation: "America",
+                image: "https://github.com/JohnMormantrops/Images/blob/main/Football.jpg?raw=true",
+                attack: "High tackle +3",
+                defense: "Scrimmage +2",
+                paragraph: "For some people their sports team is their religion and 18 million americans attend games every year.",
+            }),
+            new Card({
+                name: "Thomas Jefferson",
+                nation: "America",
+                image: "https://github.com/JohnMormantrops/Images/blob/main/Jefferson.jpg?raw=true",
+                attack: "Gather slaves. take opponents card",
+                defense: "Declare independence +3",
+                paragraph: "Thomas Jefferson is best known for signing the declaration of independence and also for his love of slaves.",
+            }),
+            new Card({
+                name: "Jesus",
+                nation: "America",
+                image: "https://github.com/JohnMormantrops/Images/blob/main/Jesus.png?raw=true",
+                attack: "Rise again. retrieve a card from the dead.",
+                defense: "Peace and love stop enemy attack",
+                paragraph: "Jesus loves freedom, guns and America.",
+            }),
+            new Card({
+                name: "Law Enforcement",
+                nation: "America",
+                image: "https://github.com/JohnMormantrops/Images/blob/main/Law%20enforcement.png?raw=true",
+                attack: "Shoot opponent + 2",
+                defense: "Send opponents card to jail",
+                paragraph: "Over 1000 people are killed by law-enforcement each year in America and around 10 million are sent to jail",
+            }),
+            new Card({
+                name: "Manitou",
+                nation: "America",
+                image: "https://github.com/JohnMormantrops/Images/blob/main/Manitou.jpg?raw=true",
+                attack: "Call spirits +4",
+                defense: "Shaman ceremony +5",
+                paragraph: "The creator of all things and defeater of evil spirits, shamans called on him to do their bidding.",
+            }),
+            new Card({
+                name: "Statue of liberty",
+                nation: "America",
+                image: "https://github.com/JohnMormantrops/Images/blob/main/Statue%20of%20liberty.jpg?raw=true",
+                attack: "Fight for liberty +3",
+                defense: "Symbol of freedom +2",
+                paragraph: "The statue of liberty is a symbol of American freedon gifted to them from France it represents a Roman Goddess.",
+            }),
+            new Card({
+                name: "The dollar",
+                nation: "America",
+                image: "https://github.com/JohnMormantrops/Images/blob/main/The%20dollar.png?raw=true",
+                attack: "Buy a unit. bring any card to the field",
+                defense: "bribe the enemy stop an attack.",
+                paragraph: "Everything revolves around the dollar in the modern world",
+            }),
+            new Card({
+                name: "The Donald",
+                nation: "America",
+                image: "https://github.com/JohnMormantrops/Images/blob/main/Trump.png?raw=true",
+                attack: "Cause division. enemy powers blocked",
+                defense: "M.A.G.A +1",
+                paragraph: "Elected in 2016 many Americans believe Donald is still the president of U.S",
+            }),
+
         ]
 
         await Card.deleteMany({});
