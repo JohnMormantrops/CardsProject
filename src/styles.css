@@ -495,16 +495,22 @@ img {
   cursor: pointer;
   text-shadow: 0 0 0px #0d0d09;
   transform: scale(2);
-  box-shadow: 0 0 5px 5px #ffd700;
-  animation: rotateShadow 1.5s linear infinite;
+  animation: rotateShadow 30s linear infinite;
 }
  
 @keyframes rotateShadow {
   0% {
-    filter: hue-rotate(0deg);
+    box-shadow: 0 0 5px 8px #ffd700;
+    /* filter: hue-rotate(0deg); */
+  }
+  
+  50% {
+    box-shadow: 0 0 15px 8px #000000;
+    /* filter: hue-rotate(360deg); */
   }
   100% {
-    filter: hue-rotate(360deg);
+    box-shadow: 0 0 5px 8px #ffd700;
+    /* filter: hue-rotate(360deg); */
   }
 }
 

@@ -64,7 +64,7 @@ export default function({ authUser }) {
       setSecondCardArray(jsonAllCards);
     };
     fetchMoreData().catch(console.error);
-  }, []);
+  }, [])
 
   //this functions should add to users collection
 
@@ -130,8 +130,7 @@ export default function({ authUser }) {
     }
   };
   //
-  console.log("CARD ARRAY HERE");
-  console.log(cardArray);
+
   //Handle card click
   const handleCardClick = (e, nation, name) => {
     e.preventDefault();
@@ -144,9 +143,16 @@ export default function({ authUser }) {
 
   return (
     <div className="back">
+      {
+        clicked === false && added === false && (
+          <span id="limit shadow">
+          CLICK THE CARD TO OPEN PACKS AND GET CARDS FOR YOUR COLLECTION!!
+        </span>
+        )
+      }
       {/* style={{marginLeft: '15%'}} */}
       {clicked === true && (
-        <span id="limit">
+        <span id="limit shadow">
           SORRY YOU HAVE TOO MANY CARDS IN YOUR COLLECTION!!
         </span>
       )}

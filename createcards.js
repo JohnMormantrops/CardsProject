@@ -59,7 +59,7 @@ mongoose
         nation: "Norse",
         image:
           "https://github.com/JohnMormantrops/Images/blob/main/Ragnarok.jpg?raw=true",
-        attack: "Doomsday +8 attack (When summoned by Heimdall's horn)",
+        attack: "Doomsday +8 (Summoned by Heimdall's horn)",
         defense: "Await Heimdalls horn",
         paragraph:
           "The Norse gods feared the coming of Ragnarok or doomsday. There will be a great battle between monsters and the gods. Heimdall's horn will sound before the coming of Ragnarock.",
