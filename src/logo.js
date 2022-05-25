@@ -1,85 +1,33 @@
+
 import React from "react";
-// import "./App.css";
+import "./styles.css";
+
 
 function Logo() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="170mm"
-      height="257mm"
+      // width="170mm"
+      // height="257mm
+      height="160mm"
       version="1.1"
       viewBox="0 0 210 297"
       id="logo"
     >
+      <defs>
+    <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');</style>
+    </defs>
       <g stroke="#000">
-        <path
-          fill="red"
-          fillRule="evenodd"
-          strokeDasharray="none"
-          strokeMiterlimit="4"
-          strokeWidth="1.683"
-          d="M146.641 54.593H202.176V144.45100000000002H146.641z"
-          transform="rotate(19.578)"
-        ></path>
-        <path
-          fill="#00f"
-          fillRule="evenodd"
-          strokeDasharray="none"
-          strokeMiterlimit="4"
-          strokeWidth="1.683"
-          d="M-13.221 126.567H42.31399999999999V216.425H-13.221z"
-          transform="rotate(-23.488)"
-        ></path>
-        <path
-          fill="#00f"
-          strokeDasharray="none"
-          strokeMiterlimit="4"
-          strokeWidth="1.869"
-          d="M136.449 133.946a37.083 36.101 41.46 00-13.316-2.138 37.083 36.101 41.46 00-.352.934 37.083 36.101 41.46 003.1 29.796 37.083 36.101 41.46 0022.35-21.817 37.083 36.101 41.46 00-11.782-6.775z"
-          opacity="0.805"
-        ></path>
-        <path
-          fill="red"
-          strokeDasharray="none"
-          strokeMiterlimit="4"
-          strokeWidth="1.898"
-          d="M74.124 132.084a36.361 37.968 65.624 00-11.449 7.876 36.361 37.968 65.624 00.378.928 36.361 37.968 65.624 0022.786 19.463 36.361 37.968 65.624 001.771-31.687 36.361 37.968 65.624 00-13.486 3.42z"
-          opacity="0.893"
-        ></path>
-        <path
-          fill="#ff0"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeOpacity="1"
-          strokeWidth="0.24"
-          d="M59.069 136.256l14.705 8.68-2.145-5.362 18.474 11.204-2.682-5.384 14.508 8.242-19.688-15.666 2.221 6.118-18.058-10.864 1.948 4.923-13.37-4.536z"
-        ></path>
-        <path
-          fill="#d45500"
-          strokeDasharray="none"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeMiterlimit="4"
-          strokeOpacity="1"
-          strokeWidth="0.704"
-          d="M123.133 131.808c.674-14.63 5.677-15.565 5.677-15.565s-1.474 15.086.33 15.972c1.804.886-6.007-.407-6.007-.407z"
-        ></path>
-        <path
-          fill="#d45500"
-          strokeDasharray="none"
-          strokeLinecap="butt"
-          strokeLinejoin="miter"
-          strokeMiterlimit="4"
-          strokeOpacity="1"
-          strokeWidth="0.709"
-          d="M148.232 140.721c8.578-11.858 5.201-15.768 5.201-15.768s-8.229 12.723-10.208 12.268c-1.98-.454 5.007 3.5 5.007 3.5z"
-        ></path>
+
+    
+          
+                
         <g
           ariaLabel="WORLD OF WORSHIP"
           style={{ lineHeight: "1.25" }}
           fill="#ffd700"
           strokeWidth="0.973"
-          fontFamily="Britannic Bold"
+          fontFamily="Skranji" cursive
           fontSize="24.168"
           id="textWrap"
         >

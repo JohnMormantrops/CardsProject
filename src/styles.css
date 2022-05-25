@@ -13,10 +13,106 @@
   font-family: "Skranji", cursive;
 }
 .home {
-  margin-top: 10%;
-  display: flex;
-  justify-content: center;
+  margin-top: 70px;
 }
+.homecard{
+  margin-top: -400px;
+  margin-left: 150px;
+  position: absolute;
+}
+.cardhome {
+  color: black;
+  background-color: #d14f00;
+  border-width: 3%;
+  border-style: solid;
+  border-color: green;
+  background-image: url("https://github.com/JohnMormantrops/Images/blob/main/greenlightning.jpg?raw=true");
+  /*  card ratio  3: 2  */
+  height: 200px;
+  width: 130px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  /* box-shadow: 5px 10px #2c2c2b; */
+  text-shadow: 0 0 0px #0d0d09;
+}
+.right{
+  transform: rotate(10deg);
+  margin-left: 40px;
+}
+.left{
+  transform: rotate(-10deg);
+  margin-left: -40px;
+}
+#logo {
+  /* margin:auto; */
+
+  /* display: inline-flex;
+  justify-content: center; */
+  font-family: "Skranji", cursive;
+}
+.logo{
+  font-family: "Skranji", cursive;
+}
+#textWrap{
+  font-family: "Skranji", cursive;
+}
+
+.getStarted {
+  text-align: center;
+  margin-top: 50px; 
+  padding: 0px;
+  width: 150px;
+  height: 50px;
+  font: verdana;
+  font-size: large;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0); */
+  color: #ffd700;
+  border-radius: 15px;
+  border: none;
+  font-family: "Skranji", cursive;
+  background-color: transparent;
+  text-shadow: 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000;
+}
+.getStarted:hover{
+    background-color: black;
+    cursor: pointer;
+    /* box-shadow: -0.1em 0.1em 0.1em 0.3em  #ffd700; */
+    box-shadow: 0em 0em 0.1em 0.1em  #ffd700;
+    background-color: #000000c7;
+  }
+
+.welcome{
+  
+  margin: 0px;
+  margin-top: 70px;
+  margin-left: 150px;
+  color:#ffd700;
+  text-shadow: 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000;
+
+}
+
+#textWrap {
+  animation: textSpin 15s linear infinite;
+  /* transform-origin: bottom center; */
+  /*   transform-box: fill-box; */
+}
+
+@keyframes textSpin {
+  0% {
+    transform: rotate(0deg);
+    transform-origin: center;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform-origin: center;
+  }
+}
+
+
+
 .title {
   /* margin:auto; */
 }
@@ -76,8 +172,21 @@
   list-style: none;
   color: #ffd700;
   padding: 15px;
-  text-shadow: 0 0 5px #0d0d09;
+  text-shadow: 0 0 5px #0d0d09, 0 0 5px #0d0d09, 0 0 5px #0d0d09;
+
   z-index: 10;
+}
+
+.navButton:hover {
+
+  border-radius: 15px;
+  /* background-color: #0d0d09;
+  box-shadow: -0.1em 0.1em 0.1em 0.3em  #ffd700; */
+  /* box-shadow: -0.1em 0.1em 0.1em 0.3em #000000; */
+  box-shadow: 0em 0em 0.1em 0.1em  #ffd700;
+  /* background-color: #000000; */
+  
+  background-color: #00000048;
 }
 .heading {
   align-content: center;
@@ -88,16 +197,12 @@
   list-style: none;
   color: gold;
   padding: 15px;
-  text-shadow: 2px 1px 5px #0d0d09;
+  text-shadow: 0px 1px 5px #0d0d09;
   /* box-shadow: .75em .75em .75em #000000; */
 }
-.navButton:hover {
-  /* background-color: gray; */
 
-  /* border-width: 15%;
-  border-style: solid;
-  border-color: gold; */
-  box-shadow: -0.1em 0.1em 0.1em 0.3em #000000;
+.shadow{
+  text-shadow: 0px 0px 8px #0d0d09, 0px 0px 8px #0d0d09, 0px 0px 8px #0d0d09;
 }
 
 /* ////
@@ -112,7 +217,7 @@
   /* margin: 15px; */
   color: gold;
   padding: 2%;
-  text-shadow: 1px 1px 2px #000000;
+  text-shadow: 0px 0px 5px #000000,0px 0px 5px #000000;
 }
 
 .row {
@@ -187,26 +292,46 @@
   right: 2px;
 }
 /* ////
-////CARD COLORS
-//// */
-#norse {
-  filter: hue-rotate(350deg);
+////CARD COLORS/// */
+#Norse {
+  filter: hue-rotate(0deg) brightness(0.9);
 }
-#china {
+#Norse .pic {
+  filter: hue-rotate(0deg) brightness(1.1);
+}
+#Chinese {
   filter: hue-rotate(250deg);
 }
-#usa {
-  filter: hue-rotate(100deg);
+#Chinese .pic {
+  filter: hue-rotate(-250deg);
 }
-#southamerican {
+
+#America {
+  filter: hue-rotate(270deg);
+}
+#America .pic {
+  filter: hue-rotate(-270deg);
+}
+#SouthAmerican {
   filter: hue-rotate(310deg);
 }
-#greek {
+#Greek {
   filter: hue-rotate(270deg);
+}
+#Greek .pic{
+  filter: hue-rotate(-270deg);
 }
 #Egyptian {
   filter: hue-rotate(20deg);
 }
+#Japanese {
+  filter: hue-rotate(90deg);
+}
+
+#Japanese .pic {
+  filter: hue-rotate(-90deg);
+}
+
 
 .pic {
   height: 55%;
@@ -344,6 +469,83 @@ img {
 .manageSection {
   margin-top: -40px;
 }
+.scaled{
+  margin-top: 100px;
+  transform: scale(2);
+}
+
+
+.cardOne {
+  color: black;
+  background-color: #d14f00;
+  border-width: 3%;
+  border-style: solid;
+  border-color: green;
+  background-image: url("https://github.com/JohnMormantrops/Images/blob/main/greenlightning.jpg?raw=true");
+  /*  card ratio  3: 2  */
+  height: 200px;
+  width: 130px;
+  border-radius: 10px;
+  flex-shrink: 0;
+  position: relative;
+  align-items: center;
+  margin: 15px;
+  margin-top: 50px;
+  /* box-shadow: 5px 10px #2c2c2b; */
+  cursor: pointer;
+  text-shadow: 0 0 0px #0d0d09;
+  transform: scale(2);
+  animation: rotateShadow 30s linear infinite;
+}
+ 
+@keyframes rotateShadow {
+  0% {
+    box-shadow: 0 0 5px 8px #ffd700;
+    /* filter: hue-rotate(0deg); */
+  }
+  
+  50% {
+    box-shadow: 0 0 15px 8px #000000;
+    /* filter: hue-rotate(360deg); */
+  }
+  100% {
+    box-shadow: 0 0 5px 8px #ffd700;
+    /* filter: hue-rotate(360deg); */
+  }
+}
+
+
+.onePara{
+  color:#ffd700;
+  cursor: pointer;
+  max-width: 250px;
+}
+
+.backOne {
+  text-align: center;
+  padding: 30px;
+  width: 150px;
+  height: 100px;
+  margin-left: 50%;
+  font: verdana;
+  font-size: large;
+  text-shadow: 0 0 3px #000000, 0 0 3px #000000;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0); */
+  color: #ffd700;
+  border-radius: 20px;
+}
+
+.backOne:hover {
+  cursor: pointer;
+  box-shadow: 0em 0em 0.1em 0.1em  #ffd700;
+  background-color: #000000;
+  background-color: #000000c7;
+  /* box-shadow:  #ffd700;  */
+  /* box-shadow: 0px 5px 5px 2px #0d0d09;
+  background-color: rgba(128, 128, 128, 0.386); */
+}
+
 /* 
 /////
 /////END MANAGE DECK STYLES
@@ -387,10 +589,14 @@ img {
   transform: rotateY(180deg);
 }
 
+#turnback {
+  transition: transform 1s;
+  transform: rotateY(-180deg);
+}
+
 .addToCollection {
   text-align: center;
   padding: 30px;
-  background-color: rgba(128, 128, 128, 0.386);
   width: 150px;
   height: 100px;
   transition: transform 1s;
@@ -398,15 +604,26 @@ img {
   margin-left: 50%;
   font: verdana;
   font-size: large;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgb(0, 0, 0);
+  text-shadow: 0 0 3px #000000, 0 0 3px #000000;
+  /* -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0); */
   color: #ffd700;
+  border-radius: 20px;
 }
 .addToCollection:hover {
   cursor: pointer;
-  box-shadow: 0px 5px 5px 2px #0d0d09;
+  box-shadow: 0em 0em 0.1em 0.1em  #ffd700;
+  background-color: #000000;
+  background-color: #000000c7;
+  /* box-shadow:  #ffd700;  */
+  /* box-shadow: 0px 5px 5px 2px #0d0d09;
+  background-color: rgba(128, 128, 128, 0.386); */
 }
-
+span{
+  color:#ffd700;
+  text-shadow: 0 0 5px #0d0d09, 0 0 5px #0d0d09;
+  
+}
 /* ////
 ////END OPEN PACKS STYLES */
 
@@ -447,26 +664,5 @@ img {
   margin-top: 100px;
 }
 
-#logo {
-  margin-top: -40%;
-  margin-left: -10%;
-  display: inline-flex;
-  justify-content: center;
-}
 
-#textWrap {
-  animation: textSpin 15s linear infinite;
-  /* transform-origin: bottom center; */
-  /*   transform-box: fill-box; */
-}
 
-@keyframes textSpin {
-  0% {
-    transform: rotate(0deg);
-    transform-origin: center;
-  }
-  100% {
-    transform: rotate(360deg);
-    transform-origin: center;
-  }
-}

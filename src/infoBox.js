@@ -14,7 +14,7 @@ export default function ({card}) {
     
     <div className="infoBox">
       <div className="viewInfo">
-        <h1>{card.name} {card.nation} God</h1>
+        <h1>{card.name} - {card.nation} </h1>
         <p>
          {card.paragraph}
         </p>

@@ -47,7 +47,7 @@ export default function({ authUser, setAuthUser }) {
             VIEW DECK
           </Link>
           <Link to="getCards" className="navButton">
-            GET CARDS
+              CARD LIST
           </Link>
           <div className="navButton" onClick={handleClick}>
             SIGN OUT
