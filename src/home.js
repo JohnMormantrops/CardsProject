@@ -33,6 +33,7 @@ function Home() {
    
     <div >
      {Logo()}
+     <Link to="../openPacks">
         <div className="cardContainer homecard" id="cardContainer">
                   <div className="cardhome right"  id="norse">
                     <div className="pic">
@@ -66,11 +67,13 @@ function Home() {
                       <p className="text">Sneak away +3 defense</p>
                     </div>
                     </div>
-             
-              </div> 
+              </div>
+              {/*  end of card container */}
+              </Link>
             </div>
+            
           </div>
-       
+         
        
         </div>
 

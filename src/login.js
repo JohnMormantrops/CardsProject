@@ -2,6 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 
+
+//handle login sets the quthenticated user for the app and navigates to the home page
 const handleLogin = async (setAuthUser, email, password, navigate) => {
   const data = {
     email,
@@ -22,8 +24,6 @@ const handleLogin = async (setAuthUser, email, password, navigate) => {
       alert(err);
     } else {
       const { jwtToken } = await res.json();
-      // console.log("HERE IS THE JWT")
-      // console.log(jwtToken)
       localStorage.setItem("token", jwtToken);
       setAuthUser(jwtToken);
       navigate("/home");

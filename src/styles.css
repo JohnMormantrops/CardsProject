@@ -197,7 +197,7 @@
   list-style: none;
   color: gold;
   padding: 15px;
-  text-shadow: 0px 1px 5px #0d0d09;
+  text-shadow: 0px 1px 5px #0d0d09,  0px 1px 5px #0d0d09;
   /* box-shadow: .75em .75em .75em #000000; */
 }
 
