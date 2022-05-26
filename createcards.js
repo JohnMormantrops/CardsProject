@@ -730,7 +730,7 @@ mongoose
         name: "Dionysus",
         nation: "Greek",
         image:
-          "https://raw.githubusercontent.com/Emma-martin1/CS353c-Rowan/main/folderCardImages/dionysus.jpg",
+          "https://raw.githubusercontent.com/Emma-martin1/CS353c-Rowan/main/folderCardImages/dionysus.jpg?raw=true",
         attack: "Lion attack +9 damage",
         defense: "Grows vine to impede enemy advance +8",
         paragraph:
@@ -756,6 +756,90 @@ mongoose
         paragraph:
           "God of the sea, Poseidon is powerful but can also be moody and unpredictable. He can cause earthquakes and control the waves.",
       }),
+        new Card({
+                name:"Demeter",
+                nation: "Greek",
+                image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/demeter.jpg?raw=true",
+                attack: "Poison rival's crops +3 damage",
+                defense: "Harvest boost +2 defense for all Greeks",
+                paragraph: "Known as the godess of agriculture, bread and grain, Demeter protects farming and vegetation. She is associated with fertility of the Earth."
+            }),
+
+ new Card({
+                name:"Hades",
+                nation: "Greek",
+                image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/hades.jpg?raw=true",
+                attack: "Unexpected attack due to invisibility +5 damage",
+                defense: "Immortality boost +4 defense for all Greeks",
+                paragraph: "Hades, more commonly known today by his Roman name Pluto, is god of the underworld. He is a brother of Zeus and Poseidon and the 3 of them are the most powerful Greek gods."
+            }),
+
+
+new Card({
+                name:"Persephone",
+                nation: "Greek",
+                image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/persephone.jpg?raw=true",
+                attack: "Summon the dead +2 damage",
+                defense: "Disease resistant +2 defense",
+                paragraph: "Persephone is the daughter of Zeus and Demeter, and wife of Hades."
+            }),
+new Card({
+                name:"Hermes",
+                nation: "Greek",
+                image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/hermes.jpg?raw=true",
+                attack: "Steal an enemy's card",
+                defense: "Distract enemy with music +2 defense",
+                paragraph: "Credited with inventing the lyre, Hermes is the god of luck, fortune and thieves. He is considered to be the cleverest of the Olympian gods."
+            }),
+new Card({
+                name:"Acropolis",
+                nation: "Greek",
+                image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/acropolis.jpg?raw=true",
+                attack: "Play another card",
+                defense: "Safe refuge for Greeks +4 defense.",
+                paragraph: "Acropolis is a combination of the Greek words for highest point and city and they are found all over Greece.The Acropolis of Athens is one of ancient Greece's most famous ruins. "
+            }),
+
+new Card({
+                name:"Achilles",
+                nation: "Greek",
+                image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/achilles.jpg?raw=true",
+                attack: "Spear attack +7 damage",
+                defense: "Protect his heal +7 defense",
+                paragraph: "Achilles is a brave and handsome warrior most known for his heroic battle against the Trojans. His story appears in Homer's Iliad."
+            }),
+new Card({
+                name:"Medusa",
+                nation: "Greek",
+                image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/medusa.jpg?raw=true",
+                attack: "Snake attack +3 damage",
+                defense: "Scare off enemy +6 defense",
+                paragraph: "Medusa is a monster who looks evil but is actually used to repel evil. Athena placed Medusa's severed head on her shield to protect her."
+            }),
+new Card({
+                name:"Helios' chariot",
+                nation: "Greek",
+                image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/helios.jpg?raw=true",
+                attack: "Fire attack +6 damage",
+                defense: "Escape danger +3 defense to all Greeks",
+                paragraph: "This chariot belonged to Helio, the god of the sun. It crossed the sky from east to west each day."
+            }),
+new Card({
+                name:"Pegasus",
+                nation: "Greek",
+                image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/pegasus.jpg?raw=true",
+                attack: "Hoof attack +8 damage",
+                defense: "Fly away from attack +4 defense",
+                paragraph: "Pegasus is the offspring of Medusa and was born as Medusa was being decapitated. He is very strong."
+            }),
+new Card({
+                name:"Oedipus",
+                nation: "Greek",
+                image:"https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/oedipus.jpg?raw=true",
+                attack: "A strong ruler +1 attack to all greeks",
+                defense: "Will not accept doomed destiny +4 defense",
+                paragraph: "Oedipus is king of Thebes and he is the subject of a famous play that deals with destiny and free will."
+            }),
       new Card({
         name: "Sarcophagus",
         nation: "Egyptian",
