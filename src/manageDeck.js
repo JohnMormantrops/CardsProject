@@ -14,7 +14,9 @@ export default function({ authUser }) {
   //the info box will dispay the info of the selected card
   const [selectedCard, setSelectedCard] = useState([]);
   const [cardArray, setCardArray] = useState([]);
+  const [confirmed, setConfirmed] = useState(false)
 
+  //load the users card from the db
   useEffect(() => {
     const headers = {
       // "Access-Control-Allow-Origin": '*',
@@ -31,9 +33,8 @@ export default function({ authUser }) {
     fetchData().catch(console.error);
   }, []);
 
-  console.log("MANAGER DECK");
-  console.log(cardArray.owned);
 
+  //load the users current deck into the side panel
   useEffect(() => {
     if (cardArray.decks) {
       cardArray.decks.forEach((card) =>
@@ -41,13 +42,14 @@ export default function({ authUser }) {
       );
     }
   }, [cardArray.decks]);
-  console.log("YUP");
 
   ///WHEN CARD IS CLICKED ADD IT TO THE DECK ARRAY DISPLAY THE
   ///INFO IN THE SIDE PANEL
-
   const handleCardClick = (e, card) => {
     e.preventDefault();
+
+    setConfirmed(false)
+
     let limit = 0;
     for (let i = 0; i < cardArray.owned.length; i++) {
       if (card._id === cardArray.owned[i]._id) {
@@ -70,9 +72,9 @@ export default function({ authUser }) {
     showInfoCard();
   };
 
-  console.log("HERES THE DECK ARRAY");
-  console.log(deckArray);
+ 
 
+  //remove card from the deck in the side panel
   const removeFromDeck = (card) => {
     console.log("REMOVE THIS");
     console.log(card);
@@ -82,26 +84,29 @@ export default function({ authUser }) {
     setDeckArray(tempArray);
   };
 
+  ///select the clicked card and show the info box for it
   const handlePanelClick = (card) => {
     var select = cardArray.owned.find((cards) => cards.name === card.name);
+    setConfirmed(false)
     setSelectedCard(select);
     setShowInfo("true");
   };
 
+  //set show info to true
   const showInfoCard = () => {
     setShowInfo("true");
   };
 
+  //remove all cards from the deck selection sidepanel
   const clearArray = () => {
     setDeckArray([]);
     setShowInfo("false");
   };
 
   //add the cards from the deck array to your data base
-  const confirmDeck = async (e) => {
-    e.preventDefault();
-    console.log("ADDING?");
-    console.log(deckArray);
+  const confirmDeck = async () => {
+    
+    setConfirmed(true);
     const cardInfo = JSON.stringify(deckArray);
     console.log(cardInfo);
 
@@ -128,7 +133,7 @@ export default function({ authUser }) {
   return (
     <div className="manageDeck back">
       {showInfo === "true" ? <InfoBox card={selectedCard} /> : <DeckBox />}
-
+      {confirmed && <div className="added heading shadow">ADDED DECK</div>}
       <div className="row">
         <div style={{ minWidth: 250 }}></div>
         <div className="sidePanel">

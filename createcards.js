@@ -208,8 +208,8 @@ mongoose
         nation: "Chinese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/mars.png?raw=true",
-        attack: "At least 2 damages.",
-        defense: "Invalidate at least 2 damages",
+        attack: "dragon ride +2.",
+        defense: "block +2",
         paragraph: "The symbol of mars in ancient China.",
       }),
       new Card({
@@ -217,17 +217,17 @@ mongoose
         nation: "Chinese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/fireBoy.png?raw=true",
-        attack: "Spit out fire(fire property damage)",
-        defense: "Invalidate fire property damage",
-        paragraph: "Born from gourd with 6 brothers. Can control fire.",
+        attack: "Spit fire +4",
+        defense: "fire shield protect a chinese card from attack +6",
+        paragraph: "Born from a gourd with 6 brothers. Can control fire.",
       }),
       new Card({
         name: "Somersault Cloud",
         nation: "Chinese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/somersaultCloud.png?raw=true",
-        attack: "Have a chance of getting one more turn in the same round",
-        defense: "Have a chance of skipping the turn",
+        attack: "50/50 chance of getting one more turn",
+        defense: "skip enemy turn",
         paragraph: "Special cloud, only kind people can take.",
       }),
       new Card({
@@ -246,8 +246,8 @@ mongoose
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/kitchenKnife.png?raw=true",
         attack:
-          "Incur damages that are proporational to the attack of the character.",
-        defense: "Never defense.",
+          "damage proporational to the attack of an enemy.",
+        defense: "Scare away +2 ",
         paragraph:
           "The most powerful weapon in the world. Even if you are a master in Wusu, you would submit yourself to the legendary weapon.",
       }),
@@ -256,23 +256,23 @@ mongoose
         nation: "Chinese",
         image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/taoistPriest.png?raw=true",
         attack: "Ignore the defense on one attack.",
-        defense: "Avoid one attack(ignore the attack).",
+        defense: "ignore One attack.",
         paragraph: "The priests in Taoism. In Chinese legendary stories, they can wind, fire, flash and raining."
       }),
       new Card({
         name: "The Great Wall",
         nation: "Chinese",
         image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/theGreatWall.png?raw=true",
-        attack: "Never attack.",
-        defense: "Ignore all physical attack in the next round.",
+        attack: "Archer volley +5",
+        defense: "Ignore all physical attack in the next round and +5.",
         paragraph: "The defense of the ancient China. Never works."
       }),
       new Card({
         name: "The Flash Controller",
         nation: "Chinese",
         image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/flashController.png?raw=true",
-        attack: "Summon flash(flash property damage, stunning the target for one round).",
-        defense: "Avoid one attack by flash speed.",
+        attack: "Summon flash stun enemy and +5",
+        defense: "Avoid one attack using flash speed.",
         paragraph: "Created by a great thunderstorm, born to control flash."
       }),
       //9 Japanese cards
@@ -281,27 +281,27 @@ mongoose
         nation: "Japanese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_bone.png?raw=true",
-        attack: "attack plants with 3 damages",
-        defense: "hide oneself and invalidate 2 damage",
+        attack: "Attack guided by the lantern +8",
+        defense: "hide oneself +2",
         paragraph:
-          "Bone Woman is a pretty ghost that kills bad guys in Japanese legends.",
+          "Bone Woman is a pretty ghost that arose from the dead and kills bad guys in Japanese legends. She carried a traditional lantern to guide her.",
       }),
       new Card({
         name: "Fan",
         nation: "Japanese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_fan.jpg?raw=true",
-        attack: "blow strong wind to put out fire with 2 damage ",
-        defense: "defend from shot and invalidate 1 damage",
+        attack: "blow strong wind +4",
+        defense: "defend from attack +1",
         paragraph: "A traditional asian folded fan belongs to a swordsman.",
       }),
       new Card({
-        name: "Lamp",
+        name: "Lantern",
         nation: "Japanese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_lamp.jpeg?raw=true",
-        attack: "light up the sky and find the hidden enermy +1",
-        defense: "invalidate 1 damage from wind",
+        attack: "light up the sky and find the hidden enemy +4",
+        defense: "See attack +3",
         paragraph: "A lamp brings you light and warmth.",
       }),
       new Card({
@@ -309,17 +309,17 @@ mongoose
         nation: "Japanese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_maple.jpg?raw=true",
-        attack: "poison the enermy with 1 damage",
-        defense: "invalidate 1 damage from bone",
-        paragraph: "Falling maples in autumn.",
+        attack: "poison the enemy with 1 damage per turn",
+        defense: "Hide beneath the maple tree +2",
+        paragraph: "Japan is cover by falling maples in autumn.",
       }),
       new Card({
         name: "Mirror",
         nation: "Japanese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_mirror.jpg?raw=true",
-        attack: "reflect the enermy with its damage",
-        defense: "invalidate 2 damage from anyone",
+        attack: "reflect the enemy with its damage",
+        defense: "Copy an enemy defense",
         paragraph: "Geisha put on makeup in front of the mirror.",
       }),
       new Card({
@@ -327,35 +327,35 @@ mongoose
         nation: "Japanese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_sakura.jpeg?raw=true",
-        attack: "poison the enermy with 2 damage",
-        defense: "invalidate 1 damage from bone",
-        paragraph: "Spring arrived when the sakura were blooming",
+        attack: "poison the enemy with 2 damage per turn",
+        defense: "Transcience of life revive one card",
+        paragraph: "Spring arrived when the sakura were blooming they represent renewal and optimism, blossoms also symbolize the transience of life, a major theme in Buddhism.",
       }),
       new Card({
         name: "Shrine",
         nation: "Japanese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_temple.png?raw=true",
-        attack: "make everyting static with 1 damage",
-        defense: "invalidate 1 damage from poison or wind",
-        paragraph: "You can find inner peace in a shrine",
+        attack: "make offering swap card from hand with any from deck",
+        defense: "Inner peace +3",
+        paragraph: "Make an offering and you can find inner peace in a shrine",
       }),
       new Card({
         name: "Umbrella",
         nation: "Japanese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_umbrella.jpg?raw=true",
-        attack: "block the view of enermy with 1 damage",
-        defense: "invalidate 1 damage from water",
-        paragraph: "An umbrella shelters you from the rain.",
+        attack: "block the view of enememy they miss one attack",
+        defense: "Ward of spirits +5",
+        paragraph: "In traditional Japanese weddings, the matron of honor would cover the bride with a red oil-paper umbrella upon arrival to ward off evil spirits",
       }),
       new Card({
         name: "Wave",
         nation: "Japanese",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/card_wave.jpg?raw=true",
-        attack: "put out fire with 3 damage",
-        defense: "invalidate 1 damage from temple",
+        attack: "Tsunmai +7",
+        defense: "Water wall +5",
         paragraph:
           "There's waves that are coming and you can't stop them from coming.",
       }),
@@ -374,7 +374,7 @@ mongoose
         nation: "America",
         image:
           "https://github.com/JohnMormantrops/Images/blob/main/Fast%20Food.jpg?raw=true",
-        attack: "Heart Attack +3",
+        attack: "Heart Attack stop enemys turn",
         defense: "Quick meal energy boost +4",
         paragraph:
           "America has an obsession with fast food eating over $50 billion annually. Leading to high rates of obesity and heart attacks.",
@@ -404,7 +404,7 @@ mongoose
         nation: "America",
         image:
           "https://github.com/JohnMormantrops/Images/blob/main/Jesus.png?raw=true",
-        attack: "Rise again. retrieve a card from the dead.",
+        attack: "Rise again retrieve American card from dead.",
         defense: "Peace and love stop enemy attack",
         paragraph: "Jesus loves freedom, guns and America.",
       }),
@@ -433,8 +433,8 @@ mongoose
         nation: "America",
         image:
           "https://github.com/JohnMormantrops/Images/blob/main/Statue%20of%20liberty.jpg?raw=true",
-        attack: "Fight for liberty +3",
-        defense: "Symbol of freedom +2",
+        attack: "Fight for liberty +1 all Americans",
+        defense: "Symbol of freedom +2 all Americans",
         paragraph:
           "The statue of liberty is a symbol of American freedon gifted to them from France it represents a Roman Goddess.",
       }),
@@ -453,7 +453,7 @@ mongoose
         image:
           "https://github.com/JohnMormantrops/Images/blob/main/Trump.png?raw=true",
         attack: "Cause division. enemy powers blocked",
-        defense: "M.A.G.A +1",
+        defense: "M.A.G.A +1 all gunholders",
         paragraph:
           "Elected in 2016 many Americans believe Donald is still the president of U.S",
       }),
@@ -472,8 +472,8 @@ mongoose
         nation: "SouthAmerican",
         image:
           "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/football.jpg?raw=true",
-        attack: "Mess freekick to opponent's head +5",
-        defense: "Team boost +1 attack to all cards in play",
+        attack: "Messi freekick to opponent's head +5",
+        defense: "Team boost +1 attack to all SA cards in play",
         paragraph:
           "Football is Latin America's most popular sport. Do not underestimate its power.",
       }),
@@ -773,7 +773,7 @@ mongoose
         image:
           "https://github.com/lcroker/Card-Images/blob/main/Scarab%20Beetle.jpg?raw=true",
         attack: "Hard Shell +5 damage",
-        defense: "Ressurection +6 defense",
+        defense: "Ressurection return 2 from dead",
         paragraph:
           "The Scarab Beetle attacks with a flying assault using its hard shell, while boosting owners health with Ressurection.",
       }),
@@ -794,10 +794,10 @@ mongoose
         nation: "Egyptian",
         image:
           "https://github.com/lcroker/Card-Images/blob/main/The%20Mummy.jpg?raw=true",
-        attack: "Life Force Drain +8 damage",
+        attack: "Life Force Drain +12 damage",
         defense: "Immunity +10 defense",
         paragraph:
-          "Immunity to all forms of attack and draining the life force of mortals, The Mummy has some of the strongest powers",
+          "Immunity to all forms of attack and draining the life force of mortals, The Mummy has some of the strongest powers, combine the pharoah and the sarcophagus to summon",
       }),
 
       new Card({
@@ -805,7 +805,7 @@ mongoose
         nation: "Egyptian",
         image:
           "https://github.com/lcroker/Card-Images/blob/main/Uraeus%20the%20Cobra.jpg?raw=true",
-        attack: "Poison Strike +4 damage",
+        attack: "Poison Strike +2 damage per turn",
         defense: "Wall of Flames +6 defense",
         paragraph:
           "Ureas The Cobra is a serpant goddess who wields fierce powers as she can use not only poison but flames against the enemies of the pharaoh.",
@@ -827,7 +827,7 @@ mongoose
         nation: "Egyptian",
         image:
           "https://github.com/lcroker/Card-Images/blob/main/Anubis.jpg?raw=true",
-        attack: "Rising Dead +6 damage",
+        attack: "Rising Dead return two cards from the dead",
         defense: "Speed Dodge +3 defense",
         paragraph:
           "Anubis, son of Ra and Hesat, God of the dead, he posesses super strength and speed.",
@@ -849,7 +849,7 @@ mongoose
         nation: "Egyptian",
         image:
           "https://github.com/lcroker/Card-Images/blob/main/Cleopatra.jpg?raw=true",
-        attack: "Enchantment +5 damage",
+        attack: "Enchantment turn enemy card against them",
         defense: "Cunning +6 defense",
         paragraph:
           "Cleopatra, Queen of Egypt, charming, inteligent and ruthless.",

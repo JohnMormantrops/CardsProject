@@ -195,7 +195,7 @@ export default function({ authUser }) {
                 </div>
               </div>
             ))}
-            <div className="row">
+            <div className="row hide">
             <div className="addToCollection" onClick={addToCollection}>
               ADD TO COLLECTION
             </div>
