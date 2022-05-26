@@ -3,7 +3,6 @@ import { apiKey } from "./apiKey.js";
 import InfoBox from "./infoBox";
 import React from "react";
 
-import Logo from "./babyLogo";
 
 export default function({ authUser }) {
 

@@ -7,14 +7,16 @@ export default function({ authUser, setAuthUser }) {
 
   console.log("auth user");
   console.log(authUser);
-
+ 
+  //set auth user to blank and nav to home
   const handleClick = () => {
     localStorage.removeItem("token");
-    setAuthUser("false");
+    setAuthUser("");
     navigate("/");
   };
 
   return (
+    //show login pages 
     <div>
       {authUser === "" ? (
         <ol className="nav">

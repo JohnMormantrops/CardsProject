@@ -39,7 +39,7 @@ export default function App() {
         <Nav authUser={authUser} setAuthUser={setAuthUser}/>
        
         <div>
-          {/* Route links are in navbar file */}
+          {/* Route links are in navbar file will display whichver components clicked on */}
           <Routes>
             <Route exact path="/" element={<Login authUser={authUser} setAuthUser={setAuthUser}/>} /> 
             <Route exact path="register" element={<Register authUser={authUser} setAuthUser={setAuthUser}/>} />
