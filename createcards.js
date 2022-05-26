@@ -6,7 +6,7 @@ const dbURI =
 
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then(async function(result) {
+  .then(async function (result) {
     console.log("db connected");
 
     //mogose requires a schema to upload the following is my scheam for a hero in the game
@@ -250,6 +250,30 @@ mongoose
         defense: "Never defense.",
         paragraph:
           "The most powerful weapon in the world. Even if you are a master in Wusu, you would submit yourself to the legendary weapon.",
+      }),
+      new Card({
+        name: "Taoist Priest",
+        nation: "Chinese",
+        image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/taoistPriest.png?raw=true",
+        attack: "Ignore the defense on one attack.",
+        defense: "Avoid one attack(ignore the attack).",
+        paragraph: "The priests in Taoism. In Chinese legendary stories, they can wind, fire, flash and raining."
+      }),
+      new Card({
+        name: "The Great Wall",
+        nation: "Chinese",
+        image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/theGreatWall.png?raw=true",
+        attack: "Never attack.",
+        defense: "Ignore all physical attack in the next round.",
+        paragraph: "The defense of the ancient China. Never works."
+      }),
+      new Card({
+        name: "The Flash Controller",
+        nation: "Chinese",
+        image: "https://github.com/Emma-martin1/CS353c-Rowan/blob/main/folderCardImages/flashController.png?raw=true",
+        attack: "Summon flash(flash property damage, stunning the target for one round).",
+        defense: "Avoid one attack by flash speed.",
+        paragraph: "Created by a great thunderstorm, born to control flash."
       }),
       //9 Japanese cards
       new Card({
@@ -808,8 +832,8 @@ mongoose
         paragraph:
           "Anubis, son of Ra and Hesat, God of the dead, he posesses super strength and speed.",
       }),
-      
-    new Card({
+
+      new Card({
         name: "Bastet",
         nation: "Egyptian",
         image:
@@ -848,7 +872,7 @@ mongoose
     console.log(`${cards.length} cards updated!`);
     await mongoose.connection.close();
   })
-  .catch(function(err) {
+  .catch(function (err) {
     console.log("db connection error!");
     console.log(err);
   });
