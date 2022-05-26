@@ -63,7 +63,7 @@ export default function({ authUser }) {
       setSecondCardArray(jsonAllCards);
     };
     fetchMoreData().catch(console.error);
-  }, [])
+  }, [secondCardArray])
 
   //this functions should add to users collection
 

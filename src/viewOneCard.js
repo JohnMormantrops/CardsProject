@@ -37,7 +37,7 @@ return (
     </div>
      ):(
     <div className="onePara shadow" onClick={() => setShow("card")}>
-    <h1>{card.name}-{card.nation} </h1>
+    <h1>{card.name}-{card.nation}</h1>
         <p>
          {card.paragraph}
         </p>

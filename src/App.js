@@ -30,7 +30,7 @@ export default function App() {
   const[authUser, setAuthUser] = useState("")
   
   // console.log("App user?")
-  // console.log(authUser)
+  console.log(authUser)
 
   return (
     <Router>
