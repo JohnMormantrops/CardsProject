@@ -840,6 +840,114 @@ mongoose
         defense: "Health Restore +5 defense",
         paragraph: "Protects and Restores health by taking opponents",
       }),
+
+      new Card({
+        name: "Ammit",
+        nation: "Egyptian",
+        image:
+          "https://github.com/lcroker/Card-Images/blob/main/Ammit.jpg?raw=true",
+        attack: "Time of Judgment +8 damage",
+        defense: "Balance Attack +10",
+        paragraph: "Ammit The Devourer of The Dead.",
+      }),
+
+      new Card({
+        name: "Ankh",
+        nation: "Egyptian",
+        image:
+          "https://github.com/lcroker/Card-Images/blob/main/Ankh.jpg?raw=true",
+        attack: "Lifeforce Drain +2 damage",
+        defense: "Restoration +10 defense",
+        paragraph:
+          "Ankh symbolises the key to life, boosts Egyptian cards health by +3",
+      }),
+
+      new Card({
+        name: "Ba",
+        nation: "Egyptian",
+        image:
+          "https://github.com/lcroker/Card-Images/blob/main/Ba.jpg?raw=true",
+        attack: "Fight +5 damage",
+        defense: "Flight +5 defense",
+        paragraph:
+          "Ba represents character, boosts an Egyptian cards attack by +2",
+      }),
+
+      new Card({
+        name: "Ka",
+        nation: "Egyptian",
+        image:
+          "https://github.com/lcroker/Card-Images/blob/main/Ka.jpeg?raw=true",
+        attack: "+0 damage",
+        defense: "+0 defense",
+        paragraph:
+          "Ka is the spirit, a universal force, and combined with with the Pharoah card boosts his attack to +10",
+      }),
+
+      new Card({
+        name: "The Pharoahs Chariot",
+        nation: "Egyptian",
+        image:
+          "https://github.com/lcroker/Card-Images/blob/main/Pharoahs%20Chariot.jpg?raw=true",
+        attack: "+0 damage",
+        defense: "+0 defense",
+        paragraph:
+          "The chariot of the Pharoah, when used by any Egyptian card, it will boost their defense to +8",
+      }),
+
+      new Card({
+        name: "Nefertiti",
+        nation: "Egyptian",
+        image:
+          "https://github.com/lcroker/Card-Images/blob/main/Queen.jpg?raw=true",
+        attack: "Charm +8 damage",
+        defense: "Hathors Crown +5 defense",
+        paragraph: "One of the most powerful Queens to ever rule Egypt",
+      }),
+
+      new Card({
+        name: "Sa",
+        nation: "Egyptian",
+        image:
+          "https://github.com/lcroker/Card-Images/blob/main/Sa.jpg?raw=true",
+        attack: "+0 damage",
+        defense: "+0 defense",
+        paragraph:
+          "Sa the protector card, combined with any Egyptian card will add +5 to their defense",
+      }),
+
+      new Card({
+        name: "The Nile",
+        nation: "Egyptian",
+        image:
+          "https://github.com/lcroker/Card-Images/blob/main/The%20Nile.jpg?raw=true",
+        attack: "Flood +6 damage",
+        defense: "Flood +6 defense",
+        paragraph:
+          "The Nile river will flood to protect advancement from enemies, while keeping the Egyptain cards mobile with their boats.",
+      }),
+
+      new Card({
+        name: "The Great Pyramid",
+        nation: "Egyptian",
+        image:
+          "https://github.com/lcroker/Card-Images/blob/main/Pyramid.jpg?raw=true",
+        attack: "Stiring +6 damage",
+        defense: "Imposing +4 defense",
+        paragraph:
+          "The Great Pyramid of Giza, holds great power and is a symbol to the people of inspiration, and a warning to enemies",
+      }),
+
+      new Card({
+        name: "People of Egypt",
+        nation: "Egyptian",
+        image:
+          "https://github.com/lcroker/Card-Images/blob/main/People%20of%20Egypt.jpg?raw=true",
+        attack: "Barage +6 damage",
+        defense: "Shields +5 defense",
+        paragraph:
+          "The people of Egypt are cunning, dept, and can make a massive difference on the field",
+      }),
     ];
 
     await Card.deleteMany({});
