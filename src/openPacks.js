@@ -214,6 +214,6 @@ export default function({ authUser }) {
       <div className="centered">
         {showInfoBox === "true" && <InfoBox card={selectedCard} />}
       </div>
-    </div> //end of app div
+    </div> //end of app div!
   );
 }
