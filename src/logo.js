@@ -15,7 +15,7 @@ function Logo() {
       id="logo"
     >
       <defs>
-    <style type="text/css">@import url('https://fonts.googleapis.com/css2?family=Skranji&display=swap');</style>
+   
     </defs>
       <g stroke="#000">
 
@@ -23,7 +23,7 @@ function Logo() {
           
                 
         <g
-          ariaLabel="WORLD OF WORSHIP"
+          aria-Label="WORLD OF WORSHIP!!"
           style={{ lineHeight: "1.25" }}
           fill="#ffd700"
           strokeWidth="0.973"

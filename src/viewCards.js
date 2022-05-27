@@ -1,16 +1,22 @@
 import {  useState, useEffect } from "react";
-import InfoBox from "./infoBox";
 import React from "react";
-import { apiKey } from "./apiKey.js";
+import ViewOne from "./viewOneCard";
 
 export default function ({authUser}) {
   
-  const handleCardClick =()=> {
-    console.log("card clicked")
-  }
+ 
   //use state here is a string value when you click the 
-  const [showFaction, setShowFaction] = useState("");
+  const [showFaction, setShowFaction] = useState("false");
   const [cardArray, setCardArray] = useState([]);
+  const [selectedCard, setSelectedCard] = useState([]);
+
+
+ const handleCardClick =(card)=> {
+    console.log("card clicked")
+    console.log(card)
+    setShowFaction("card")
+    setSelectedCard(card)
+  }
 
   useEffect(() => {
 
@@ -35,15 +41,15 @@ export default function ({authUser}) {
         <div
           className="card choose centered"
           onClick={() =>
-            showFaction === "true"
-              ? setShowFaction("")
-              : setShowFaction("true")
+            showFaction === "deck"
+              ? setShowFaction("false")
+              : setShowFaction("deck")
           }
         ><div className="WW"><div className="ww">WW</div></div></div>
-        {showFaction === "true" ? (
+        {showFaction === "deck" ? (
           <div className="cardContainer" id="cardContainer">
           {cardArray.decks && cardArray.decks.map((card, key) => (
-            <div className="card view" onClick={(e) => handleCardClick(e, card.nation, card.name)} id={card.nation}>
+            <div className="card view" onClick={() => handleCardClick(card)} id={card.nation}>
               <div className="pic">
                 <p className="heroname">{card.name}<div className="letter">{card.nation.charAt(0).toUpperCase()}</div></p>
                 <img src={card.image} alt="hero pic" />
@@ -57,15 +63,25 @@ export default function ({authUser}) {
             </div>
           ))}
         </div>
-        ) : (
+        ) 
+        : 
+        (showFaction === "false" ?
+        (
           <div className="infoBox">
       <div className="viewInfo">
         <h1>MY DECK</h1>
         <p>
+          Build your deck in the manage deck page
         </p>
       </div>
       </div> 
-        )}
+        )
+        :
+        (
+          <ViewOne card={selectedCard} setShowFaction={setShowFaction} />
+        )
+        )
+      }
       </div>
       {/* //end of row */}
     </div> //end of app div

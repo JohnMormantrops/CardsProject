@@ -38,7 +38,7 @@ const Register = ({setAuthUser}) => {
 
 	return (
 		<div style={{marginTop: "150px", display: "flex", justifyContent: "center", flexDirection: "column", alignItems: "center"}}>
-			<h2 className="heading">New User? Register here!</h2>		
+			<h2 className="heading shadow">New User? Register here!</h2>		
 			<div>
 				<input type="text" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
 			</div>
